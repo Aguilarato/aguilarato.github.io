@@ -22,7 +22,7 @@ Publicar la carpeta `Proyecto 2` en GitHub Pages (por ejemplo `aguilarato.github
 | Carrito | `carrito.html` | E-commerce |
 | Facturación | `facturacion.html` | Formularios (permisivo, estructurado, sugerencias) |
 | Entrega | `entrega.html` | Rellenar espacios, indicadores |
-| Bosquejos | `bosquejos/index.html` | Wireframes con texto de ejemplo |
+| Bosquejos | `bosquejos/index.html` (+ 10 archivos) | Wireframes HTML separados |
 
 ## Formularios (patrones de diseño)
 

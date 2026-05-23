@@ -3,82 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bosquejos GameVault - Proyecto 2</title>
+  <title>Índice de bosquejos — GameVault</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/site.css">
-  <style>
-    body.wireframe-page { padding: 1.5rem; }
-    .wireframe-grid { display: grid; gap: 0.75rem; }
-    .wf-header { min-height: 4rem; }
-    .wf-hero { min-height: 10rem; }
-    .wf-card { min-height: 6rem; }
-    .wf-sidebar { min-height: 14rem; }
-  </style>
+  <link rel="stylesheet" href="wireframe.css">
 </head>
 <body class="wireframe-page">
-  <header class="mb-4">
-    <h1 class="h3">Bosquejos de pantalla — GameVault</h1>
-    <p class="text-secondary">Texto de ejemplo real (sin lorem ipsum). Capture cada sección para el PDF del entregable.</p>
-    <p><a href="../index.html">Ver prototipo HTML codificado</a></p>
+  <header class="wf-page-header">
+    <h1 class="h3 mb-1">Bosquejos de pantalla — GameVault</h1>
+    <p class="text-secondary mb-0">Un archivo HTML por tipo de página. Texto de ejemplo real (sin lorem ipsum).</p>
+    <div class="wf-actions">
+      <a href="../index.html">Ver prototipo codificado (inicio)</a>
+    </div>
   </header>
 
-  <section class="mb-5">
-    <h2 class="h5">1. Página de inicio</h2>
-    <div class="wireframe-grid">
-      <div class="wireframe-box wf-header"><span class="wireframe-label">Cabecera</span>Logo GameVault · Navegación global · Búsqueda “Buscar RPG…”</div>
-      <div class="row g-2">
-        <div class="col-md-3"><div class="wireframe-box wf-sidebar"><span class="wireframe-label">Barra lateral</span>Acción, Aventura, RPG, Indie…</div></div>
-        <div class="col-md-9">
-          <div class="wireframe-box wf-hero mb-2"><span class="wireframe-label">Carrusel</span>Destacado: Elden Ring — Oferta -25%</div>
-          <div class="row g-2">
-            <div class="col-md-4"><div class="wireframe-box wf-card">The Witcher 3</div></div>
-            <div class="col-md-4"><div class="wireframe-box wf-card">Baldurs Gate 3</div></div>
-            <div class="col-md-4"><div class="wireframe-box wf-card">Cyberpunk 2077</div></div>
-          </div>
-        </div>
-      </div>
-      <div class="wireframe-box"><span class="wireframe-label">Pie</span>Autores UNA · Contacto · Derechos © 2026</div>
-    </div>
-  </section>
-
-  <section class="mb-5">
-    <h2 class="h5">2. Página de categoría (RPG)</h2>
-    <div class="wireframe-box wf-header mb-2">Migas: Inicio › Categorías › RPG</div>
-    <div class="row g-2">
-      <div class="col-md-3"><div class="wireframe-box wf-sidebar">Filtro lateral por sección</div></div>
-      <div class="col-md-9">
-        <div class="row g-2">
-          <div class="col-4"><div class="wireframe-box wf-card">Elden Ring $44.99</div></div>
-          <div class="col-4"><div class="wireframe-box wf-card">Witcher 3 $19.99</div></div>
-          <div class="col-4"><div class="wireframe-box wf-card">BG3 $59.99</div></div>
-        </div>
-        <div class="wireframe-box mt-2">Paginación: 1 · 2 · 3 ›</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="mb-5">
-    <h2 class="h5">3. Búsqueda</h2>
-    <div class="wireframe-box">Resultados para “hades” — 1 juego — Tarjeta con enlace a ficha</div>
-  </section>
-
-  <section class="mb-5">
-    <h2 class="h5">4. Contenido (pestañas / acordeón / secciones)</h2>
-    <div class="row g-2">
-      <div class="col-md-4"><div class="wireframe-box">Elden Ring — Pestañas: Descripción | Requisitos | Reseñas</div></div>
-      <div class="col-md-4"><div class="wireframe-box">Hades — Acordeón colapsable</div></div>
-      <div class="col-md-4"><div class="wireframe-box">BG3 — Secciones con títulos</div></div>
-    </div>
-    <div class="wireframe-box mt-2">Bloque asociativo: “También te puede interesar”</div>
-  </section>
-
-  <section class="mb-5">
-    <h2 class="h5">5. Comercio electrónico</h2>
-    <div class="row g-2">
-      <div class="col-md-4"><div class="wireframe-box">Carrito: Elden Ring + Hades</div></div>
-      <div class="col-md-4"><div class="wireframe-box">Facturación: campos permisivos y tarjeta</div></div>
-      <div class="col-md-4"><div class="wireframe-box">Entrega: rellenar espacios en blanco</div></div>
-    </div>
-  </section>
+  <table class="table table-bordered wf-index-table bg-white">
+    <thead class="table-light">
+      <tr>
+        <th>#</th>
+        <th>Tipo de página</th>
+        <th>Bosquejo</th>
+        <th>HTML codificado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Inicio</td>
+        <td><a href="inicio.html">inicio.html</a></td>
+        <td><a href="../index.html">index.html</a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Categoría</td>
+        <td><a href="categoria.html">categoria.html</a></td>
+        <td><a href="../categoria.html?cat=3">categoria.html?cat=3</a></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Búsqueda</td>
+        <td><a href="busqueda.html">busqueda.html</a></td>
+        <td><a href="../busqueda.html?q=hades">busqueda.html?q=hades</a></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Contenido — pestañas</td>
+        <td><a href="contenido-pestanas.html">contenido-pestanas.html</a></td>
+        <td><a href="../juego-elden-ring.html">juego-elden-ring.html</a></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Contenido — acordeón</td>
+        <td><a href="contenido-acordeon.html">contenido-acordeon.html</a></td>
+        <td><a href="../juego-hades.html">juego-hades.html</a></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Contenido — secciones</td>
+        <td><a href="contenido-secciones.html">contenido-secciones.html</a></td>
+        <td><a href="../juego-baldurs-gate-3.html">juego-baldurs-gate-3.html</a></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Navegación asociativa</td>
+        <td><a href="navegacion-asociativa.html">navegacion-asociativa.html</a></td>
+        <td><a href="../juego-elden-ring.html">juego-elden-ring.html</a></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Carrito</td>
+        <td><a href="carrito.html">carrito.html</a></td>
+        <td><a href="../carrito.html">carrito.html</a></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Facturación</td>
+        <td><a href="facturacion.html">facturacion.html</a></td>
+        <td><a href="../facturacion.html">facturacion.html</a></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Entrega</td>
+        <td><a href="entrega.html">entrega.html</a></td>
+        <td><a href="../entrega.html">entrega.html</a></td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>
