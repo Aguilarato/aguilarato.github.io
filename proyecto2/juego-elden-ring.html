@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Luis A. Aguilar Bolaños, Pablo A. Alvarado Umaña">
+  <title>GameVault | Elden Ring</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body
+  data-active-nav=""
+  data-active-category="3"
+  data-breadcrumbs='[{"label":"Inicio","href":"index.html"},{"label":"RPG","href":"categoria.html?cat=3"},{"label":"Elden Ring"}]'
+  data-related='{"id":1,"category":3}'>
+  <div id="gv-header"></div>
+
+  <div class="container-fluid px-3 px-lg-4 py-4">
+    <div class="row g-4">
+      <div class="col-lg-3"><div id="gv-sidebar"></div></div>
+      <div class="col-lg-9">
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <h1 class="h2 mb-3">Elden Ring</h1>
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_616x353.jpg" class="img-fluid rounded mb-3 w-100" alt="Elden Ring - portada principal">
+            <ul class="nav nav-tabs" id="eldenTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tab-desc" data-bs-toggle="tab" data-bs-target="#panel-desc" type="button" role="tab">Descripción</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-req" data-bs-toggle="tab" data-bs-target="#panel-req" type="button" role="tab">Requisitos</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-reviews" data-bs-toggle="tab" data-bs-target="#panel-reviews" type="button" role="tab">Reseñas</button>
+              </li>
+            </ul>
+            <div class="tab-content border border-secondary border-top-0 rounded-bottom p-3 bg-dark" id="eldenTabContent">
+              <div class="tab-pane fade show active" id="panel-desc" role="tabpanel">
+                <p>RPG de acción en mundo abierto desarrollado por FromSoftware en colaboración con George R.R. Martin. Explora las Tierras Intermedias, derrota jefes legendarios y personaliza tu build con armas, hechizos y espíritus invocados.</p>
+                <p>Modo: Ambos · Clasificación: M · Puntuación: 9.5/10</p>
+              </div>
+              <div class="tab-pane fade" id="panel-req" role="tabpanel">
+                <ul>
+                  <li><strong>Mínimos:</strong> Windows 10, Ryzen 5 1600 / i5-8400, 12 GB RAM, GTX 1060 3 GB.</li>
+                  <li><strong>Recomendados:</strong> Windows 11, Ryzen 7 2700X / i7-8700K, 16 GB RAM, RTX 3060 Ti.</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="panel-reviews" role="tabpanel">
+                <blockquote class="blockquote">
+                  <p>“La libertad de exploración y el diseño de jefes lo convierten en un referente del género.”</p>
+                  <footer class="blockquote-footer text-secondary">Comunidad GameVault</footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <aside class="gv-panel-buy p-3">
+              <p class="gv-price mb-1">$44.99 USD</p>
+              <p class="gv-price-old">$59.99 USD</p>
+              <span class="badge gv-badge-sale mb-3">-25%</span>
+              <div class="d-grid gap-2">
+                <a class="btn btn-info" href="carrito.html">Agregar al carrito</a>
+                <a class="btn btn-outline-light btn-sm" href="https://www.youtube.com/watch?v=E3Huy2cdih0" target="_blank" rel="noopener">Ver tráiler</a>
+              </div>
+            </aside>
+            <section class="mt-4" aria-labelledby="relacionados-title">
+              <h2 id="relacionados-title" class="h6 text-uppercase text-secondary">También te puede interesar</h2>
+              <div class="list-group" id="gv-related"></div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="gv-footer"></div>
+  <script src="js/catalog.js"></script>
+  <script src="js/site.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

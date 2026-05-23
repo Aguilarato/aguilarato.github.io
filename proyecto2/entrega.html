@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Luis A. Aguilar Bolaños, Pablo A. Alvarado Umaña">
+  <title>GameVault | Entrega</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="entrega" data-crumb="Entrega">
+  <div id="gv-header"></div>
+
+  <div class="container-fluid px-3 px-lg-4 py-4">
+    <div class="row g-4">
+      <div class="col-lg-3"><div id="gv-sidebar"></div></div>
+      <div class="col-lg-9">
+        <h1 class="h3 gv-section-title mb-3">Información de entrega</h1>
+        <p class="text-secondary">Rellenar espacios en blanco en la dirección e indicadores visuales en campos clave.</p>
+
+        <form class="gv-form needs-validation" novalidate action="index.html" method="get">
+          <div class="card gv-card mb-3">
+            <div class="card-body">
+              <p class="mb-3">
+                Entregar en: Provincia <input class="form-control d-inline-block gv-blank-field" style="width:8rem" name="provincia" placeholder="___" required>
+                , Cantón <input class="form-control d-inline-block gv-blank-field" style="width:8rem" name="canton" placeholder="___" required>
+                , Distrito <input class="form-control d-inline-block gv-blank-field" style="width:8rem" name="distrito" placeholder="___" required>.
+              </p>
+              <p class="mb-3">
+                Otras señas: <input class="form-control d-inline-block gv-blank-field w-75" name="senas" placeholder="Frente al parque, casa de portón verde…" required>.
+              </p>
+              <p class="mb-0">
+                Código postal: <input class="form-control d-inline-block gv-blank-field" style="width:6rem" name="codigo" inputmode="numeric" pattern="[0-9]{5}" placeholder="10101">
+              </p>
+              <div class="gv-hint mt-2">Patrón de rellenar espacios en blanco integrado en la redacción.</div>
+            </div>
+          </div>
+
+          <div class="row g-3 mb-3">
+            <div class="col-md-6 gv-input-indicator">
+              <label class="form-label" for="telefono">Teléfono de contacto</label>
+              <span class="gv-icon" aria-hidden="true">☎</span>
+              <input class="form-control" id="telefono" name="telefono" type="tel" placeholder="+506 8888-8888" pattern="\+?[0-9\s\-]{8,16}" required>
+              <div class="gv-hint">Indicador de entrada con icono contextual.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="ventana">Ventana de entrega digital</label>
+              <select class="form-select" id="ventana" name="ventana" required>
+                <option value="">Seleccione…</option>
+                <option>Descarga inmediata</option>
+                <option>Enlace por correo en 15 min</option>
+                <option>Programar regalo</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="terminos" required>
+            <label class="form-check-label" for="terminos">Acepto los términos de licencia digital</label>
+          </div>
+
+          <button class="btn btn-success" type="submit">Confirmar pedido</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="gv-footer"></div>
+  <script src="js/catalog.js"></script>
+  <script src="js/site.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

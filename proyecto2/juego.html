@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Luis A. Aguilar Bolaños, Pablo A. Alvarado Umaña">
+  <title>GameVault | Detalle de juego</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-active-nav="" data-active-category="0" data-breadcrumbs='[{"label":"Inicio","href":"index.html"},{"label":"Detalle"}]'>
+  <div id="gv-header"></div>
+
+  <div class="container-fluid px-3 px-lg-4 py-4">
+    <div class="row g-4">
+      <div class="col-lg-3"><div id="gv-sidebar"></div></div>
+      <div class="col-lg-9" id="gv-generic-product"></div>
+    </div>
+  </div>
+
+  <div id="gv-footer"></div>
+  <script src="js/catalog.js"></script>
+  <script src="js/site.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const id = Number(new URLSearchParams(location.search).get("id"));
+      const product = window.GameVaultCatalog.productos.find((p) => p.id === id);
+      const mount = document.getElementById("gv-generic-product");
+      if (!product || !mount) {
+        mount.innerHTML = "<p class='alert alert-warning'>Producto no encontrado. <a href='index.html'>Volver al inicio</a></p>";
+        return;
+      }
+      document.title = `GameVault | ${product.nombre}`;
+      document.body.dataset.activeCategory = String(product.id_categoria);
+      const category = window.GameVaultCatalog.categorias.find((c) => c.id === product.id_categoria);
+      mount.innerHTML = `
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <h1 class="h2">${product.nombre}</h1>
+            <img src="${product.imagen_url}" class="img-fluid rounded mb-3" alt="${product.nombre}">
+            <div class="card gv-card mb-3"><div class="card-body"><p>${product.descripcion}</p></div></div>
+            <div class="card gv-card"><div class="card-header">Información</div><div class="card-body">
+              <p><strong>Modo:</strong> ${product.modo_juego} · <strong>Clasificación:</strong> ${product.clasificacion_edad}</p>
+              <p><strong>Puntuación:</strong> ${product.puntuacion}/10</p>
+            </div></div>
+          </div>
+          <div class="col-lg-4">
+            <aside class="gv-panel-buy p-3">
+              <p class="gv-price">${window.GameVault.formatPrice(window.GameVault.salePrice(product))}</p>
+              <a class="btn btn-info w-100" href="carrito.html">Agregar al carrito</a>
+            </aside>
+            <section class="mt-4"><h2 class="h6 text-uppercase text-secondary">Relacionados</h2><div class="list-group" id="gv-related"></div></section>
+          </div>
+        </div>`;
+      document.body.dataset.related = JSON.stringify({ id: product.id, category: product.id_categoria });
+      const related = window.GameVaultCatalog.productos.filter((p) => p.id_categoria === product.id_categoria && p.id !== product.id).slice(0, 3);
+      document.getElementById("gv-related").innerHTML = related.map((p) =>
+        `<a class="list-group-item list-group-item-action" href="${p.pagina}">${p.nombre}</a>`).join("");
+    });
+  </script>
+</body>
+</html>

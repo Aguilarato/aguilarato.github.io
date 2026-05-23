@@ -1,0 +1,252 @@
+:root {
+  --gv-bg: #0d1b2a;
+  --gv-surface: #1b263b;
+  --gv-surface-2: #243447;
+  --gv-accent: #1b9aaa;
+  --gv-accent-hover: #22c4d6;
+  --gv-text: #e0e6ed;
+  --gv-muted: #9fb3c8;
+  --gv-border: #334155;
+  --gv-sale: #f4a261;
+}
+
+body {
+  background: var(--gv-bg);
+  color: var(--gv-text);
+  min-height: 100vh;
+}
+
+a {
+  color: var(--gv-accent-hover);
+}
+
+a:hover {
+  color: #7ee0ee;
+}
+
+.gv-topbar {
+  background: linear-gradient(180deg, #14243a 0%, var(--gv-surface) 100%);
+  border-bottom: 1px solid var(--gv-border);
+}
+
+.gv-brand {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--gv-text);
+  text-decoration: none;
+}
+
+.gv-brand:hover {
+  color: #fff;
+}
+
+.gv-nav-link {
+  color: var(--gv-muted);
+  text-decoration: none;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.35rem;
+}
+
+.gv-nav-link:hover,
+.gv-nav-link.active {
+  color: #fff;
+  background: rgba(27, 154, 170, 0.2);
+}
+
+.gv-search .form-control {
+  background: #0f172a;
+  border-color: var(--gv-border);
+  color: var(--gv-text);
+}
+
+.gv-search .form-control:focus {
+  background: #0f172a;
+  border-color: var(--gv-accent);
+  color: var(--gv-text);
+  box-shadow: 0 0 0 0.2rem rgba(27, 154, 170, 0.25);
+}
+
+.gv-search .btn {
+  background: var(--gv-accent);
+  border-color: var(--gv-accent);
+  color: #041018;
+  font-weight: 600;
+}
+
+.gv-search .btn:hover {
+  background: var(--gv-accent-hover);
+  border-color: var(--gv-accent-hover);
+}
+
+.gv-breadcrumb {
+  --bs-breadcrumb-divider-color: var(--gv-muted);
+  --bs-breadcrumb-item-active-color: var(--gv-text);
+}
+
+.gv-breadcrumb .breadcrumb-item a {
+  color: var(--gv-muted);
+  text-decoration: none;
+}
+
+.gv-sidebar {
+  background: var(--gv-surface);
+  border: 1px solid var(--gv-border);
+  border-radius: 0.75rem;
+}
+
+.gv-sidebar .list-group-item {
+  background: transparent;
+  color: var(--gv-text);
+  border-color: var(--gv-border);
+}
+
+.gv-sidebar .list-group-item:hover,
+.gv-sidebar .list-group-item.active {
+  background: rgba(27, 154, 170, 0.18);
+  color: #fff;
+}
+
+.gv-card {
+  background: var(--gv-surface);
+  border: 1px solid var(--gv-border);
+  color: var(--gv-text);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.gv-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.gv-card img {
+  aspect-ratio: 616 / 353;
+  object-fit: cover;
+}
+
+.gv-price {
+  color: #9ef0a4;
+  font-weight: 700;
+}
+
+.gv-price-old {
+  color: var(--gv-muted);
+  text-decoration: line-through;
+  font-size: 0.9rem;
+}
+
+.gv-badge-sale {
+  background: var(--gv-sale);
+  color: #1a1208;
+}
+
+.gv-footer {
+  background: var(--gv-surface);
+  border-top: 1px solid var(--gv-border);
+  color: var(--gv-muted);
+  margin-top: 3rem;
+}
+
+.gv-carousel .carousel-item img {
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+}
+
+.gv-section-title {
+  border-left: 4px solid var(--gv-accent);
+  padding-left: 0.75rem;
+}
+
+.gv-panel-buy {
+  background: var(--gv-surface-2);
+  border: 1px solid var(--gv-border);
+  border-radius: 0.75rem;
+}
+
+.gv-form .form-control,
+.gv-form .form-select {
+  background: #0f172a;
+  border-color: var(--gv-border);
+  color: var(--gv-text);
+}
+
+.gv-form .form-control:focus,
+.gv-form .form-select:focus {
+  background: #0f172a;
+  border-color: var(--gv-accent);
+  color: var(--gv-text);
+  box-shadow: 0 0 0 0.2rem rgba(27, 154, 170, 0.25);
+}
+
+.gv-form .form-label {
+  color: var(--gv-muted);
+}
+
+.gv-hint {
+  font-size: 0.85rem;
+  color: var(--gv-muted);
+}
+
+.gv-input-indicator {
+  position: relative;
+}
+
+.gv-input-indicator .form-control {
+  padding-left: 2.25rem;
+}
+
+.gv-input-indicator .gv-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gv-muted);
+  pointer-events: none;
+}
+
+.gv-blank-field {
+  border-bottom: 2px dashed var(--gv-accent);
+  background: transparent;
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.wireframe-page {
+  background: #f8fafc;
+  color: #0f172a;
+  font-family: system-ui, sans-serif;
+}
+
+.wireframe-box {
+  border: 2px dashed #64748b;
+  background: #fff;
+  min-height: 3rem;
+  padding: 0.75rem;
+}
+
+.wireframe-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #475569;
+  margin-bottom: 0.35rem;
+}
+
+.pagination .page-link {
+  background: var(--gv-surface);
+  border-color: var(--gv-border);
+  color: var(--gv-text);
+}
+
+.pagination .page-item.active .page-link {
+  background: var(--gv-accent);
+  border-color: var(--gv-accent);
+  color: #041018;
+}
+
+@media (max-width: 991.98px) {
+  .gv-sidebar {
+    margin-bottom: 1rem;
+  }
+}

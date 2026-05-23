@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Luis A. Aguilar Bolaños, Pablo A. Alvarado Umaña">
+  <title>GameVault | Facturación</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="facturacion" data-crumb="Facturación">
+  <div id="gv-header"></div>
+
+  <div class="container-fluid px-3 px-lg-4 py-4">
+    <div class="row g-4">
+      <div class="col-lg-3"><div id="gv-sidebar"></div></div>
+      <div class="col-lg-9">
+        <h1 class="h3 gv-section-title mb-3">Datos de facturación</h1>
+        <p class="text-secondary">Formato permisivo en nombre; formato estructurado en tarjeta; sugerencias en correo y país.</p>
+
+        <form class="gv-form needs-validation" novalidate action="entrega.html" method="get">
+          <div class="card gv-card mb-3">
+            <div class="card-header">Identificación del comprador</div>
+            <div class="card-body row g-3">
+              <div class="col-md-6">
+                <label class="form-label" for="nombre">Nombre completo</label>
+                <input class="form-control" id="nombre" name="nombre" type="text" placeholder="Como figura en su identificación" required>
+                <div class="gv-hint">Formato permisivo: acepta acentos y espacios.</div>
+              </div>
+              <div class="col-md-6 gv-input-indicator">
+                <label class="form-label" for="correo">Correo electrónico</label>
+                <span class="gv-icon" aria-hidden="true">@</span>
+                <input class="form-control" id="correo" name="correo" type="email" list="correo-sugerencias" placeholder="usuario@dominio.com" required>
+                <datalist id="correo-sugerencias">
+                  <option value="@gmail.com"></option>
+                  <option value="@una.ac.cr"></option>
+                  <option value="@hotmail.com"></option>
+                </datalist>
+                <div class="gv-hint">Sugerencias de entrada con datalist.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="cedula">Cédula o pasaporte</label>
+                <input class="form-control" id="cedula" name="cedula" type="text" inputmode="numeric" pattern="[0-9\-]{9,20}" placeholder="1-2345-6789" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="pais">País</label>
+                <input class="form-control" id="pais" name="pais" list="paises" value="Costa Rica" required>
+                <datalist id="paises">
+                  <option value="Costa Rica"></option>
+                  <option value="Panamá"></option>
+                  <option value="México"></option>
+                  <option value="Colombia"></option>
+                </datalist>
+              </div>
+            </div>
+          </div>
+
+          <div class="card gv-card mb-3">
+            <div class="card-header">Pago con tarjeta (formato estructurado)</div>
+            <div class="card-body row g-3">
+              <div class="col-12">
+                <label class="form-label" for="titular">Titular de la tarjeta</label>
+                <input class="form-control" id="titular" name="titular" type="text" autocomplete="cc-name" required>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" for="numero">Número de tarjeta</label>
+                <input class="form-control" id="numero" name="numero" type="text" inputmode="numeric" autocomplete="cc-number" placeholder="1234 5678 9012 3456" pattern="[0-9 ]{15,19}" required>
+              </div>
+              <div class="col-md-2">
+                <label class="form-label" for="vence">Vence</label>
+                <input class="form-control" id="vence" name="vence" type="text" placeholder="MM/AA" pattern="(0[1-9]|1[0-2])\/[0-9]{2}" required>
+              </div>
+              <div class="col-md-2">
+                <label class="form-label" for="cvv">CVV</label>
+                <input class="form-control" id="cvv" name="cvv" type="password" inputmode="numeric" autocomplete="cc-csc" pattern="[0-9]{3,4}" required>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-info" type="submit">Continuar a entrega</button>
+          <a class="btn btn-outline-light ms-2" href="carrito.html">Volver al carrito</a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="gv-footer"></div>
+  <script src="js/catalog.js"></script>
+  <script src="js/site.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
