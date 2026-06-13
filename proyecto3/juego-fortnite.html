@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Luis A. Aguilar Bolaños y Pablo A. Alvarado Umaña">
+  <meta name="description" content="GameVault — Tienda de videojuegos — Proyecto 3 EIF 506">
+  <title>GameVault | Fortnite</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <header class="gv-topbar py-3">
+    <div class="container-fluid px-3 px-lg-4">
+      <div class="row g-3 align-items-center">
+        <div class="col-lg-3">
+          <a class="gv-brand fs-4" href="index.html">GameVault</a>
+          <div class="small text-secondary">Tienda de videojuegos</div>
+        </div>
+        <div class="col-lg-5">
+          <nav class="d-flex flex-wrap gap-1" aria-label="Navegación global">
+            <a class="gv-nav-link" href="../index.html">Menú del sitio</a>
+            <a class="gv-nav-link" href="index.html">Inicio</a>
+            <a class="gv-nav-link" href="mapa.html">Índice</a>
+            <a class="gv-nav-link" href="categoria-rpg.html">Categorías</a>
+            <a class="gv-nav-link" href="busqueda.html">Búsqueda</a>
+            <a class="gv-nav-link" href="carrito.html">Carrito</a>
+          </nav>
+        </div>
+        <div class="col-lg-4">
+          <form class="gv-search d-flex" action="busqueda.html" method="get" role="search">
+            <label class="visually-hidden" for="gv-search-input">Buscar juegos</label>
+            <input id="gv-search-input" class="form-control" type="search" name="q" placeholder="Buscar por nombre o género" list="gv-search-suggestions">
+            <button class="btn ms-2" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+      <nav aria-label="Migas de pan" class="mb-0 mt-3">
+        <ol class="breadcrumb gv-breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item"><a href="categoria-acci-n.html">Acción</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Fortnite</li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container-fluid px-3 px-lg-4 py-4">
+    <div class="row g-4">
+      <div class="col-lg-3">
+        <aside class="gv-sidebar p-3" aria-label="Categorías de contenido">
+          <h2 class="h6 text-uppercase text-secondary">Secciones</h2>
+          <div class="list-group list-group-flush">
+            <a href="categoria-acci-n.html" class="list-group-item list-group-item-action active">Acción</a>
+            <a href="categoria-aventura.html" class="list-group-item list-group-item-action">Aventura</a>
+            <a href="categoria-rpg.html" class="list-group-item list-group-item-action">RPG</a>
+            <a href="categoria-deportes.html" class="list-group-item list-group-item-action">Deportes</a>
+            <a href="categoria-estrategia.html" class="list-group-item list-group-item-action">Estrategia</a>
+            <a href="categoria-terror.html" class="list-group-item list-group-item-action">Terror</a>
+            <a href="categoria-simulaci-n.html" class="list-group-item list-group-item-action">Simulación</a>
+            <a href="categoria-peleas.html" class="list-group-item list-group-item-action">Peleas</a>
+            <a href="categoria-plataformas.html" class="list-group-item list-group-item-action">Plataformas</a>
+            <a href="categoria-puzzle.html" class="list-group-item list-group-item-action">Puzzle</a>
+            <a href="categoria-indie.html" class="list-group-item list-group-item-action">Indie</a>
+          </div>
+          <hr class="border-secondary">
+          <p class="small text-secondary mb-2">Ofertas destacadas</p>
+          <a class="btn btn-sm btn-outline-warning w-100 mb-2" href="categoria-rpg.html">RPG en oferta</a>
+          <a class="btn btn-sm btn-outline-info w-100" href="categoria-indie.html">Indie recomendados</a>
+        </aside>
+      </div>
+      <div class="col-lg-9">
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <h1 class="h2 mb-3">Fortnite</h1>
+            <img src="https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/cmmwetl8h22ka07oe7aq59gwi" class="img-fluid rounded mb-3 w-100" alt="Fortnite">
+            <section class="mb-4">
+              <h2 class="h5 gv-section-title">Descripción</h2>
+              <p>Battle royale free-to-play en constante evolución con colaboraciones de Marvel, Star Wars y más. Construye estructuras para sobrevivir.</p>
+            </section>
+            <section class="mb-4">
+              <h2 class="h5 gv-section-title">Detalles</h2>
+              <ul><li>Modo: Multijugador</li><li>Clasificación: T</li><li>Tipo: Juego base</li><li>Puntuación: 7.9/10</li><li>Disponibilidad: En stock</li></ul>
+            </section>
+          </div>
+          <div class="col-lg-4">
+            <aside class="gv-panel-buy p-3">
+              <p class="gv-price mb-1">Gratis</p>
+              <div class="d-grid gap-2">
+                <a class="btn btn-info" href="carrito.html">Agregar al carrito</a>
+                <a class="btn btn-outline-light btn-sm" href="https://www.youtube.com/watch?v=2gUtfBmw86Y" target="_blank" rel="noopener">Ver tráiler</a>
+              </div>
+            </aside>
+            <section class="mt-4">
+              <h2 class="h6 text-uppercase text-secondary">También te puede interesar</h2>
+              <div class="list-group">
+                <a class="list-group-item list-group-item-action" href="juego-god-of-war-ragnar-k.html">
+                  <div class="d-flex gap-2 align-items-center">
+                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202207/1117/4uH3OH4dQtHMe2gmdFuth02u.jpg" alt="" width="72" height="41" class="rounded" style="object-fit:cover">
+                    <div><strong>God of War: Ragnarök</strong><br><span class="small text-secondary">$69.99 USD</span></div>
+                  </div>
+                </a>
+                <a class="list-group-item list-group-item-action" href="juego-grand-theft-auto-v.html">
+                  <div class="d-flex gap-2 align-items-center">
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/capsule_616x353.jpg" alt="" width="72" height="41" class="rounded" style="object-fit:cover">
+                    <div><strong>Grand Theft Auto V</strong><br><span class="small text-secondary">$22.49 USD</span></div>
+                  </div>
+                </a>
+                <a class="list-group-item list-group-item-action" href="juego-apex-legends.html">
+                  <div class="d-flex gap-2 align-items-center">
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/capsule_616x353.jpg" alt="" width="72" height="41" class="rounded" style="object-fit:cover">
+                    <div><strong>Apex Legends</strong><br><span class="small text-secondary">Gratis</span></div>
+                  </div>
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="gv-footer py-4">
+    <div class="container-fluid px-3 px-lg-4">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <strong>GameVault</strong>
+          <p class="small mb-0">Sitio estático generado con InjaX (Proyecto 3).</p>
+        </div>
+        <div class="col-md-4">
+          <p class="small mb-1"><strong>Autores:</strong> Luis A. Aguilar Bolaños y Pablo A. Alvarado Umaña</p>
+          <p class="small mb-0"><strong>Contacto:</strong> <a href="mailto:gamevault@una.ac.cr">gamevault@una.ac.cr</a></p>
+        </div>
+        <div class="col-md-4">
+          <p class="small mb-0">© 2026 GameVault — EIF 506, Diseño de Sitios Web, UNA.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <datalist id="gv-search-suggestions">
+    <option value="Elden Ring"></option>
+    <option value="The Witcher 3: Wild Hunt"></option>
+    <option value="Red Dead Redemption 2"></option>
+    <option value="Hollow Knight"></option>
+    <option value="FIFA 24"></option>
+    <option value="Resident Evil Village"></option>
+    <option value="Hades"></option>
+    <option value="Minecraft"></option>
+    <option value="God of War: Ragnarök"></option>
+    <option value="Cyberpunk 2077"></option>
+    <option value="Stardew Valley"></option>
+    <option value="Dead by Daylight"></option>
+    <option value="Celeste"></option>
+    <option value="Grand Theft Auto V"></option>
+    <option value="Undertale"></option>
+    <option value="Baldur's Gate 3"></option>
+    <option value="Apex Legends"></option>
+    <option value="The Legend of Zelda: Tears of the Kingdom"></option>
+    <option value="Mortal Kombat 1"></option>
+    <option value="Cities: Skylines"></option>
+    <option value="Sekiro: Shadows Die Twice"></option>
+    <option value="Portal 2"></option>
+    <option value="Fortnite"></option>
+    <option value="Horizon Forbidden West"></option>
+    <option value="Terraria"></option>
+    <option value="Civilization VI"></option>
+    <option value="Night in the Woods"></option>
+    <option value="LEGO Star Wars: The Skywalker Saga"></option>
+    <option value="Project Zomboid"></option>
+    <option value="Hogwarts Legacy"></option>
+  </datalist>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

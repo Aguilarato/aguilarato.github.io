@@ -1,0 +1,234 @@
+{
+  "site": {
+    "store": "GameVault",
+    "authors": "Luis A. Aguilar Bolaños y Pablo A. Alvarado Umaña",
+    "contact": "gamevault@una.ac.cr",
+    "tagline": "Tienda de videojuegos",
+    "nav": [
+      {
+        "id": "portafolio",
+        "label": "Menú del sitio",
+        "href": "../index.html"
+      },
+      {
+        "id": "inicio",
+        "label": "Inicio",
+        "href": "index.html"
+      },
+      {
+        "id": "mapa",
+        "label": "Índice",
+        "href": "mapa.html"
+      },
+      {
+        "id": "categoria",
+        "label": "Categorías",
+        "href": "categoria-rpg.html"
+      },
+      {
+        "id": "busqueda",
+        "label": "Búsqueda",
+        "href": "busqueda.html"
+      },
+      {
+        "id": "carrito",
+        "label": "Carrito",
+        "href": "carrito.html"
+      }
+    ],
+    "categorias": [
+      {
+        "id": 1,
+        "nombre": "Acción",
+        "slug": "acci-n",
+        "href": "categoria-acci-n.html"
+      },
+      {
+        "id": 2,
+        "nombre": "Aventura",
+        "slug": "aventura",
+        "href": "categoria-aventura.html"
+      },
+      {
+        "id": 3,
+        "nombre": "RPG",
+        "slug": "rpg",
+        "href": "categoria-rpg.html"
+      },
+      {
+        "id": 4,
+        "nombre": "Deportes",
+        "slug": "deportes",
+        "href": "categoria-deportes.html"
+      },
+      {
+        "id": 5,
+        "nombre": "Estrategia",
+        "slug": "estrategia",
+        "href": "categoria-estrategia.html"
+      },
+      {
+        "id": 6,
+        "nombre": "Terror",
+        "slug": "terror",
+        "href": "categoria-terror.html"
+      },
+      {
+        "id": 7,
+        "nombre": "Simulación",
+        "slug": "simulaci-n",
+        "href": "categoria-simulaci-n.html"
+      },
+      {
+        "id": 8,
+        "nombre": "Peleas",
+        "slug": "peleas",
+        "href": "categoria-peleas.html"
+      },
+      {
+        "id": 9,
+        "nombre": "Plataformas",
+        "slug": "plataformas",
+        "href": "categoria-plataformas.html"
+      },
+      {
+        "id": 10,
+        "nombre": "Puzzle",
+        "slug": "puzzle",
+        "href": "categoria-puzzle.html"
+      },
+      {
+        "id": 11,
+        "nombre": "Indie",
+        "slug": "indie",
+        "href": "categoria-indie.html"
+      }
+    ],
+    "search_suggestions": [
+      "Elden Ring",
+      "The Witcher 3: Wild Hunt",
+      "Red Dead Redemption 2",
+      "Hollow Knight",
+      "FIFA 24",
+      "Resident Evil Village",
+      "Hades",
+      "Minecraft",
+      "God of War: Ragnarök",
+      "Cyberpunk 2077",
+      "Stardew Valley",
+      "Dead by Daylight",
+      "Celeste",
+      "Grand Theft Auto V",
+      "Undertale",
+      "Baldur's Gate 3",
+      "Apex Legends",
+      "The Legend of Zelda: Tears of the Kingdom",
+      "Mortal Kombat 1",
+      "Cities: Skylines",
+      "Sekiro: Shadows Die Twice",
+      "Portal 2",
+      "Fortnite",
+      "Horizon Forbidden West",
+      "Terraria",
+      "Civilization VI",
+      "Night in the Woods",
+      "LEGO Star Wars: The Skywalker Saga",
+      "Project Zomboid",
+      "Hogwarts Legacy"
+    ]
+  },
+  "page": {
+    "title": "GameVault | Aventura",
+    "active_nav": "categoria",
+    "active_category": 2,
+    "breadcrumbs": [
+      {
+        "label": "Inicio",
+        "is_last": false,
+        "href": "index.html"
+      },
+      {
+        "label": "Categorías",
+        "is_last": false,
+        "href": "categoria-rpg.html"
+      },
+      {
+        "label": "Aventura",
+        "is_last": true,
+        "href": ""
+      }
+    ]
+  },
+  "category": {
+    "nombre": "Aventura",
+    "descripcion": "Juegos con narrativa profunda, exploración y resolución de misterios.",
+    "slug": "aventura"
+  },
+  "products": [
+    {
+      "id": 3,
+      "nombre": "Red Dead Redemption 2",
+      "descripcion_corta": "Épica historia del salvaje oeste americano. Juega como Arthur Morgan, forajido que lucha por sobrevivir mientr…",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/capsule_616x353.jpg",
+      "categoria": "Aventura",
+      "precio_final": "$47.99 USD",
+      "precio_original": "$59.99 USD",
+      "descuento_badge": "-20%",
+      "has_discount": true,
+      "search_key": "red dead redemption 2",
+      "href": "juego-red-dead-redemption-2.html"
+    },
+    {
+      "id": 18,
+      "nombre": "The Legend of Zelda: Tears of the Kingdom",
+      "descripcion_corta": "Aventura épica en Hyrule donde Link explora cielos, tierra y profundidades con nuevas habilidades como Ultraha…",
+      "imagen_url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/store/software/switch2/70010000096821/f20258999e8d852a496dad2961a87faf2b119488f97fb81442f378043e58b000",
+      "categoria": "Aventura",
+      "precio_final": "$69.99 USD",
+      "precio_original": "",
+      "descuento_badge": "",
+      "has_discount": false,
+      "search_key": "the legend of zelda: tears of the kingdom",
+      "href": "juego-the-legend-of-zelda-tears-of-the-kingdom.html"
+    },
+    {
+      "id": 24,
+      "nombre": "Horizon Forbidden West",
+      "descripcion_corta": "Aloy explora una Tierra futurista infestada de máquinas. Desbloquea el misterio del Corte Rojo y salva a la hu…",
+      "imagen_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2420110/ss_7c1ead4b3d952fd0fb92735397945bd8732bba53.1920x1080.jpg?t=1776465869",
+      "categoria": "Aventura",
+      "precio_final": "$47.99 USD",
+      "precio_original": "$59.99 USD",
+      "descuento_badge": "-20%",
+      "has_discount": true,
+      "search_key": "horizon forbidden west",
+      "href": "juego-horizon-forbidden-west.html"
+    },
+    {
+      "id": 25,
+      "nombre": "Terraria",
+      "descripcion_corta": "Juego de aventura y construcción en 2D con más de 400 enemigos, 20 jefes y cientos de objetos. Un sandbox de e…",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/capsule_616x353.jpg",
+      "categoria": "Aventura",
+      "precio_final": "$8.99 USD",
+      "precio_original": "$9.99 USD",
+      "descuento_badge": "-10%",
+      "has_discount": true,
+      "search_key": "terraria",
+      "href": "juego-terraria.html"
+    },
+    {
+      "id": 28,
+      "nombre": "LEGO Star Wars: The Skywalker Saga",
+      "descripcion_corta": "Revive las 9 películas de Star Wars en formato LEGO. Más de 300 personajes, combate mejorado y humor clásico d…",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/920210/capsule_616x353.jpg",
+      "categoria": "Aventura",
+      "precio_final": "$44.99 USD",
+      "precio_original": "$59.99 USD",
+      "descuento_badge": "-25%",
+      "has_discount": true,
+      "search_key": "lego star wars: the skywalker saga",
+      "href": "juego-lego-star-wars-the-skywalker-saga.html"
+    }
+  ]
+}

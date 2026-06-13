@@ -1,0 +1,208 @@
+{
+  "site": {
+    "store": "GameVault",
+    "authors": "Luis A. Aguilar Bolaños y Pablo A. Alvarado Umaña",
+    "contact": "gamevault@una.ac.cr",
+    "tagline": "Tienda de videojuegos",
+    "nav": [
+      {
+        "id": "portafolio",
+        "label": "Menú del sitio",
+        "href": "../index.html"
+      },
+      {
+        "id": "inicio",
+        "label": "Inicio",
+        "href": "index.html"
+      },
+      {
+        "id": "mapa",
+        "label": "Índice",
+        "href": "mapa.html"
+      },
+      {
+        "id": "categoria",
+        "label": "Categorías",
+        "href": "categoria-rpg.html"
+      },
+      {
+        "id": "busqueda",
+        "label": "Búsqueda",
+        "href": "busqueda.html"
+      },
+      {
+        "id": "carrito",
+        "label": "Carrito",
+        "href": "carrito.html"
+      }
+    ],
+    "categorias": [
+      {
+        "id": 1,
+        "nombre": "Acción",
+        "slug": "acci-n",
+        "href": "categoria-acci-n.html"
+      },
+      {
+        "id": 2,
+        "nombre": "Aventura",
+        "slug": "aventura",
+        "href": "categoria-aventura.html"
+      },
+      {
+        "id": 3,
+        "nombre": "RPG",
+        "slug": "rpg",
+        "href": "categoria-rpg.html"
+      },
+      {
+        "id": 4,
+        "nombre": "Deportes",
+        "slug": "deportes",
+        "href": "categoria-deportes.html"
+      },
+      {
+        "id": 5,
+        "nombre": "Estrategia",
+        "slug": "estrategia",
+        "href": "categoria-estrategia.html"
+      },
+      {
+        "id": 6,
+        "nombre": "Terror",
+        "slug": "terror",
+        "href": "categoria-terror.html"
+      },
+      {
+        "id": 7,
+        "nombre": "Simulación",
+        "slug": "simulaci-n",
+        "href": "categoria-simulaci-n.html"
+      },
+      {
+        "id": 8,
+        "nombre": "Peleas",
+        "slug": "peleas",
+        "href": "categoria-peleas.html"
+      },
+      {
+        "id": 9,
+        "nombre": "Plataformas",
+        "slug": "plataformas",
+        "href": "categoria-plataformas.html"
+      },
+      {
+        "id": 10,
+        "nombre": "Puzzle",
+        "slug": "puzzle",
+        "href": "categoria-puzzle.html"
+      },
+      {
+        "id": 11,
+        "nombre": "Indie",
+        "slug": "indie",
+        "href": "categoria-indie.html"
+      }
+    ],
+    "search_suggestions": [
+      "Elden Ring",
+      "The Witcher 3: Wild Hunt",
+      "Red Dead Redemption 2",
+      "Hollow Knight",
+      "FIFA 24",
+      "Resident Evil Village",
+      "Hades",
+      "Minecraft",
+      "God of War: Ragnarök",
+      "Cyberpunk 2077",
+      "Stardew Valley",
+      "Dead by Daylight",
+      "Celeste",
+      "Grand Theft Auto V",
+      "Undertale",
+      "Baldur's Gate 3",
+      "Apex Legends",
+      "The Legend of Zelda: Tears of the Kingdom",
+      "Mortal Kombat 1",
+      "Cities: Skylines",
+      "Sekiro: Shadows Die Twice",
+      "Portal 2",
+      "Fortnite",
+      "Horizon Forbidden West",
+      "Terraria",
+      "Civilization VI",
+      "Night in the Woods",
+      "LEGO Star Wars: The Skywalker Saga",
+      "Project Zomboid",
+      "Hogwarts Legacy"
+    ]
+  },
+  "page": {
+    "title": "GameVault | Terror",
+    "active_nav": "categoria",
+    "active_category": 6,
+    "breadcrumbs": [
+      {
+        "label": "Inicio",
+        "is_last": false,
+        "href": "index.html"
+      },
+      {
+        "label": "Categorías",
+        "is_last": false,
+        "href": "categoria-rpg.html"
+      },
+      {
+        "label": "Terror",
+        "is_last": true,
+        "href": ""
+      }
+    ]
+  },
+  "category": {
+    "nombre": "Terror",
+    "descripcion": "Juegos de horror con atmósferas perturbadoras, suspenso y supervivencia.",
+    "slug": "terror"
+  },
+  "products": [
+    {
+      "id": 6,
+      "nombre": "Resident Evil Village",
+      "descripcion_corta": "Continúa la historia de Ethan Winters en un misterioso pueblo europeo lleno de criaturas sobrenaturales. Terro…",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1196590/capsule_616x353.jpg",
+      "categoria": "Terror",
+      "precio_final": "$29.99 USD",
+      "precio_original": "$39.99 USD",
+      "descuento_badge": "-25%",
+      "has_discount": true,
+      "search_key": "resident evil village",
+      "href": "juego-resident-evil-village.html"
+    },
+    {
+      "id": 12,
+      "nombre": "Dead by Daylight",
+      "descripcion_corta": "Juego de terror multijugador asimétrico: 4 supervivientes intentan escapar mientras un asesino los caza. Colab…",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/capsule_616x353.jpg",
+      "categoria": "Terror",
+      "precio_final": "$15.99 USD",
+      "precio_original": "$19.99 USD",
+      "descuento_badge": "-20%",
+      "has_discount": true,
+      "search_key": "dead by daylight",
+      "href": "juego-dead-by-daylight.html"
+    },
+    {
+      "id": 29,
+      "nombre": "Project Zomboid",
+      "descripcion_corta": "Simulador de supervivencia zombie de mundo abierto. Sobrevive en Kentucky con gestión de recursos, enfermedade…",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/capsule_616x353.jpg",
+      "categoria": "Terror",
+      "precio_final": "$19.99 USD",
+      "precio_original": "",
+      "descuento_badge": "",
+      "has_discount": false,
+      "search_key": "project zomboid",
+      "href": "juego-project-zomboid.html"
+    }
+  ]
+}

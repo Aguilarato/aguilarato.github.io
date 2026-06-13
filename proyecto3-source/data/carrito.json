@@ -1,0 +1,190 @@
+{
+  "site": {
+    "store": "GameVault",
+    "authors": "Luis A. Aguilar Bolaños y Pablo A. Alvarado Umaña",
+    "contact": "gamevault@una.ac.cr",
+    "tagline": "Tienda de videojuegos",
+    "nav": [
+      {
+        "id": "portafolio",
+        "label": "Menú del sitio",
+        "href": "../index.html"
+      },
+      {
+        "id": "inicio",
+        "label": "Inicio",
+        "href": "index.html"
+      },
+      {
+        "id": "mapa",
+        "label": "Índice",
+        "href": "mapa.html"
+      },
+      {
+        "id": "categoria",
+        "label": "Categorías",
+        "href": "categoria-rpg.html"
+      },
+      {
+        "id": "busqueda",
+        "label": "Búsqueda",
+        "href": "busqueda.html"
+      },
+      {
+        "id": "carrito",
+        "label": "Carrito",
+        "href": "carrito.html"
+      }
+    ],
+    "categorias": [
+      {
+        "id": 1,
+        "nombre": "Acción",
+        "slug": "acci-n",
+        "href": "categoria-acci-n.html"
+      },
+      {
+        "id": 2,
+        "nombre": "Aventura",
+        "slug": "aventura",
+        "href": "categoria-aventura.html"
+      },
+      {
+        "id": 3,
+        "nombre": "RPG",
+        "slug": "rpg",
+        "href": "categoria-rpg.html"
+      },
+      {
+        "id": 4,
+        "nombre": "Deportes",
+        "slug": "deportes",
+        "href": "categoria-deportes.html"
+      },
+      {
+        "id": 5,
+        "nombre": "Estrategia",
+        "slug": "estrategia",
+        "href": "categoria-estrategia.html"
+      },
+      {
+        "id": 6,
+        "nombre": "Terror",
+        "slug": "terror",
+        "href": "categoria-terror.html"
+      },
+      {
+        "id": 7,
+        "nombre": "Simulación",
+        "slug": "simulaci-n",
+        "href": "categoria-simulaci-n.html"
+      },
+      {
+        "id": 8,
+        "nombre": "Peleas",
+        "slug": "peleas",
+        "href": "categoria-peleas.html"
+      },
+      {
+        "id": 9,
+        "nombre": "Plataformas",
+        "slug": "plataformas",
+        "href": "categoria-plataformas.html"
+      },
+      {
+        "id": 10,
+        "nombre": "Puzzle",
+        "slug": "puzzle",
+        "href": "categoria-puzzle.html"
+      },
+      {
+        "id": 11,
+        "nombre": "Indie",
+        "slug": "indie",
+        "href": "categoria-indie.html"
+      }
+    ],
+    "search_suggestions": [
+      "Elden Ring",
+      "The Witcher 3: Wild Hunt",
+      "Red Dead Redemption 2",
+      "Hollow Knight",
+      "FIFA 24",
+      "Resident Evil Village",
+      "Hades",
+      "Minecraft",
+      "God of War: Ragnarök",
+      "Cyberpunk 2077",
+      "Stardew Valley",
+      "Dead by Daylight",
+      "Celeste",
+      "Grand Theft Auto V",
+      "Undertale",
+      "Baldur's Gate 3",
+      "Apex Legends",
+      "The Legend of Zelda: Tears of the Kingdom",
+      "Mortal Kombat 1",
+      "Cities: Skylines",
+      "Sekiro: Shadows Die Twice",
+      "Portal 2",
+      "Fortnite",
+      "Horizon Forbidden West",
+      "Terraria",
+      "Civilization VI",
+      "Night in the Woods",
+      "LEGO Star Wars: The Skywalker Saga",
+      "Project Zomboid",
+      "Hogwarts Legacy"
+    ]
+  },
+  "page": {
+    "title": "GameVault | Carrito",
+    "active_nav": "carrito",
+    "active_category": 0,
+    "breadcrumbs": [
+      {
+        "label": "Inicio",
+        "is_last": false,
+        "href": "index.html"
+      },
+      {
+        "label": "Carrito de compras",
+        "is_last": true,
+        "href": ""
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": 1,
+      "nombre": "Elden Ring",
+      "descripcion_corta": "RPG de acción en mundo abierto desarrollado por FromSoftware en colaboración con George R.R. Martin. Explora l…",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_616x353.jpg",
+      "categoria": "RPG",
+      "precio_final": "$44.99 USD",
+      "precio_original": "$59.99 USD",
+      "descuento_badge": "-25%",
+      "has_discount": true,
+      "search_key": "elden ring",
+      "href": "juego-elden-ring.html",
+      "cantidad": 1,
+      "subtotal": "$44.99 USD"
+    },
+    {
+      "id": 7,
+      "nombre": "Hades",
+      "descripcion_corta": "Roguelike de acción donde juegas como Zagreus, hijo de Hades, intentando escapar del inframundo griego. Narrat…",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/capsule_616x353.jpg",
+      "categoria": "Indie",
+      "precio_final": "$19.99 USD",
+      "precio_original": "$24.99 USD",
+      "descuento_badge": "-20%",
+      "has_discount": true,
+      "search_key": "hades",
+      "href": "juego-hades.html",
+      "cantidad": 1,
+      "subtotal": "$19.99 USD"
+    }
+  ],
+  "total": "$64.98 USD"
+}

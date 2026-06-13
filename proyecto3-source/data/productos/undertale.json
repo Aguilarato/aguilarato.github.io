@@ -1,0 +1,232 @@
+{
+  "site": {
+    "store": "GameVault",
+    "authors": "Luis A. Aguilar Bolaños y Pablo A. Alvarado Umaña",
+    "contact": "gamevault@una.ac.cr",
+    "tagline": "Tienda de videojuegos",
+    "nav": [
+      {
+        "id": "portafolio",
+        "label": "Menú del sitio",
+        "href": "../index.html"
+      },
+      {
+        "id": "inicio",
+        "label": "Inicio",
+        "href": "index.html"
+      },
+      {
+        "id": "mapa",
+        "label": "Índice",
+        "href": "mapa.html"
+      },
+      {
+        "id": "categoria",
+        "label": "Categorías",
+        "href": "categoria-rpg.html"
+      },
+      {
+        "id": "busqueda",
+        "label": "Búsqueda",
+        "href": "busqueda.html"
+      },
+      {
+        "id": "carrito",
+        "label": "Carrito",
+        "href": "carrito.html"
+      }
+    ],
+    "categorias": [
+      {
+        "id": 1,
+        "nombre": "Acción",
+        "slug": "acci-n",
+        "href": "categoria-acci-n.html"
+      },
+      {
+        "id": 2,
+        "nombre": "Aventura",
+        "slug": "aventura",
+        "href": "categoria-aventura.html"
+      },
+      {
+        "id": 3,
+        "nombre": "RPG",
+        "slug": "rpg",
+        "href": "categoria-rpg.html"
+      },
+      {
+        "id": 4,
+        "nombre": "Deportes",
+        "slug": "deportes",
+        "href": "categoria-deportes.html"
+      },
+      {
+        "id": 5,
+        "nombre": "Estrategia",
+        "slug": "estrategia",
+        "href": "categoria-estrategia.html"
+      },
+      {
+        "id": 6,
+        "nombre": "Terror",
+        "slug": "terror",
+        "href": "categoria-terror.html"
+      },
+      {
+        "id": 7,
+        "nombre": "Simulación",
+        "slug": "simulaci-n",
+        "href": "categoria-simulaci-n.html"
+      },
+      {
+        "id": 8,
+        "nombre": "Peleas",
+        "slug": "peleas",
+        "href": "categoria-peleas.html"
+      },
+      {
+        "id": 9,
+        "nombre": "Plataformas",
+        "slug": "plataformas",
+        "href": "categoria-plataformas.html"
+      },
+      {
+        "id": 10,
+        "nombre": "Puzzle",
+        "slug": "puzzle",
+        "href": "categoria-puzzle.html"
+      },
+      {
+        "id": 11,
+        "nombre": "Indie",
+        "slug": "indie",
+        "href": "categoria-indie.html"
+      }
+    ],
+    "search_suggestions": [
+      "Elden Ring",
+      "The Witcher 3: Wild Hunt",
+      "Red Dead Redemption 2",
+      "Hollow Knight",
+      "FIFA 24",
+      "Resident Evil Village",
+      "Hades",
+      "Minecraft",
+      "God of War: Ragnarök",
+      "Cyberpunk 2077",
+      "Stardew Valley",
+      "Dead by Daylight",
+      "Celeste",
+      "Grand Theft Auto V",
+      "Undertale",
+      "Baldur's Gate 3",
+      "Apex Legends",
+      "The Legend of Zelda: Tears of the Kingdom",
+      "Mortal Kombat 1",
+      "Cities: Skylines",
+      "Sekiro: Shadows Die Twice",
+      "Portal 2",
+      "Fortnite",
+      "Horizon Forbidden West",
+      "Terraria",
+      "Civilization VI",
+      "Night in the Woods",
+      "LEGO Star Wars: The Skywalker Saga",
+      "Project Zomboid",
+      "Hogwarts Legacy"
+    ]
+  },
+  "page": {
+    "title": "GameVault | Undertale",
+    "active_nav": "",
+    "active_category": 11,
+    "breadcrumbs": [
+      {
+        "label": "Inicio",
+        "is_last": false,
+        "href": "index.html"
+      },
+      {
+        "label": "Indie",
+        "is_last": false,
+        "href": "categoria-indie.html"
+      },
+      {
+        "label": "Undertale",
+        "is_last": true,
+        "href": ""
+      }
+    ]
+  },
+  "product": {
+    "id": 15,
+    "nombre": "Undertale",
+    "descripcion": "RPG indie donde tus decisiones importan: puedes completar el juego sin matar a nadie. Personajes memorables, humor y emotividad únicos.",
+    "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/capsule_616x353.jpg",
+    "video_url": "https://www.youtube.com/watch?v=hGHTFtrGnqk",
+    "has_video": true,
+    "categoria": "Indie",
+    "precio_final": "$9.99 USD",
+    "precio_original": "",
+    "descuento_badge": "",
+    "has_discount": false,
+    "modo_juego": "Un jugador",
+    "clasificacion_edad": "E",
+    "puntuacion": "9.3"
+  },
+  "content": {
+    "layout": "generic",
+    "sections": [
+      {
+        "title": "Descripción",
+        "body": "<p>RPG indie donde tus decisiones importan: puedes completar el juego sin matar a nadie. Personajes memorables, humor y emotividad únicos.</p>"
+      },
+      {
+        "title": "Detalles",
+        "body": "<ul><li>Modo: Un jugador</li><li>Clasificación: E</li><li>Tipo: Juego base</li><li>Puntuación: 9.3/10</li><li>Disponibilidad: En stock</li></ul>"
+      }
+    ]
+  },
+  "related": [
+    {
+      "id": 4,
+      "nombre": "Hollow Knight",
+      "descripcion_corta": "Juego de acción-aventura 2D en un vasto reino de insectos subterráneo. Explora cuevas, lucha contra jefes y de…",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/capsule_616x353.jpg",
+      "categoria": "Indie",
+      "precio_final": "$14.99 USD",
+      "precio_original": "",
+      "descuento_badge": "",
+      "has_discount": false,
+      "search_key": "hollow knight",
+      "href": "juego-hollow-knight.html"
+    },
+    {
+      "id": 7,
+      "nombre": "Hades",
+      "descripcion_corta": "Roguelike de acción donde juegas como Zagreus, hijo de Hades, intentando escapar del inframundo griego. Narrat…",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/capsule_616x353.jpg",
+      "categoria": "Indie",
+      "precio_final": "$19.99 USD",
+      "precio_original": "$24.99 USD",
+      "descuento_badge": "-20%",
+      "has_discount": true,
+      "search_key": "hades",
+      "href": "juego-hades.html"
+    },
+    {
+      "id": 27,
+      "nombre": "Night in the Woods",
+      "descripcion_corta": "Juego de aventura narrativo sobre Mae Borowski, una felina que regresa a su pueblo natal. Explora relaciones, …",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/481510/capsule_616x353.jpg",
+      "categoria": "Indie",
+      "precio_final": "$19.99 USD",
+      "precio_original": "",
+      "descuento_badge": "",
+      "has_discount": false,
+      "search_key": "night in the woods",
+      "href": "juego-night-in-the-woods.html"
+    }
+  ]
+}

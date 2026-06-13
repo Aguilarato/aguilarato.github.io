@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Luis A. Aguilar Bolaños y Pablo A. Alvarado Umaña">
+  <meta name="description" content="GameVault — Tienda de videojuegos — Proyecto 3 EIF 506">
+  <title>GameVault | Búsqueda</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <header class="gv-topbar py-3">
+    <div class="container-fluid px-3 px-lg-4">
+      <div class="row g-3 align-items-center">
+        <div class="col-lg-3">
+          <a class="gv-brand fs-4" href="index.html">GameVault</a>
+          <div class="small text-secondary">Tienda de videojuegos</div>
+        </div>
+        <div class="col-lg-5">
+          <nav class="d-flex flex-wrap gap-1" aria-label="Navegación global">
+            <a class="gv-nav-link" href="../index.html">Menú del sitio</a>
+            <a class="gv-nav-link" href="index.html">Inicio</a>
+            <a class="gv-nav-link" href="mapa.html">Índice</a>
+            <a class="gv-nav-link" href="categoria-rpg.html">Categorías</a>
+            <a class="gv-nav-link active" href="busqueda.html">Búsqueda</a>
+            <a class="gv-nav-link" href="carrito.html">Carrito</a>
+          </nav>
+        </div>
+        <div class="col-lg-4">
+          <form class="gv-search d-flex" action="busqueda.html" method="get" role="search">
+            <label class="visually-hidden" for="gv-search-input">Buscar juegos</label>
+            <input id="gv-search-input" class="form-control" type="search" name="q" placeholder="Buscar por nombre o género" list="gv-search-suggestions">
+            <button class="btn ms-2" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+      <nav aria-label="Migas de pan" class="mb-0 mt-3">
+        <ol class="breadcrumb gv-breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Búsqueda</li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container-fluid px-3 px-lg-4 py-4">
+    <div class="row g-4">
+      <div class="col-lg-3">
+        <aside class="gv-sidebar p-3" aria-label="Categorías de contenido">
+          <h2 class="h6 text-uppercase text-secondary">Secciones</h2>
+          <div class="list-group list-group-flush">
+            <a href="categoria-acci-n.html" class="list-group-item list-group-item-action">Acción</a>
+            <a href="categoria-aventura.html" class="list-group-item list-group-item-action">Aventura</a>
+            <a href="categoria-rpg.html" class="list-group-item list-group-item-action">RPG</a>
+            <a href="categoria-deportes.html" class="list-group-item list-group-item-action">Deportes</a>
+            <a href="categoria-estrategia.html" class="list-group-item list-group-item-action">Estrategia</a>
+            <a href="categoria-terror.html" class="list-group-item list-group-item-action">Terror</a>
+            <a href="categoria-simulaci-n.html" class="list-group-item list-group-item-action">Simulación</a>
+            <a href="categoria-peleas.html" class="list-group-item list-group-item-action">Peleas</a>
+            <a href="categoria-plataformas.html" class="list-group-item list-group-item-action">Plataformas</a>
+            <a href="categoria-puzzle.html" class="list-group-item list-group-item-action">Puzzle</a>
+            <a href="categoria-indie.html" class="list-group-item list-group-item-action">Indie</a>
+          </div>
+          <hr class="border-secondary">
+          <p class="small text-secondary mb-2">Ofertas destacadas</p>
+          <a class="btn btn-sm btn-outline-warning w-100 mb-2" href="categoria-rpg.html">RPG en oferta</a>
+          <a class="btn btn-sm btn-outline-info w-100" href="categoria-indie.html">Indie recomendados</a>
+        </aside>
+      </div>
+      <div class="col-lg-9">
+        <header class="mb-4">
+          <h1 class="h3 gv-section-title">Resultados de búsqueda</h1>
+          <p id="gv-search-results-title" class="text-secondary mb-0">30 juegos en catálogo</p>
+          <p class="small text-secondary">Use el campo de búsqueda del encabezado o filtre en esta página.</p>
+        </header>
+        <div class="row g-3" id="gv-product-grid">
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="elden ring">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_616x353.jpg" class="card-img-top" alt="Portada de Elden Ring" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">RPG</span>
+                <h3 class="h6 card-title">Elden Ring</h3>
+                <p class="card-text small text-secondary flex-grow-1">RPG de acción en mundo abierto desarrollado por FromSoftware en colaboración con George R.R. Martin. Explora l…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$44.99 USD</div>
+                  <span class="badge gv-badge-sale">-25%</span>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-elden-ring.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="the witcher 3: wild hunt">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/capsule_616x353.jpg" class="card-img-top" alt="Portada de The Witcher 3: Wild Hunt" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">RPG</span>
+                <h3 class="h6 card-title">The Witcher 3: Wild Hunt</h3>
+                <p class="card-text small text-secondary flex-grow-1">RPG de mundo abierto donde juegas como Geralt de Rivia, un cazador de monstruos en busca de su hija adoptiva e…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$20.00 USD</div>
+                  <span class="badge gv-badge-sale">-50%</span>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-the-witcher-3-wild-hunt.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="red dead redemption 2">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/capsule_616x353.jpg" class="card-img-top" alt="Portada de Red Dead Redemption 2" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Aventura</span>
+                <h3 class="h6 card-title">Red Dead Redemption 2</h3>
+                <p class="card-text small text-secondary flex-grow-1">Épica historia del salvaje oeste americano. Juega como Arthur Morgan, forajido que lucha por sobrevivir mientr…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$47.99 USD</div>
+                  <span class="badge gv-badge-sale">-20%</span>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-red-dead-redemption-2.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="hollow knight">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/capsule_616x353.jpg" class="card-img-top" alt="Portada de Hollow Knight" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Indie</span>
+                <h3 class="h6 card-title">Hollow Knight</h3>
+                <p class="card-text small text-secondary flex-grow-1">Juego de acción-aventura 2D en un vasto reino de insectos subterráneo. Explora cuevas, lucha contra jefes y de…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$14.99 USD</div>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-hollow-knight.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="fifa 24">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2195250/capsule_616x353.jpg" class="card-img-top" alt="Portada de FIFA 24" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Deportes</span>
+                <h3 class="h6 card-title">FIFA 24</h3>
+                <p class="card-text small text-secondary flex-grow-1">La entrega anual de fútbol de EA Sports con licencias oficiales, Ultimate Team mejorado, clubes mundiales y mo…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$34.99 USD</div>
+                  <span class="badge gv-badge-sale">-50%</span>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-fifa-24.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="resident evil village">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1196590/capsule_616x353.jpg" class="card-img-top" alt="Portada de Resident Evil Village" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Terror</span>
+                <h3 class="h6 card-title">Resident Evil Village</h3>
+                <p class="card-text small text-secondary flex-grow-1">Continúa la historia de Ethan Winters en un misterioso pueblo europeo lleno de criaturas sobrenaturales. Terro…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$29.99 USD</div>
+                  <span class="badge gv-badge-sale">-25%</span>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-resident-evil-village.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="hades">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/capsule_616x353.jpg" class="card-img-top" alt="Portada de Hades" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Indie</span>
+                <h3 class="h6 card-title">Hades</h3>
+                <p class="card-text small text-secondary flex-grow-1">Roguelike de acción donde juegas como Zagreus, hijo de Hades, intentando escapar del inframundo griego. Narrat…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$19.99 USD</div>
+                  <span class="badge gv-badge-sale">-20%</span>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-hades.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="minecraft">
+            <div class="card gv-card h-100">
+              <img src="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Homepage_Discover-our-games_MC-Vanilla-KeyArt_864x864.jpg" class="card-img-top" alt="Portada de Minecraft" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Simulación</span>
+                <h3 class="h6 card-title">Minecraft</h3>
+                <p class="card-text small text-secondary flex-grow-1">Juego de construcción y supervivencia en un mundo de bloques infinito. Crea, explora y sobrevive en un univers…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$26.99 USD</div>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-minecraft.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="god of war: ragnarök">
+            <div class="card gv-card h-100">
+              <img src="https://image.api.playstation.com/vulcan/ap/rnd/202207/1117/4uH3OH4dQtHMe2gmdFuth02u.jpg" class="card-img-top" alt="Portada de God of War: Ragnarök" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Acción</span>
+                <h3 class="h6 card-title">God of War: Ragnarök</h3>
+                <p class="card-text small text-secondary flex-grow-1">Kratos y Atreus se embarcan en una épica aventura por los nueve reinos para evitar el Ragnarök. Acción especta…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$69.99 USD</div>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-god-of-war-ragnar-k.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="cyberpunk 2077">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/capsule_616x353.jpg" class="card-img-top" alt="Portada de Cyberpunk 2077" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">RPG</span>
+                <h3 class="h6 card-title">Cyberpunk 2077</h3>
+                <p class="card-text small text-secondary flex-grow-1">RPG de mundo abierto en Night City, una megalópolis del futuro. Juega como V, un mercenario que busca la inmor…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$30.00 USD</div>
+                  <span class="badge gv-badge-sale">-50%</span>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-cyberpunk-2077.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="stardew valley">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/capsule_616x353.jpg" class="card-img-top" alt="Portada de Stardew Valley" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Simulación</span>
+                <h3 class="h6 card-title">Stardew Valley</h3>
+                <p class="card-text small text-secondary flex-grow-1">Juego de simulación de granja donde heredas una parcela y construyes tu vida en un pequeño pueblo. Cultiva, pe…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$14.99 USD</div>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-stardew-valley.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="dead by daylight">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/capsule_616x353.jpg" class="card-img-top" alt="Portada de Dead by Daylight" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Terror</span>
+                <h3 class="h6 card-title">Dead by Daylight</h3>
+                <p class="card-text small text-secondary flex-grow-1">Juego de terror multijugador asimétrico: 4 supervivientes intentan escapar mientras un asesino los caza. Colab…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$15.99 USD</div>
+                  <span class="badge gv-badge-sale">-20%</span>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-dead-by-daylight.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="celeste">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/capsule_616x353.jpg" class="card-img-top" alt="Portada de Celeste" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Plataformas</span>
+                <h3 class="h6 card-title">Celeste</h3>
+                <p class="card-text small text-secondary flex-grow-1">Juego de plataformas narrativo sobre Madeline, quien escala la Montaña Celeste enfrentando sus propios demonio…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$16.99 USD</div>
+                  <span class="badge gv-badge-sale">-15%</span>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-celeste.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="grand theft auto v">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/capsule_616x353.jpg" class="card-img-top" alt="Portada de Grand Theft Auto V" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Acción</span>
+                <h3 class="h6 card-title">Grand Theft Auto V</h3>
+                <p class="card-text small text-secondary flex-grow-1">Juego de mundo abierto en Los Santos. Vive las vidas de tres criminales en el crimen organizado de la ciudad. …</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$22.49 USD</div>
+                  <span class="badge gv-badge-sale">-25%</span>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-grand-theft-auto-v.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="undertale">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/capsule_616x353.jpg" class="card-img-top" alt="Portada de Undertale" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Indie</span>
+                <h3 class="h6 card-title">Undertale</h3>
+                <p class="card-text small text-secondary flex-grow-1">RPG indie donde tus decisiones importan: puedes completar el juego sin matar a nadie. Personajes memorables, h…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$9.99 USD</div>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-undertale.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="baldur's gate 3">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/capsule_616x353.jpg" class="card-img-top" alt="Portada de Baldur's Gate 3" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">RPG</span>
+                <h3 class="h6 card-title">Baldur's Gate 3</h3>
+                <p class="card-text small text-secondary flex-grow-1">RPG basado en Dungeons & Dragons. Con tus compañeros, enfrenta amenazas cósmicas en Faerûn con libertad narrat…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$59.99 USD</div>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-baldurs-gate-3.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="apex legends">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/capsule_616x353.jpg" class="card-img-top" alt="Portada de Apex Legends" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Acción</span>
+                <h3 class="h6 card-title">Apex Legends</h3>
+                <p class="card-text small text-secondary flex-grow-1">Battle royale de héroes en primera persona. Elige tu leyenda, forma escuadrones de 3 y combate en arenas de al…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">Gratis</div>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-apex-legends.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="the legend of zelda: tears of the kingdom">
+            <div class="card gv-card h-100">
+              <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/store/software/switch2/70010000096821/f20258999e8d852a496dad2961a87faf2b119488f97fb81442f378043e58b000" class="card-img-top" alt="Portada de The Legend of Zelda: Tears of the Kingdom" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Aventura</span>
+                <h3 class="h6 card-title">The Legend of Zelda: Tears of the Kingdom</h3>
+                <p class="card-text small text-secondary flex-grow-1">Aventura épica en Hyrule donde Link explora cielos, tierra y profundidades con nuevas habilidades como Ultraha…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$69.99 USD</div>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-the-legend-of-zelda-tears-of-the-kingdom.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="mortal kombat 1">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1971870/capsule_616x353.jpg" class="card-img-top" alt="Portada de Mortal Kombat 1" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Peleas</span>
+                <h3 class="h6 card-title">Mortal Kombat 1</h3>
+                <p class="card-text small text-secondary flex-grow-1">Reinicio del universo Mortal Kombat con Liu Kang como dios del fuego. Sistema de Kameos, Klash Kastle y nuevos…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$55.99 USD</div>
+                  <span class="badge gv-badge-sale">-20%</span>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-mortal-kombat-1.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="cities: skylines">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/255710/capsule_616x353.jpg" class="card-img-top" alt="Portada de Cities: Skylines" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Simulación</span>
+                <h3 class="h6 card-title">Cities: Skylines</h3>
+                <p class="card-text small text-secondary flex-grow-1">Simulador de construcción y gestión de ciudades moderno. Diseña carreteras, gestiona servicios y haz crecer tu…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$7.50 USD</div>
+                  <span class="badge gv-badge-sale">-75%</span>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-cities-skylines.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="sekiro: shadows die twice">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/capsule_616x353.jpg" class="card-img-top" alt="Portada de Sekiro: Shadows Die Twice" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Acción</span>
+                <h3 class="h6 card-title">Sekiro: Shadows Die Twice</h3>
+                <p class="card-text small text-secondary flex-grow-1">Juego de acción en el Japón feudal. Juegas como un shinobi que busca rescatar a su señor y vengarse. Sistema d…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$50.99 USD</div>
+                  <span class="badge gv-badge-sale">-15%</span>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-sekiro-shadows-die-twice.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="portal 2">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/capsule_616x353.jpg" class="card-img-top" alt="Portada de Portal 2" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Puzzle</span>
+                <h3 class="h6 card-title">Portal 2</h3>
+                <p class="card-text small text-secondary flex-grow-1">Puzzle de ingenio con portales. Resuelve cámaras de prueba con física creativa, solo o cooperativo, con la IA …</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$8.99 USD</div>
+                  <span class="badge gv-badge-sale">-10%</span>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-portal-2.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="fortnite">
+            <div class="card gv-card h-100">
+              <img src="https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/cmmwetl8h22ka07oe7aq59gwi" class="card-img-top" alt="Portada de Fortnite" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Acción</span>
+                <h3 class="h6 card-title">Fortnite</h3>
+                <p class="card-text small text-secondary flex-grow-1">Battle royale free-to-play en constante evolución con colaboraciones de Marvel, Star Wars y más. Construye est…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">Gratis</div>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-fortnite.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="horizon forbidden west">
+            <div class="card gv-card h-100">
+              <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2420110/ss_7c1ead4b3d952fd0fb92735397945bd8732bba53.1920x1080.jpg?t=1776465869" class="card-img-top" alt="Portada de Horizon Forbidden West" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Aventura</span>
+                <h3 class="h6 card-title">Horizon Forbidden West</h3>
+                <p class="card-text small text-secondary flex-grow-1">Aloy explora una Tierra futurista infestada de máquinas. Desbloquea el misterio del Corte Rojo y salva a la hu…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$47.99 USD</div>
+                  <span class="badge gv-badge-sale">-20%</span>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-horizon-forbidden-west.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="terraria">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/capsule_616x353.jpg" class="card-img-top" alt="Portada de Terraria" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Aventura</span>
+                <h3 class="h6 card-title">Terraria</h3>
+                <p class="card-text small text-secondary flex-grow-1">Juego de aventura y construcción en 2D con más de 400 enemigos, 20 jefes y cientos de objetos. Un sandbox de e…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$8.99 USD</div>
+                  <span class="badge gv-badge-sale">-10%</span>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-terraria.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="civilization vi">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/capsule_616x353.jpg" class="card-img-top" alt="Portada de Civilization VI" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Estrategia</span>
+                <h3 class="h6 card-title">Civilization VI</h3>
+                <p class="card-text small text-secondary flex-grow-1">Juego de estrategia por turnos donde guías una civilización desde la prehistoria hasta la era espacial. Diplom…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$15.00 USD</div>
+                  <span class="badge gv-badge-sale">-75%</span>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-civilization-vi.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="night in the woods">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/481510/capsule_616x353.jpg" class="card-img-top" alt="Portada de Night in the Woods" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Indie</span>
+                <h3 class="h6 card-title">Night in the Woods</h3>
+                <p class="card-text small text-secondary flex-grow-1">Juego de aventura narrativo sobre Mae Borowski, una felina que regresa a su pueblo natal. Explora relaciones, …</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$19.99 USD</div>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-night-in-the-woods.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="lego star wars: the skywalker saga">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/920210/capsule_616x353.jpg" class="card-img-top" alt="Portada de LEGO Star Wars: The Skywalker Saga" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Aventura</span>
+                <h3 class="h6 card-title">LEGO Star Wars: The Skywalker Saga</h3>
+                <p class="card-text small text-secondary flex-grow-1">Revive las 9 películas de Star Wars en formato LEGO. Más de 300 personajes, combate mejorado y humor clásico d…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$44.99 USD</div>
+                  <span class="badge gv-badge-sale">-25%</span>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-lego-star-wars-the-skywalker-saga.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="project zomboid">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/capsule_616x353.jpg" class="card-img-top" alt="Portada de Project Zomboid" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">Terror</span>
+                <h3 class="h6 card-title">Project Zomboid</h3>
+                <p class="card-text small text-secondary flex-grow-1">Simulador de supervivencia zombie de mundo abierto. Sobrevive en Kentucky con gestión de recursos, enfermedade…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$19.99 USD</div>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-project-zomboid.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-xl-4 gv-search-item" data-name="hogwarts legacy">
+            <div class="card gv-card h-100">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/capsule_616x353.jpg" class="card-img-top" alt="Portada de Hogwarts Legacy" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-secondary mb-2 align-self-start">RPG</span>
+                <h3 class="h6 card-title">Hogwarts Legacy</h3>
+                <p class="card-text small text-secondary flex-grow-1">RPG de acción ambientado en el universo mágico de Harry Potter en el siglo XIX. Explora Hogwarts, domina hechi…</p>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div class="gv-price">$50.99 USD</div>
+                  <span class="badge gv-badge-sale">-15%</span>
+                </div>
+                <a class="btn btn-sm btn-outline-info mt-3" href="juego-hogwarts-legacy.html">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <script>
+          (function () {
+            var params = new URLSearchParams(window.location.search);
+            var query = (params.get("q") || "").trim().toLowerCase();
+            var input = document.getElementById("gv-search-input");
+            if (input && query) input.value = query;
+            var items = document.querySelectorAll(".gv-search-item");
+            var visible = 0;
+            items.forEach(function (el) {
+              var name = el.getAttribute("data-name") || "";
+              var show = !query || name.indexOf(query) !== -1;
+              el.style.display = show ? "" : "none";
+              if (show) visible += 1;
+            });
+            var title = document.getElementById("gv-search-results-title");
+            if (title && query) {
+              title.textContent = visible + ' resultados para "' + query + '"';
+            }
+          })();
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <footer class="gv-footer py-4">
+    <div class="container-fluid px-3 px-lg-4">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <strong>GameVault</strong>
+          <p class="small mb-0">Sitio estático generado con InjaX (Proyecto 3).</p>
+        </div>
+        <div class="col-md-4">
+          <p class="small mb-1"><strong>Autores:</strong> Luis A. Aguilar Bolaños y Pablo A. Alvarado Umaña</p>
+          <p class="small mb-0"><strong>Contacto:</strong> <a href="mailto:gamevault@una.ac.cr">gamevault@una.ac.cr</a></p>
+        </div>
+        <div class="col-md-4">
+          <p class="small mb-0">© 2026 GameVault — EIF 506, Diseño de Sitios Web, UNA.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <datalist id="gv-search-suggestions">
+    <option value="Elden Ring"></option>
+    <option value="The Witcher 3: Wild Hunt"></option>
+    <option value="Red Dead Redemption 2"></option>
+    <option value="Hollow Knight"></option>
+    <option value="FIFA 24"></option>
+    <option value="Resident Evil Village"></option>
+    <option value="Hades"></option>
+    <option value="Minecraft"></option>
+    <option value="God of War: Ragnarök"></option>
+    <option value="Cyberpunk 2077"></option>
+    <option value="Stardew Valley"></option>
+    <option value="Dead by Daylight"></option>
+    <option value="Celeste"></option>
+    <option value="Grand Theft Auto V"></option>
+    <option value="Undertale"></option>
+    <option value="Baldur's Gate 3"></option>
+    <option value="Apex Legends"></option>
+    <option value="The Legend of Zelda: Tears of the Kingdom"></option>
+    <option value="Mortal Kombat 1"></option>
+    <option value="Cities: Skylines"></option>
+    <option value="Sekiro: Shadows Die Twice"></option>
+    <option value="Portal 2"></option>
+    <option value="Fortnite"></option>
+    <option value="Horizon Forbidden West"></option>
+    <option value="Terraria"></option>
+    <option value="Civilization VI"></option>
+    <option value="Night in the Woods"></option>
+    <option value="LEGO Star Wars: The Skywalker Saga"></option>
+    <option value="Project Zomboid"></option>
+    <option value="Hogwarts Legacy"></option>
+  </datalist>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

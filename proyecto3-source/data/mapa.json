@@ -1,0 +1,394 @@
+{
+  "site": {
+    "store": "GameVault",
+    "authors": "Luis A. Aguilar Bolaños y Pablo A. Alvarado Umaña",
+    "contact": "gamevault@una.ac.cr",
+    "tagline": "Tienda de videojuegos",
+    "nav": [
+      {
+        "id": "portafolio",
+        "label": "Menú del sitio",
+        "href": "../index.html"
+      },
+      {
+        "id": "inicio",
+        "label": "Inicio",
+        "href": "index.html"
+      },
+      {
+        "id": "mapa",
+        "label": "Índice",
+        "href": "mapa.html"
+      },
+      {
+        "id": "categoria",
+        "label": "Categorías",
+        "href": "categoria-rpg.html"
+      },
+      {
+        "id": "busqueda",
+        "label": "Búsqueda",
+        "href": "busqueda.html"
+      },
+      {
+        "id": "carrito",
+        "label": "Carrito",
+        "href": "carrito.html"
+      }
+    ],
+    "categorias": [
+      {
+        "id": 1,
+        "nombre": "Acción",
+        "slug": "acci-n",
+        "href": "categoria-acci-n.html"
+      },
+      {
+        "id": 2,
+        "nombre": "Aventura",
+        "slug": "aventura",
+        "href": "categoria-aventura.html"
+      },
+      {
+        "id": 3,
+        "nombre": "RPG",
+        "slug": "rpg",
+        "href": "categoria-rpg.html"
+      },
+      {
+        "id": 4,
+        "nombre": "Deportes",
+        "slug": "deportes",
+        "href": "categoria-deportes.html"
+      },
+      {
+        "id": 5,
+        "nombre": "Estrategia",
+        "slug": "estrategia",
+        "href": "categoria-estrategia.html"
+      },
+      {
+        "id": 6,
+        "nombre": "Terror",
+        "slug": "terror",
+        "href": "categoria-terror.html"
+      },
+      {
+        "id": 7,
+        "nombre": "Simulación",
+        "slug": "simulaci-n",
+        "href": "categoria-simulaci-n.html"
+      },
+      {
+        "id": 8,
+        "nombre": "Peleas",
+        "slug": "peleas",
+        "href": "categoria-peleas.html"
+      },
+      {
+        "id": 9,
+        "nombre": "Plataformas",
+        "slug": "plataformas",
+        "href": "categoria-plataformas.html"
+      },
+      {
+        "id": 10,
+        "nombre": "Puzzle",
+        "slug": "puzzle",
+        "href": "categoria-puzzle.html"
+      },
+      {
+        "id": 11,
+        "nombre": "Indie",
+        "slug": "indie",
+        "href": "categoria-indie.html"
+      }
+    ],
+    "search_suggestions": [
+      "Elden Ring",
+      "The Witcher 3: Wild Hunt",
+      "Red Dead Redemption 2",
+      "Hollow Knight",
+      "FIFA 24",
+      "Resident Evil Village",
+      "Hades",
+      "Minecraft",
+      "God of War: Ragnarök",
+      "Cyberpunk 2077",
+      "Stardew Valley",
+      "Dead by Daylight",
+      "Celeste",
+      "Grand Theft Auto V",
+      "Undertale",
+      "Baldur's Gate 3",
+      "Apex Legends",
+      "The Legend of Zelda: Tears of the Kingdom",
+      "Mortal Kombat 1",
+      "Cities: Skylines",
+      "Sekiro: Shadows Die Twice",
+      "Portal 2",
+      "Fortnite",
+      "Horizon Forbidden West",
+      "Terraria",
+      "Civilization VI",
+      "Night in the Woods",
+      "LEGO Star Wars: The Skywalker Saga",
+      "Project Zomboid",
+      "Hogwarts Legacy"
+    ]
+  },
+  "page": {
+    "title": "GameVault | Índice del sitio",
+    "active_nav": "mapa",
+    "active_category": 0,
+    "breadcrumbs": [
+      {
+        "label": "Inicio",
+        "is_last": false,
+        "href": "index.html"
+      },
+      {
+        "label": "Índice del sitio",
+        "is_last": true,
+        "href": ""
+      }
+    ]
+  },
+  "rows": [
+    {
+      "tipo": "Inicio",
+      "archivo": "index.html",
+      "descripcion": "Página principal con carrusel y rejillas"
+    },
+    {
+      "tipo": "Índice de navegación",
+      "archivo": "mapa.html",
+      "descripcion": "Mapa del sitio generado con InjaX"
+    },
+    {
+      "tipo": "Búsqueda",
+      "archivo": "busqueda.html",
+      "descripcion": "Resultados y catálogo completo"
+    },
+    {
+      "tipo": "Carrito",
+      "archivo": "carrito.html",
+      "descripcion": "Comercio electrónico — carrito"
+    },
+    {
+      "tipo": "Facturación",
+      "archivo": "facturacion.html",
+      "descripcion": "Formulario de pago"
+    },
+    {
+      "tipo": "Entrega",
+      "archivo": "entrega.html",
+      "descripcion": "Datos de entrega digital"
+    },
+    {
+      "tipo": "Categoría — Acción",
+      "archivo": "categoria-acci-n.html",
+      "descripcion": "Juegos de ritmo rápido centrados en combate, reflejos y habilidad del jugador."
+    },
+    {
+      "tipo": "Categoría — Aventura",
+      "archivo": "categoria-aventura.html",
+      "descripcion": "Juegos con narrativa profunda, exploración y resolución de misterios."
+    },
+    {
+      "tipo": "Categoría — RPG",
+      "archivo": "categoria-rpg.html",
+      "descripcion": "Juegos de rol con desarrollo de personajes, historia ramificada y sistemas de progresión."
+    },
+    {
+      "tipo": "Categoría — Deportes",
+      "archivo": "categoria-deportes.html",
+      "descripcion": "Simulaciones y arcade de disciplinas deportivas del mundo real."
+    },
+    {
+      "tipo": "Categoría — Estrategia",
+      "archivo": "categoria-estrategia.html",
+      "descripcion": "Juegos que requieren planificación, gestión de recursos y toma de decisiones tácticas."
+    },
+    {
+      "tipo": "Categoría — Terror",
+      "archivo": "categoria-terror.html",
+      "descripcion": "Juegos de horror con atmósferas perturbadoras, suspenso y supervivencia."
+    },
+    {
+      "tipo": "Categoría — Simulación",
+      "archivo": "categoria-simulaci-n.html",
+      "descripcion": "Juegos que replican sistemas del mundo real como ciudades, vuelos o vida cotidiana."
+    },
+    {
+      "tipo": "Categoría — Peleas",
+      "archivo": "categoria-peleas.html",
+      "descripcion": "Juegos de combate uno contra uno o en grupos con mecánicas de combos y habilidades."
+    },
+    {
+      "tipo": "Categoría — Plataformas",
+      "archivo": "categoria-plataformas.html",
+      "descripcion": "Juegos de desplazamiento lateral o 3D donde el jugador salta entre plataformas y obstáculos."
+    },
+    {
+      "tipo": "Categoría — Puzzle",
+      "archivo": "categoria-puzzle.html",
+      "descripcion": "Juegos basados en resolver acertijos lógicos, espaciales o creativos."
+    },
+    {
+      "tipo": "Categoría — Indie",
+      "archivo": "categoria-indie.html",
+      "descripcion": "Juegos desarrollados de forma independiente, con propuestas artísticas y mecánicas únicas."
+    },
+    {
+      "tipo": "Producto (tabs) — Elden Ring",
+      "archivo": "juego-elden-ring.html",
+      "descripcion": "RPG de acción en mundo abierto desarrollado por FromSoftware en colaboración con George R.…"
+    },
+    {
+      "tipo": "Producto (generic) — The Witcher 3: Wild Hunt",
+      "archivo": "juego-the-witcher-3-wild-hunt.html",
+      "descripcion": "RPG de mundo abierto donde juegas como Geralt de Rivia, un cazador de monstruos en busca d…"
+    },
+    {
+      "tipo": "Producto (generic) — Red Dead Redemption 2",
+      "archivo": "juego-red-dead-redemption-2.html",
+      "descripcion": "Épica historia del salvaje oeste americano. Juega como Arthur Morgan, forajido que lucha p…"
+    },
+    {
+      "tipo": "Producto (generic) — Hollow Knight",
+      "archivo": "juego-hollow-knight.html",
+      "descripcion": "Juego de acción-aventura 2D en un vasto reino de insectos subterráneo. Explora cuevas, luc…"
+    },
+    {
+      "tipo": "Producto (generic) — FIFA 24",
+      "archivo": "juego-fifa-24.html",
+      "descripcion": "La entrega anual de fútbol de EA Sports con licencias oficiales, Ultimate Team mejorado, c…"
+    },
+    {
+      "tipo": "Producto (generic) — Resident Evil Village",
+      "archivo": "juego-resident-evil-village.html",
+      "descripcion": "Continúa la historia de Ethan Winters en un misterioso pueblo europeo lleno de criaturas s…"
+    },
+    {
+      "tipo": "Producto (accordion) — Hades",
+      "archivo": "juego-hades.html",
+      "descripcion": "Roguelike de acción donde juegas como Zagreus, hijo de Hades, intentando escapar del infra…"
+    },
+    {
+      "tipo": "Producto (generic) — Minecraft",
+      "archivo": "juego-minecraft.html",
+      "descripcion": "Juego de construcción y supervivencia en un mundo de bloques infinito. Crea, explora y sob…"
+    },
+    {
+      "tipo": "Producto (generic) — God of War: Ragnarök",
+      "archivo": "juego-god-of-war-ragnar-k.html",
+      "descripcion": "Kratos y Atreus se embarcan en una épica aventura por los nueve reinos para evitar el Ragn…"
+    },
+    {
+      "tipo": "Producto (generic) — Cyberpunk 2077",
+      "archivo": "juego-cyberpunk-2077.html",
+      "descripcion": "RPG de mundo abierto en Night City, una megalópolis del futuro. Juega como V, un mercenari…"
+    },
+    {
+      "tipo": "Producto (generic) — Stardew Valley",
+      "archivo": "juego-stardew-valley.html",
+      "descripcion": "Juego de simulación de granja donde heredas una parcela y construyes tu vida en un pequeño…"
+    },
+    {
+      "tipo": "Producto (generic) — Dead by Daylight",
+      "archivo": "juego-dead-by-daylight.html",
+      "descripcion": "Juego de terror multijugador asimétrico: 4 supervivientes intentan escapar mientras un ase…"
+    },
+    {
+      "tipo": "Producto (generic) — Celeste",
+      "archivo": "juego-celeste.html",
+      "descripcion": "Juego de plataformas narrativo sobre Madeline, quien escala la Montaña Celeste enfrentando…"
+    },
+    {
+      "tipo": "Producto (generic) — Grand Theft Auto V",
+      "archivo": "juego-grand-theft-auto-v.html",
+      "descripcion": "Juego de mundo abierto en Los Santos. Vive las vidas de tres criminales en el crimen organ…"
+    },
+    {
+      "tipo": "Producto (generic) — Undertale",
+      "archivo": "juego-undertale.html",
+      "descripcion": "RPG indie donde tus decisiones importan: puedes completar el juego sin matar a nadie. Pers…"
+    },
+    {
+      "tipo": "Producto (sections) — Baldur's Gate 3",
+      "archivo": "juego-baldurs-gate-3.html",
+      "descripcion": "RPG basado en Dungeons & Dragons. Con tus compañeros, enfrenta amenazas cósmicas en Faerûn…"
+    },
+    {
+      "tipo": "Producto (generic) — Apex Legends",
+      "archivo": "juego-apex-legends.html",
+      "descripcion": "Battle royale de héroes en primera persona. Elige tu leyenda, forma escuadrones de 3 y com…"
+    },
+    {
+      "tipo": "Producto (generic) — The Legend of Zelda: Tears of the Kingdom",
+      "archivo": "juego-the-legend-of-zelda-tears-of-the-kingdom.html",
+      "descripcion": "Aventura épica en Hyrule donde Link explora cielos, tierra y profundidades con nuevas habi…"
+    },
+    {
+      "tipo": "Producto (generic) — Mortal Kombat 1",
+      "archivo": "juego-mortal-kombat-1.html",
+      "descripcion": "Reinicio del universo Mortal Kombat con Liu Kang como dios del fuego. Sistema de Kameos, K…"
+    },
+    {
+      "tipo": "Producto (generic) — Cities: Skylines",
+      "archivo": "juego-cities-skylines.html",
+      "descripcion": "Simulador de construcción y gestión de ciudades moderno. Diseña carreteras, gestiona servi…"
+    },
+    {
+      "tipo": "Producto (generic) — Sekiro: Shadows Die Twice",
+      "archivo": "juego-sekiro-shadows-die-twice.html",
+      "descripcion": "Juego de acción en el Japón feudal. Juegas como un shinobi que busca rescatar a su señor y…"
+    },
+    {
+      "tipo": "Producto (generic) — Portal 2",
+      "archivo": "juego-portal-2.html",
+      "descripcion": "Puzzle de ingenio con portales. Resuelve cámaras de prueba con física creativa, solo o coo…"
+    },
+    {
+      "tipo": "Producto (generic) — Fortnite",
+      "archivo": "juego-fortnite.html",
+      "descripcion": "Battle royale free-to-play en constante evolución con colaboraciones de Marvel, Star Wars …"
+    },
+    {
+      "tipo": "Producto (generic) — Horizon Forbidden West",
+      "archivo": "juego-horizon-forbidden-west.html",
+      "descripcion": "Aloy explora una Tierra futurista infestada de máquinas. Desbloquea el misterio del Corte …"
+    },
+    {
+      "tipo": "Producto (generic) — Terraria",
+      "archivo": "juego-terraria.html",
+      "descripcion": "Juego de aventura y construcción en 2D con más de 400 enemigos, 20 jefes y cientos de obje…"
+    },
+    {
+      "tipo": "Producto (generic) — Civilization VI",
+      "archivo": "juego-civilization-vi.html",
+      "descripcion": "Juego de estrategia por turnos donde guías una civilización desde la prehistoria hasta la …"
+    },
+    {
+      "tipo": "Producto (generic) — Night in the Woods",
+      "archivo": "juego-night-in-the-woods.html",
+      "descripcion": "Juego de aventura narrativo sobre Mae Borowski, una felina que regresa a su pueblo natal. …"
+    },
+    {
+      "tipo": "Producto (generic) — LEGO Star Wars: The Skywalker Saga",
+      "archivo": "juego-lego-star-wars-the-skywalker-saga.html",
+      "descripcion": "Revive las 9 películas de Star Wars en formato LEGO. Más de 300 personajes, combate mejora…"
+    },
+    {
+      "tipo": "Producto (generic) — Project Zomboid",
+      "archivo": "juego-project-zomboid.html",
+      "descripcion": "Simulador de supervivencia zombie de mundo abierto. Sobrevive en Kentucky con gestión de r…"
+    },
+    {
+      "tipo": "Producto (generic) — Hogwarts Legacy",
+      "archivo": "juego-hogwarts-legacy.html",
+      "descripcion": "RPG de acción ambientado en el universo mágico de Harry Potter en el siglo XIX. Explora Ho…"
+    }
+  ]
+}

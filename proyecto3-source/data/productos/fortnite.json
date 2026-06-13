@@ -1,0 +1,232 @@
+{
+  "site": {
+    "store": "GameVault",
+    "authors": "Luis A. Aguilar Bolaños y Pablo A. Alvarado Umaña",
+    "contact": "gamevault@una.ac.cr",
+    "tagline": "Tienda de videojuegos",
+    "nav": [
+      {
+        "id": "portafolio",
+        "label": "Menú del sitio",
+        "href": "../index.html"
+      },
+      {
+        "id": "inicio",
+        "label": "Inicio",
+        "href": "index.html"
+      },
+      {
+        "id": "mapa",
+        "label": "Índice",
+        "href": "mapa.html"
+      },
+      {
+        "id": "categoria",
+        "label": "Categorías",
+        "href": "categoria-rpg.html"
+      },
+      {
+        "id": "busqueda",
+        "label": "Búsqueda",
+        "href": "busqueda.html"
+      },
+      {
+        "id": "carrito",
+        "label": "Carrito",
+        "href": "carrito.html"
+      }
+    ],
+    "categorias": [
+      {
+        "id": 1,
+        "nombre": "Acción",
+        "slug": "acci-n",
+        "href": "categoria-acci-n.html"
+      },
+      {
+        "id": 2,
+        "nombre": "Aventura",
+        "slug": "aventura",
+        "href": "categoria-aventura.html"
+      },
+      {
+        "id": 3,
+        "nombre": "RPG",
+        "slug": "rpg",
+        "href": "categoria-rpg.html"
+      },
+      {
+        "id": 4,
+        "nombre": "Deportes",
+        "slug": "deportes",
+        "href": "categoria-deportes.html"
+      },
+      {
+        "id": 5,
+        "nombre": "Estrategia",
+        "slug": "estrategia",
+        "href": "categoria-estrategia.html"
+      },
+      {
+        "id": 6,
+        "nombre": "Terror",
+        "slug": "terror",
+        "href": "categoria-terror.html"
+      },
+      {
+        "id": 7,
+        "nombre": "Simulación",
+        "slug": "simulaci-n",
+        "href": "categoria-simulaci-n.html"
+      },
+      {
+        "id": 8,
+        "nombre": "Peleas",
+        "slug": "peleas",
+        "href": "categoria-peleas.html"
+      },
+      {
+        "id": 9,
+        "nombre": "Plataformas",
+        "slug": "plataformas",
+        "href": "categoria-plataformas.html"
+      },
+      {
+        "id": 10,
+        "nombre": "Puzzle",
+        "slug": "puzzle",
+        "href": "categoria-puzzle.html"
+      },
+      {
+        "id": 11,
+        "nombre": "Indie",
+        "slug": "indie",
+        "href": "categoria-indie.html"
+      }
+    ],
+    "search_suggestions": [
+      "Elden Ring",
+      "The Witcher 3: Wild Hunt",
+      "Red Dead Redemption 2",
+      "Hollow Knight",
+      "FIFA 24",
+      "Resident Evil Village",
+      "Hades",
+      "Minecraft",
+      "God of War: Ragnarök",
+      "Cyberpunk 2077",
+      "Stardew Valley",
+      "Dead by Daylight",
+      "Celeste",
+      "Grand Theft Auto V",
+      "Undertale",
+      "Baldur's Gate 3",
+      "Apex Legends",
+      "The Legend of Zelda: Tears of the Kingdom",
+      "Mortal Kombat 1",
+      "Cities: Skylines",
+      "Sekiro: Shadows Die Twice",
+      "Portal 2",
+      "Fortnite",
+      "Horizon Forbidden West",
+      "Terraria",
+      "Civilization VI",
+      "Night in the Woods",
+      "LEGO Star Wars: The Skywalker Saga",
+      "Project Zomboid",
+      "Hogwarts Legacy"
+    ]
+  },
+  "page": {
+    "title": "GameVault | Fortnite",
+    "active_nav": "",
+    "active_category": 1,
+    "breadcrumbs": [
+      {
+        "label": "Inicio",
+        "is_last": false,
+        "href": "index.html"
+      },
+      {
+        "label": "Acción",
+        "is_last": false,
+        "href": "categoria-acci-n.html"
+      },
+      {
+        "label": "Fortnite",
+        "is_last": true,
+        "href": ""
+      }
+    ]
+  },
+  "product": {
+    "id": 23,
+    "nombre": "Fortnite",
+    "descripcion": "Battle royale free-to-play en constante evolución con colaboraciones de Marvel, Star Wars y más. Construye estructuras para sobrevivir.",
+    "imagen_url": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/cmmwetl8h22ka07oe7aq59gwi",
+    "video_url": "https://www.youtube.com/watch?v=2gUtfBmw86Y",
+    "has_video": true,
+    "categoria": "Acción",
+    "precio_final": "Gratis",
+    "precio_original": "",
+    "descuento_badge": "",
+    "has_discount": false,
+    "modo_juego": "Multijugador",
+    "clasificacion_edad": "T",
+    "puntuacion": "7.9"
+  },
+  "content": {
+    "layout": "generic",
+    "sections": [
+      {
+        "title": "Descripción",
+        "body": "<p>Battle royale free-to-play en constante evolución con colaboraciones de Marvel, Star Wars y más. Construye estructuras para sobrevivir.</p>"
+      },
+      {
+        "title": "Detalles",
+        "body": "<ul><li>Modo: Multijugador</li><li>Clasificación: T</li><li>Tipo: Juego base</li><li>Puntuación: 7.9/10</li><li>Disponibilidad: En stock</li></ul>"
+      }
+    ]
+  },
+  "related": [
+    {
+      "id": 9,
+      "nombre": "God of War: Ragnarök",
+      "descripcion_corta": "Kratos y Atreus se embarcan en una épica aventura por los nueve reinos para evitar el Ragnarök. Acción especta…",
+      "imagen_url": "https://image.api.playstation.com/vulcan/ap/rnd/202207/1117/4uH3OH4dQtHMe2gmdFuth02u.jpg",
+      "categoria": "Acción",
+      "precio_final": "$69.99 USD",
+      "precio_original": "",
+      "descuento_badge": "",
+      "has_discount": false,
+      "search_key": "god of war: ragnarök",
+      "href": "juego-god-of-war-ragnar-k.html"
+    },
+    {
+      "id": 14,
+      "nombre": "Grand Theft Auto V",
+      "descripcion_corta": "Juego de mundo abierto en Los Santos. Vive las vidas de tres criminales en el crimen organizado de la ciudad. …",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/capsule_616x353.jpg",
+      "categoria": "Acción",
+      "precio_final": "$22.49 USD",
+      "precio_original": "$29.99 USD",
+      "descuento_badge": "-25%",
+      "has_discount": true,
+      "search_key": "grand theft auto v",
+      "href": "juego-grand-theft-auto-v.html"
+    },
+    {
+      "id": 17,
+      "nombre": "Apex Legends",
+      "descripcion_corta": "Battle royale de héroes en primera persona. Elige tu leyenda, forma escuadrones de 3 y combate en arenas de al…",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/capsule_616x353.jpg",
+      "categoria": "Acción",
+      "precio_final": "Gratis",
+      "precio_original": "",
+      "descuento_badge": "",
+      "has_discount": false,
+      "search_key": "apex legends",
+      "href": "juego-apex-legends.html"
+    }
+  ]
+}

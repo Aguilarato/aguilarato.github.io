@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Luis A. Aguilar Bolaños y Pablo A. Alvarado Umaña">
+  <meta name="description" content="GameVault — Tienda de videojuegos — Proyecto 3 EIF 506">
+  <title>GameVault | Facturación</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <header class="gv-topbar py-3">
+    <div class="container-fluid px-3 px-lg-4">
+      <div class="row g-3 align-items-center">
+        <div class="col-lg-3">
+          <a class="gv-brand fs-4" href="index.html">GameVault</a>
+          <div class="small text-secondary">Tienda de videojuegos</div>
+        </div>
+        <div class="col-lg-5">
+          <nav class="d-flex flex-wrap gap-1" aria-label="Navegación global">
+            <a class="gv-nav-link" href="../index.html">Menú del sitio</a>
+            <a class="gv-nav-link" href="index.html">Inicio</a>
+            <a class="gv-nav-link" href="mapa.html">Índice</a>
+            <a class="gv-nav-link" href="categoria-rpg.html">Categorías</a>
+            <a class="gv-nav-link" href="busqueda.html">Búsqueda</a>
+            <a class="gv-nav-link active" href="carrito.html">Carrito</a>
+          </nav>
+        </div>
+        <div class="col-lg-4">
+          <form class="gv-search d-flex" action="busqueda.html" method="get" role="search">
+            <label class="visually-hidden" for="gv-search-input">Buscar juegos</label>
+            <input id="gv-search-input" class="form-control" type="search" name="q" placeholder="Buscar por nombre o género" list="gv-search-suggestions">
+            <button class="btn ms-2" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+      <nav aria-label="Migas de pan" class="mb-0 mt-3">
+        <ol class="breadcrumb gv-breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Facturación</li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container-fluid px-3 px-lg-4 py-4">
+    <div class="row g-4">
+      <div class="col-lg-3">
+        <aside class="gv-sidebar p-3" aria-label="Categorías de contenido">
+          <h2 class="h6 text-uppercase text-secondary">Secciones</h2>
+          <div class="list-group list-group-flush">
+            <a href="categoria-acci-n.html" class="list-group-item list-group-item-action">Acción</a>
+            <a href="categoria-aventura.html" class="list-group-item list-group-item-action">Aventura</a>
+            <a href="categoria-rpg.html" class="list-group-item list-group-item-action">RPG</a>
+            <a href="categoria-deportes.html" class="list-group-item list-group-item-action">Deportes</a>
+            <a href="categoria-estrategia.html" class="list-group-item list-group-item-action">Estrategia</a>
+            <a href="categoria-terror.html" class="list-group-item list-group-item-action">Terror</a>
+            <a href="categoria-simulaci-n.html" class="list-group-item list-group-item-action">Simulación</a>
+            <a href="categoria-peleas.html" class="list-group-item list-group-item-action">Peleas</a>
+            <a href="categoria-plataformas.html" class="list-group-item list-group-item-action">Plataformas</a>
+            <a href="categoria-puzzle.html" class="list-group-item list-group-item-action">Puzzle</a>
+            <a href="categoria-indie.html" class="list-group-item list-group-item-action">Indie</a>
+          </div>
+          <hr class="border-secondary">
+          <p class="small text-secondary mb-2">Ofertas destacadas</p>
+          <a class="btn btn-sm btn-outline-warning w-100 mb-2" href="categoria-rpg.html">RPG en oferta</a>
+          <a class="btn btn-sm btn-outline-info w-100" href="categoria-indie.html">Indie recomendados</a>
+        </aside>
+      </div>
+      <div class="col-lg-9">
+        <h1 class="h3 gv-section-title mb-3">Datos de facturación</h1>
+        <p class="text-secondary">Formato permisivo en nombre; formato estructurado en tarjeta; sugerencias en correo y país.</p>
+
+        <form class="gv-form needs-validation" novalidate action="entrega.html" method="get">
+          <div class="card gv-card mb-3">
+            <div class="card-header">Identificación del comprador</div>
+            <div class="card-body row g-3">
+              <div class="col-md-6">
+                <label class="form-label" for="nombre">Nombre completo</label>
+                <input class="form-control" id="nombre" name="nombre" type="text" placeholder="Como figura en su identificación" required>
+                <div class="gv-hint">Formato permisivo: acepta acentos y espacios.</div>
+              </div>
+              <div class="col-md-6 gv-input-indicator">
+                <label class="form-label" for="correo">Correo electrónico</label>
+                <span class="gv-icon" aria-hidden="true">@</span>
+                <input class="form-control" id="correo" name="correo" type="email" list="correo-sugerencias" placeholder="usuario@dominio.com" required>
+                <datalist id="correo-sugerencias">
+                  <option value="@gmail.com"></option>
+                  <option value="@una.ac.cr"></option>
+                  <option value="@hotmail.com"></option>
+                </datalist>
+                <div class="gv-hint">Sugerencias de entrada con datalist.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="cedula">Cédula o pasaporte</label>
+                <input class="form-control" id="cedula" name="cedula" type="text" inputmode="numeric" pattern="[0-9\-]{9,20}" placeholder="1-2345-6789" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="pais">País</label>
+                <input class="form-control" id="pais" name="pais" list="paises" value="Costa Rica" required>
+                <datalist id="paises">
+                  <option value="Costa Rica"></option>
+                  <option value="Panamá"></option>
+                  <option value="México"></option>
+                  <option value="Colombia"></option>
+                </datalist>
+              </div>
+            </div>
+          </div>
+
+          <div class="card gv-card mb-3">
+            <div class="card-header">Pago con tarjeta (formato estructurado)</div>
+            <div class="card-body row g-3">
+              <div class="col-12">
+                <label class="form-label" for="titular">Titular de la tarjeta</label>
+                <input class="form-control" id="titular" name="titular" type="text" autocomplete="cc-name" required>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" for="numero">Número de tarjeta</label>
+                <input class="form-control" id="numero" name="numero" type="text" inputmode="numeric" autocomplete="cc-number" placeholder="1234 5678 9012 3456" pattern="[0-9 ]{15,19}" required>
+              </div>
+              <div class="col-md-2">
+                <label class="form-label" for="vence">Vence</label>
+                <input class="form-control" id="vence" name="vence" type="text" placeholder="MM/AA" pattern="(0[1-9]|1[0-2])\/[0-9]{2}" required>
+              </div>
+              <div class="col-md-2">
+                <label class="form-label" for="cvv">CVV</label>
+                <input class="form-control" id="cvv" name="cvv" type="password" inputmode="numeric" autocomplete="cc-csc" pattern="[0-9]{3,4}" required>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-info" type="submit">Continuar a entrega</button>
+          <a class="btn btn-outline-light ms-2" href="carrito.html">Volver al carrito</a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="gv-footer py-4">
+    <div class="container-fluid px-3 px-lg-4">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <strong>GameVault</strong>
+          <p class="small mb-0">Sitio estático generado con InjaX (Proyecto 3).</p>
+        </div>
+        <div class="col-md-4">
+          <p class="small mb-1"><strong>Autores:</strong> Luis A. Aguilar Bolaños y Pablo A. Alvarado Umaña</p>
+          <p class="small mb-0"><strong>Contacto:</strong> <a href="mailto:gamevault@una.ac.cr">gamevault@una.ac.cr</a></p>
+        </div>
+        <div class="col-md-4">
+          <p class="small mb-0">© 2026 GameVault — EIF 506, Diseño de Sitios Web, UNA.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <datalist id="gv-search-suggestions">
+    <option value="Elden Ring"></option>
+    <option value="The Witcher 3: Wild Hunt"></option>
+    <option value="Red Dead Redemption 2"></option>
+    <option value="Hollow Knight"></option>
+    <option value="FIFA 24"></option>
+    <option value="Resident Evil Village"></option>
+    <option value="Hades"></option>
+    <option value="Minecraft"></option>
+    <option value="God of War: Ragnarök"></option>
+    <option value="Cyberpunk 2077"></option>
+    <option value="Stardew Valley"></option>
+    <option value="Dead by Daylight"></option>
+    <option value="Celeste"></option>
+    <option value="Grand Theft Auto V"></option>
+    <option value="Undertale"></option>
+    <option value="Baldur's Gate 3"></option>
+    <option value="Apex Legends"></option>
+    <option value="The Legend of Zelda: Tears of the Kingdom"></option>
+    <option value="Mortal Kombat 1"></option>
+    <option value="Cities: Skylines"></option>
+    <option value="Sekiro: Shadows Die Twice"></option>
+    <option value="Portal 2"></option>
+    <option value="Fortnite"></option>
+    <option value="Horizon Forbidden West"></option>
+    <option value="Terraria"></option>
+    <option value="Civilization VI"></option>
+    <option value="Night in the Woods"></option>
+    <option value="LEGO Star Wars: The Skywalker Saga"></option>
+    <option value="Project Zomboid"></option>
+    <option value="Hogwarts Legacy"></option>
+  </datalist>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

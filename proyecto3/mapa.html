@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Luis A. Aguilar Bolaños y Pablo A. Alvarado Umaña">
+  <meta name="description" content="GameVault — Tienda de videojuegos — Proyecto 3 EIF 506">
+  <title>GameVault | Índice del sitio</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <header class="gv-topbar py-3">
+    <div class="container-fluid px-3 px-lg-4">
+      <div class="row g-3 align-items-center">
+        <div class="col-lg-3">
+          <a class="gv-brand fs-4" href="index.html">GameVault</a>
+          <div class="small text-secondary">Tienda de videojuegos</div>
+        </div>
+        <div class="col-lg-5">
+          <nav class="d-flex flex-wrap gap-1" aria-label="Navegación global">
+            <a class="gv-nav-link" href="../index.html">Menú del sitio</a>
+            <a class="gv-nav-link" href="index.html">Inicio</a>
+            <a class="gv-nav-link active" href="mapa.html">Índice</a>
+            <a class="gv-nav-link" href="categoria-rpg.html">Categorías</a>
+            <a class="gv-nav-link" href="busqueda.html">Búsqueda</a>
+            <a class="gv-nav-link" href="carrito.html">Carrito</a>
+          </nav>
+        </div>
+        <div class="col-lg-4">
+          <form class="gv-search d-flex" action="busqueda.html" method="get" role="search">
+            <label class="visually-hidden" for="gv-search-input">Buscar juegos</label>
+            <input id="gv-search-input" class="form-control" type="search" name="q" placeholder="Buscar por nombre o género" list="gv-search-suggestions">
+            <button class="btn ms-2" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+      <nav aria-label="Migas de pan" class="mb-0 mt-3">
+        <ol class="breadcrumb gv-breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Índice del sitio</li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container-fluid px-3 px-lg-4 py-4">
+    <div class="row g-4">
+      <div class="col-lg-3">
+        <aside class="gv-sidebar p-3" aria-label="Categorías de contenido">
+          <h2 class="h6 text-uppercase text-secondary">Secciones</h2>
+          <div class="list-group list-group-flush">
+            <a href="categoria-acci-n.html" class="list-group-item list-group-item-action">Acción</a>
+            <a href="categoria-aventura.html" class="list-group-item list-group-item-action">Aventura</a>
+            <a href="categoria-rpg.html" class="list-group-item list-group-item-action">RPG</a>
+            <a href="categoria-deportes.html" class="list-group-item list-group-item-action">Deportes</a>
+            <a href="categoria-estrategia.html" class="list-group-item list-group-item-action">Estrategia</a>
+            <a href="categoria-terror.html" class="list-group-item list-group-item-action">Terror</a>
+            <a href="categoria-simulaci-n.html" class="list-group-item list-group-item-action">Simulación</a>
+            <a href="categoria-peleas.html" class="list-group-item list-group-item-action">Peleas</a>
+            <a href="categoria-plataformas.html" class="list-group-item list-group-item-action">Plataformas</a>
+            <a href="categoria-puzzle.html" class="list-group-item list-group-item-action">Puzzle</a>
+            <a href="categoria-indie.html" class="list-group-item list-group-item-action">Indie</a>
+          </div>
+          <hr class="border-secondary">
+          <p class="small text-secondary mb-2">Ofertas destacadas</p>
+          <a class="btn btn-sm btn-outline-warning w-100 mb-2" href="categoria-rpg.html">RPG en oferta</a>
+          <a class="btn btn-sm btn-outline-info w-100" href="categoria-indie.html">Indie recomendados</a>
+        </aside>
+      </div>
+      <div class="col-lg-9">
+        <header class="mb-4">
+          <h1 class="h3 gv-section-title">Índice de navegación — GameVault</h1>
+          <p class="text-secondary mb-0">Mapa del sitio estático generado con InjaX a partir de archivos JSON.</p>
+        </header>
+        <div class="table-responsive">
+          <table class="table table-dark table-striped align-middle">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Tipo de página</th>
+                <th>Archivo HTML</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td>Inicio</td>
+                <td><a href="index.html">index.html</a></td>
+                <td class="small text-secondary">Página principal con carrusel y rejillas</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Índice de navegación</td>
+                <td><a href="mapa.html">mapa.html</a></td>
+                <td class="small text-secondary">Mapa del sitio generado con InjaX</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Búsqueda</td>
+                <td><a href="busqueda.html">busqueda.html</a></td>
+                <td class="small text-secondary">Resultados y catálogo completo</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Carrito</td>
+                <td><a href="carrito.html">carrito.html</a></td>
+                <td class="small text-secondary">Comercio electrónico — carrito</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Facturación</td>
+                <td><a href="facturacion.html">facturacion.html</a></td>
+                <td class="small text-secondary">Formulario de pago</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Entrega</td>
+                <td><a href="entrega.html">entrega.html</a></td>
+                <td class="small text-secondary">Datos de entrega digital</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Categoría — Acción</td>
+                <td><a href="categoria-acci-n.html">categoria-acci-n.html</a></td>
+                <td class="small text-secondary">Juegos de ritmo rápido centrados en combate, reflejos y habilidad del jugador.</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Categoría — Aventura</td>
+                <td><a href="categoria-aventura.html">categoria-aventura.html</a></td>
+                <td class="small text-secondary">Juegos con narrativa profunda, exploración y resolución de misterios.</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Categoría — RPG</td>
+                <td><a href="categoria-rpg.html">categoria-rpg.html</a></td>
+                <td class="small text-secondary">Juegos de rol con desarrollo de personajes, historia ramificada y sistemas de progresión.</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Categoría — Deportes</td>
+                <td><a href="categoria-deportes.html">categoria-deportes.html</a></td>
+                <td class="small text-secondary">Simulaciones y arcade de disciplinas deportivas del mundo real.</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Categoría — Estrategia</td>
+                <td><a href="categoria-estrategia.html">categoria-estrategia.html</a></td>
+                <td class="small text-secondary">Juegos que requieren planificación, gestión de recursos y toma de decisiones tácticas.</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Categoría — Terror</td>
+                <td><a href="categoria-terror.html">categoria-terror.html</a></td>
+                <td class="small text-secondary">Juegos de horror con atmósferas perturbadoras, suspenso y supervivencia.</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Categoría — Simulación</td>
+                <td><a href="categoria-simulaci-n.html">categoria-simulaci-n.html</a></td>
+                <td class="small text-secondary">Juegos que replican sistemas del mundo real como ciudades, vuelos o vida cotidiana.</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>Categoría — Peleas</td>
+                <td><a href="categoria-peleas.html">categoria-peleas.html</a></td>
+                <td class="small text-secondary">Juegos de combate uno contra uno o en grupos con mecánicas de combos y habilidades.</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>Categoría — Plataformas</td>
+                <td><a href="categoria-plataformas.html">categoria-plataformas.html</a></td>
+                <td class="small text-secondary">Juegos de desplazamiento lateral o 3D donde el jugador salta entre plataformas y obstáculos.</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>Categoría — Puzzle</td>
+                <td><a href="categoria-puzzle.html">categoria-puzzle.html</a></td>
+                <td class="small text-secondary">Juegos basados en resolver acertijos lógicos, espaciales o creativos.</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>Categoría — Indie</td>
+                <td><a href="categoria-indie.html">categoria-indie.html</a></td>
+                <td class="small text-secondary">Juegos desarrollados de forma independiente, con propuestas artísticas y mecánicas únicas.</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>Producto (tabs) — Elden Ring</td>
+                <td><a href="juego-elden-ring.html">juego-elden-ring.html</a></td>
+                <td class="small text-secondary">RPG de acción en mundo abierto desarrollado por FromSoftware en colaboración con George R.…</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>Producto (generic) — The Witcher 3: Wild Hunt</td>
+                <td><a href="juego-the-witcher-3-wild-hunt.html">juego-the-witcher-3-wild-hunt.html</a></td>
+                <td class="small text-secondary">RPG de mundo abierto donde juegas como Geralt de Rivia, un cazador de monstruos en busca d…</td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>Producto (generic) — Red Dead Redemption 2</td>
+                <td><a href="juego-red-dead-redemption-2.html">juego-red-dead-redemption-2.html</a></td>
+                <td class="small text-secondary">Épica historia del salvaje oeste americano. Juega como Arthur Morgan, forajido que lucha p…</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>Producto (generic) — Hollow Knight</td>
+                <td><a href="juego-hollow-knight.html">juego-hollow-knight.html</a></td>
+                <td class="small text-secondary">Juego de acción-aventura 2D en un vasto reino de insectos subterráneo. Explora cuevas, luc…</td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>Producto (generic) — FIFA 24</td>
+                <td><a href="juego-fifa-24.html">juego-fifa-24.html</a></td>
+                <td class="small text-secondary">La entrega anual de fútbol de EA Sports con licencias oficiales, Ultimate Team mejorado, c…</td>
+              </tr>
+              <tr>
+                <td>22</td>
+                <td>Producto (generic) — Resident Evil Village</td>
+                <td><a href="juego-resident-evil-village.html">juego-resident-evil-village.html</a></td>
+                <td class="small text-secondary">Continúa la historia de Ethan Winters en un misterioso pueblo europeo lleno de criaturas s…</td>
+              </tr>
+              <tr>
+                <td>23</td>
+                <td>Producto (accordion) — Hades</td>
+                <td><a href="juego-hades.html">juego-hades.html</a></td>
+                <td class="small text-secondary">Roguelike de acción donde juegas como Zagreus, hijo de Hades, intentando escapar del infra…</td>
+              </tr>
+              <tr>
+                <td>24</td>
+                <td>Producto (generic) — Minecraft</td>
+                <td><a href="juego-minecraft.html">juego-minecraft.html</a></td>
+                <td class="small text-secondary">Juego de construcción y supervivencia en un mundo de bloques infinito. Crea, explora y sob…</td>
+              </tr>
+              <tr>
+                <td>25</td>
+                <td>Producto (generic) — God of War: Ragnarök</td>
+                <td><a href="juego-god-of-war-ragnar-k.html">juego-god-of-war-ragnar-k.html</a></td>
+                <td class="small text-secondary">Kratos y Atreus se embarcan en una épica aventura por los nueve reinos para evitar el Ragn…</td>
+              </tr>
+              <tr>
+                <td>26</td>
+                <td>Producto (generic) — Cyberpunk 2077</td>
+                <td><a href="juego-cyberpunk-2077.html">juego-cyberpunk-2077.html</a></td>
+                <td class="small text-secondary">RPG de mundo abierto en Night City, una megalópolis del futuro. Juega como V, un mercenari…</td>
+              </tr>
+              <tr>
+                <td>27</td>
+                <td>Producto (generic) — Stardew Valley</td>
+                <td><a href="juego-stardew-valley.html">juego-stardew-valley.html</a></td>
+                <td class="small text-secondary">Juego de simulación de granja donde heredas una parcela y construyes tu vida en un pequeño…</td>
+              </tr>
+              <tr>
+                <td>28</td>
+                <td>Producto (generic) — Dead by Daylight</td>
+                <td><a href="juego-dead-by-daylight.html">juego-dead-by-daylight.html</a></td>
+                <td class="small text-secondary">Juego de terror multijugador asimétrico: 4 supervivientes intentan escapar mientras un ase…</td>
+              </tr>
+              <tr>
+                <td>29</td>
+                <td>Producto (generic) — Celeste</td>
+                <td><a href="juego-celeste.html">juego-celeste.html</a></td>
+                <td class="small text-secondary">Juego de plataformas narrativo sobre Madeline, quien escala la Montaña Celeste enfrentando…</td>
+              </tr>
+              <tr>
+                <td>30</td>
+                <td>Producto (generic) — Grand Theft Auto V</td>
+                <td><a href="juego-grand-theft-auto-v.html">juego-grand-theft-auto-v.html</a></td>
+                <td class="small text-secondary">Juego de mundo abierto en Los Santos. Vive las vidas de tres criminales en el crimen organ…</td>
+              </tr>
+              <tr>
+                <td>31</td>
+                <td>Producto (generic) — Undertale</td>
+                <td><a href="juego-undertale.html">juego-undertale.html</a></td>
+                <td class="small text-secondary">RPG indie donde tus decisiones importan: puedes completar el juego sin matar a nadie. Pers…</td>
+              </tr>
+              <tr>
+                <td>32</td>
+                <td>Producto (sections) — Baldur's Gate 3</td>
+                <td><a href="juego-baldurs-gate-3.html">juego-baldurs-gate-3.html</a></td>
+                <td class="small text-secondary">RPG basado en Dungeons & Dragons. Con tus compañeros, enfrenta amenazas cósmicas en Faerûn…</td>
+              </tr>
+              <tr>
+                <td>33</td>
+                <td>Producto (generic) — Apex Legends</td>
+                <td><a href="juego-apex-legends.html">juego-apex-legends.html</a></td>
+                <td class="small text-secondary">Battle royale de héroes en primera persona. Elige tu leyenda, forma escuadrones de 3 y com…</td>
+              </tr>
+              <tr>
+                <td>34</td>
+                <td>Producto (generic) — The Legend of Zelda: Tears of the Kingdom</td>
+                <td><a href="juego-the-legend-of-zelda-tears-of-the-kingdom.html">juego-the-legend-of-zelda-tears-of-the-kingdom.html</a></td>
+                <td class="small text-secondary">Aventura épica en Hyrule donde Link explora cielos, tierra y profundidades con nuevas habi…</td>
+              </tr>
+              <tr>
+                <td>35</td>
+                <td>Producto (generic) — Mortal Kombat 1</td>
+                <td><a href="juego-mortal-kombat-1.html">juego-mortal-kombat-1.html</a></td>
+                <td class="small text-secondary">Reinicio del universo Mortal Kombat con Liu Kang como dios del fuego. Sistema de Kameos, K…</td>
+              </tr>
+              <tr>
+                <td>36</td>
+                <td>Producto (generic) — Cities: Skylines</td>
+                <td><a href="juego-cities-skylines.html">juego-cities-skylines.html</a></td>
+                <td class="small text-secondary">Simulador de construcción y gestión de ciudades moderno. Diseña carreteras, gestiona servi…</td>
+              </tr>
+              <tr>
+                <td>37</td>
+                <td>Producto (generic) — Sekiro: Shadows Die Twice</td>
+                <td><a href="juego-sekiro-shadows-die-twice.html">juego-sekiro-shadows-die-twice.html</a></td>
+                <td class="small text-secondary">Juego de acción en el Japón feudal. Juegas como un shinobi que busca rescatar a su señor y…</td>
+              </tr>
+              <tr>
+                <td>38</td>
+                <td>Producto (generic) — Portal 2</td>
+                <td><a href="juego-portal-2.html">juego-portal-2.html</a></td>
+                <td class="small text-secondary">Puzzle de ingenio con portales. Resuelve cámaras de prueba con física creativa, solo o coo…</td>
+              </tr>
+              <tr>
+                <td>39</td>
+                <td>Producto (generic) — Fortnite</td>
+                <td><a href="juego-fortnite.html">juego-fortnite.html</a></td>
+                <td class="small text-secondary">Battle royale free-to-play en constante evolución con colaboraciones de Marvel, Star Wars …</td>
+              </tr>
+              <tr>
+                <td>40</td>
+                <td>Producto (generic) — Horizon Forbidden West</td>
+                <td><a href="juego-horizon-forbidden-west.html">juego-horizon-forbidden-west.html</a></td>
+                <td class="small text-secondary">Aloy explora una Tierra futurista infestada de máquinas. Desbloquea el misterio del Corte …</td>
+              </tr>
+              <tr>
+                <td>41</td>
+                <td>Producto (generic) — Terraria</td>
+                <td><a href="juego-terraria.html">juego-terraria.html</a></td>
+                <td class="small text-secondary">Juego de aventura y construcción en 2D con más de 400 enemigos, 20 jefes y cientos de obje…</td>
+              </tr>
+              <tr>
+                <td>42</td>
+                <td>Producto (generic) — Civilization VI</td>
+                <td><a href="juego-civilization-vi.html">juego-civilization-vi.html</a></td>
+                <td class="small text-secondary">Juego de estrategia por turnos donde guías una civilización desde la prehistoria hasta la …</td>
+              </tr>
+              <tr>
+                <td>43</td>
+                <td>Producto (generic) — Night in the Woods</td>
+                <td><a href="juego-night-in-the-woods.html">juego-night-in-the-woods.html</a></td>
+                <td class="small text-secondary">Juego de aventura narrativo sobre Mae Borowski, una felina que regresa a su pueblo natal. …</td>
+              </tr>
+              <tr>
+                <td>44</td>
+                <td>Producto (generic) — LEGO Star Wars: The Skywalker Saga</td>
+                <td><a href="juego-lego-star-wars-the-skywalker-saga.html">juego-lego-star-wars-the-skywalker-saga.html</a></td>
+                <td class="small text-secondary">Revive las 9 películas de Star Wars en formato LEGO. Más de 300 personajes, combate mejora…</td>
+              </tr>
+              <tr>
+                <td>45</td>
+                <td>Producto (generic) — Project Zomboid</td>
+                <td><a href="juego-project-zomboid.html">juego-project-zomboid.html</a></td>
+                <td class="small text-secondary">Simulador de supervivencia zombie de mundo abierto. Sobrevive en Kentucky con gestión de r…</td>
+              </tr>
+              <tr>
+                <td>46</td>
+                <td>Producto (generic) — Hogwarts Legacy</td>
+                <td><a href="juego-hogwarts-legacy.html">juego-hogwarts-legacy.html</a></td>
+                <td class="small text-secondary">RPG de acción ambientado en el universo mágico de Harry Potter en el siglo XIX. Explora Ho…</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="gv-footer py-4">
+    <div class="container-fluid px-3 px-lg-4">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <strong>GameVault</strong>
+          <p class="small mb-0">Sitio estático generado con InjaX (Proyecto 3).</p>
+        </div>
+        <div class="col-md-4">
+          <p class="small mb-1"><strong>Autores:</strong> Luis A. Aguilar Bolaños y Pablo A. Alvarado Umaña</p>
+          <p class="small mb-0"><strong>Contacto:</strong> <a href="mailto:gamevault@una.ac.cr">gamevault@una.ac.cr</a></p>
+        </div>
+        <div class="col-md-4">
+          <p class="small mb-0">© 2026 GameVault — EIF 506, Diseño de Sitios Web, UNA.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <datalist id="gv-search-suggestions">
+    <option value="Elden Ring"></option>
+    <option value="The Witcher 3: Wild Hunt"></option>
+    <option value="Red Dead Redemption 2"></option>
+    <option value="Hollow Knight"></option>
+    <option value="FIFA 24"></option>
+    <option value="Resident Evil Village"></option>
+    <option value="Hades"></option>
+    <option value="Minecraft"></option>
+    <option value="God of War: Ragnarök"></option>
+    <option value="Cyberpunk 2077"></option>
+    <option value="Stardew Valley"></option>
+    <option value="Dead by Daylight"></option>
+    <option value="Celeste"></option>
+    <option value="Grand Theft Auto V"></option>
+    <option value="Undertale"></option>
+    <option value="Baldur's Gate 3"></option>
+    <option value="Apex Legends"></option>
+    <option value="The Legend of Zelda: Tears of the Kingdom"></option>
+    <option value="Mortal Kombat 1"></option>
+    <option value="Cities: Skylines"></option>
+    <option value="Sekiro: Shadows Die Twice"></option>
+    <option value="Portal 2"></option>
+    <option value="Fortnite"></option>
+    <option value="Horizon Forbidden West"></option>
+    <option value="Terraria"></option>
+    <option value="Civilization VI"></option>
+    <option value="Night in the Woods"></option>
+    <option value="LEGO Star Wars: The Skywalker Saga"></option>
+    <option value="Project Zomboid"></option>
+    <option value="Hogwarts Legacy"></option>
+  </datalist>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

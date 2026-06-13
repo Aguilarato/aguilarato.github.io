@@ -1,0 +1,242 @@
+{
+  "site": {
+    "store": "GameVault",
+    "authors": "Luis A. Aguilar Bolaños y Pablo A. Alvarado Umaña",
+    "contact": "gamevault@una.ac.cr",
+    "tagline": "Tienda de videojuegos",
+    "nav": [
+      {
+        "id": "portafolio",
+        "label": "Menú del sitio",
+        "href": "../index.html"
+      },
+      {
+        "id": "inicio",
+        "label": "Inicio",
+        "href": "index.html"
+      },
+      {
+        "id": "mapa",
+        "label": "Índice",
+        "href": "mapa.html"
+      },
+      {
+        "id": "categoria",
+        "label": "Categorías",
+        "href": "categoria-rpg.html"
+      },
+      {
+        "id": "busqueda",
+        "label": "Búsqueda",
+        "href": "busqueda.html"
+      },
+      {
+        "id": "carrito",
+        "label": "Carrito",
+        "href": "carrito.html"
+      }
+    ],
+    "categorias": [
+      {
+        "id": 1,
+        "nombre": "Acción",
+        "slug": "acci-n",
+        "href": "categoria-acci-n.html"
+      },
+      {
+        "id": 2,
+        "nombre": "Aventura",
+        "slug": "aventura",
+        "href": "categoria-aventura.html"
+      },
+      {
+        "id": 3,
+        "nombre": "RPG",
+        "slug": "rpg",
+        "href": "categoria-rpg.html"
+      },
+      {
+        "id": 4,
+        "nombre": "Deportes",
+        "slug": "deportes",
+        "href": "categoria-deportes.html"
+      },
+      {
+        "id": 5,
+        "nombre": "Estrategia",
+        "slug": "estrategia",
+        "href": "categoria-estrategia.html"
+      },
+      {
+        "id": 6,
+        "nombre": "Terror",
+        "slug": "terror",
+        "href": "categoria-terror.html"
+      },
+      {
+        "id": 7,
+        "nombre": "Simulación",
+        "slug": "simulaci-n",
+        "href": "categoria-simulaci-n.html"
+      },
+      {
+        "id": 8,
+        "nombre": "Peleas",
+        "slug": "peleas",
+        "href": "categoria-peleas.html"
+      },
+      {
+        "id": 9,
+        "nombre": "Plataformas",
+        "slug": "plataformas",
+        "href": "categoria-plataformas.html"
+      },
+      {
+        "id": 10,
+        "nombre": "Puzzle",
+        "slug": "puzzle",
+        "href": "categoria-puzzle.html"
+      },
+      {
+        "id": 11,
+        "nombre": "Indie",
+        "slug": "indie",
+        "href": "categoria-indie.html"
+      }
+    ],
+    "search_suggestions": [
+      "Elden Ring",
+      "The Witcher 3: Wild Hunt",
+      "Red Dead Redemption 2",
+      "Hollow Knight",
+      "FIFA 24",
+      "Resident Evil Village",
+      "Hades",
+      "Minecraft",
+      "God of War: Ragnarök",
+      "Cyberpunk 2077",
+      "Stardew Valley",
+      "Dead by Daylight",
+      "Celeste",
+      "Grand Theft Auto V",
+      "Undertale",
+      "Baldur's Gate 3",
+      "Apex Legends",
+      "The Legend of Zelda: Tears of the Kingdom",
+      "Mortal Kombat 1",
+      "Cities: Skylines",
+      "Sekiro: Shadows Die Twice",
+      "Portal 2",
+      "Fortnite",
+      "Horizon Forbidden West",
+      "Terraria",
+      "Civilization VI",
+      "Night in the Woods",
+      "LEGO Star Wars: The Skywalker Saga",
+      "Project Zomboid",
+      "Hogwarts Legacy"
+    ]
+  },
+  "page": {
+    "title": "GameVault | Elden Ring",
+    "active_nav": "",
+    "active_category": 3,
+    "breadcrumbs": [
+      {
+        "label": "Inicio",
+        "is_last": false,
+        "href": "index.html"
+      },
+      {
+        "label": "RPG",
+        "is_last": false,
+        "href": "categoria-rpg.html"
+      },
+      {
+        "label": "Elden Ring",
+        "is_last": true,
+        "href": ""
+      }
+    ]
+  },
+  "product": {
+    "id": 1,
+    "nombre": "Elden Ring",
+    "descripcion": "RPG de acción en mundo abierto desarrollado por FromSoftware en colaboración con George R.R. Martin. Explora las Tierras Intermedias en una épica aventura.",
+    "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_616x353.jpg",
+    "video_url": "https://www.youtube.com/watch?v=E3Huy2cdih0",
+    "has_video": true,
+    "categoria": "RPG",
+    "precio_final": "$44.99 USD",
+    "precio_original": "$59.99 USD",
+    "descuento_badge": "-25%",
+    "has_discount": true,
+    "modo_juego": "Ambos",
+    "clasificacion_edad": "M",
+    "puntuacion": "9.5"
+  },
+  "content": {
+    "layout": "tabs",
+    "tabs": [
+      {
+        "id": "desc",
+        "label": "Descripción",
+        "active": true,
+        "body": "<p>RPG de acción en mundo abierto desarrollado por FromSoftware en colaboración con George R.R. Martin. Explora las Tierras Intermedias, derrota jefes legendarios y personaliza tu build con armas, hechizos y espíritus invocados.</p><p>Modo: Ambos · Clasificación: M · Puntuación: 9.5/10</p>"
+      },
+      {
+        "id": "req",
+        "label": "Requisitos",
+        "active": false,
+        "body": "<ul><li><strong>Mínimos:</strong> Windows 10, Ryzen 5 1600 / i5-8400, 12 GB RAM, GTX 1060 3 GB.</li><li><strong>Recomendados:</strong> Windows 11, Ryzen 7 2700X / i7-8700K, 16 GB RAM, RTX 3060 Ti.</li></ul>"
+      },
+      {
+        "id": "reviews",
+        "label": "Reseñas",
+        "active": false,
+        "body": "<blockquote class=\"blockquote\"><p>“La libertad de exploración y el diseño de jefes lo convierten en un referente del género.”</p><footer class=\"blockquote-footer text-secondary\">Comunidad GameVault</footer></blockquote>"
+      }
+    ]
+  },
+  "related": [
+    {
+      "id": 2,
+      "nombre": "The Witcher 3: Wild Hunt",
+      "descripcion_corta": "RPG de mundo abierto donde juegas como Geralt de Rivia, un cazador de monstruos en busca de su hija adoptiva e…",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/capsule_616x353.jpg",
+      "categoria": "RPG",
+      "precio_final": "$20.00 USD",
+      "precio_original": "$39.99 USD",
+      "descuento_badge": "-50%",
+      "has_discount": true,
+      "search_key": "the witcher 3: wild hunt",
+      "href": "juego-the-witcher-3-wild-hunt.html"
+    },
+    {
+      "id": 10,
+      "nombre": "Cyberpunk 2077",
+      "descripcion_corta": "RPG de mundo abierto en Night City, una megalópolis del futuro. Juega como V, un mercenario que busca la inmor…",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/capsule_616x353.jpg",
+      "categoria": "RPG",
+      "precio_final": "$30.00 USD",
+      "precio_original": "$59.99 USD",
+      "descuento_badge": "-50%",
+      "has_discount": true,
+      "search_key": "cyberpunk 2077",
+      "href": "juego-cyberpunk-2077.html"
+    },
+    {
+      "id": 16,
+      "nombre": "Baldur's Gate 3",
+      "descripcion_corta": "RPG basado en Dungeons & Dragons. Con tus compañeros, enfrenta amenazas cósmicas en Faerûn con libertad narrat…",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/capsule_616x353.jpg",
+      "categoria": "RPG",
+      "precio_final": "$59.99 USD",
+      "precio_original": "",
+      "descuento_badge": "",
+      "has_discount": false,
+      "search_key": "baldur's gate 3",
+      "href": "juego-baldurs-gate-3.html"
+    }
+  ]
+}

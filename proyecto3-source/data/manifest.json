@@ -1,0 +1,243 @@
+{
+  "pages": [
+    {
+      "data": "inicio.json",
+      "template": "inicio-html.inja",
+      "output": "index.html"
+    },
+    {
+      "data": "mapa.json",
+      "template": "mapa-html.inja",
+      "output": "mapa.html"
+    },
+    {
+      "data": "busqueda.json",
+      "template": "busqueda-html.inja",
+      "output": "busqueda.html"
+    },
+    {
+      "data": "carrito.json",
+      "template": "carrito-html.inja",
+      "output": "carrito.html"
+    },
+    {
+      "data": "facturacion.json",
+      "template": "facturacion-html.inja",
+      "output": "facturacion.html"
+    },
+    {
+      "data": "entrega.json",
+      "template": "entrega-html.inja",
+      "output": "entrega.html"
+    }
+  ],
+  "categories": [
+    {
+      "data": "categorias/acci-n.json",
+      "template": "categoria-html.inja",
+      "output": "categoria-acci-n.html"
+    },
+    {
+      "data": "categorias/aventura.json",
+      "template": "categoria-html.inja",
+      "output": "categoria-aventura.html"
+    },
+    {
+      "data": "categorias/rpg.json",
+      "template": "categoria-html.inja",
+      "output": "categoria-rpg.html"
+    },
+    {
+      "data": "categorias/deportes.json",
+      "template": "categoria-html.inja",
+      "output": "categoria-deportes.html"
+    },
+    {
+      "data": "categorias/estrategia.json",
+      "template": "categoria-html.inja",
+      "output": "categoria-estrategia.html"
+    },
+    {
+      "data": "categorias/terror.json",
+      "template": "categoria-html.inja",
+      "output": "categoria-terror.html"
+    },
+    {
+      "data": "categorias/simulaci-n.json",
+      "template": "categoria-html.inja",
+      "output": "categoria-simulaci-n.html"
+    },
+    {
+      "data": "categorias/peleas.json",
+      "template": "categoria-html.inja",
+      "output": "categoria-peleas.html"
+    },
+    {
+      "data": "categorias/plataformas.json",
+      "template": "categoria-html.inja",
+      "output": "categoria-plataformas.html"
+    },
+    {
+      "data": "categorias/puzzle.json",
+      "template": "categoria-html.inja",
+      "output": "categoria-puzzle.html"
+    },
+    {
+      "data": "categorias/indie.json",
+      "template": "categoria-html.inja",
+      "output": "categoria-indie.html"
+    }
+  ],
+  "products": [
+    {
+      "data": "productos/elden-ring.json",
+      "template": "producto-tabs-html.inja",
+      "output": "juego-elden-ring.html"
+    },
+    {
+      "data": "productos/the-witcher-3-wild-hunt.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-the-witcher-3-wild-hunt.html"
+    },
+    {
+      "data": "productos/red-dead-redemption-2.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-red-dead-redemption-2.html"
+    },
+    {
+      "data": "productos/hollow-knight.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-hollow-knight.html"
+    },
+    {
+      "data": "productos/fifa-24.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-fifa-24.html"
+    },
+    {
+      "data": "productos/resident-evil-village.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-resident-evil-village.html"
+    },
+    {
+      "data": "productos/hades.json",
+      "template": "producto-accordion-html.inja",
+      "output": "juego-hades.html"
+    },
+    {
+      "data": "productos/minecraft.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-minecraft.html"
+    },
+    {
+      "data": "productos/god-of-war-ragnar-k.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-god-of-war-ragnar-k.html"
+    },
+    {
+      "data": "productos/cyberpunk-2077.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-cyberpunk-2077.html"
+    },
+    {
+      "data": "productos/stardew-valley.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-stardew-valley.html"
+    },
+    {
+      "data": "productos/dead-by-daylight.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-dead-by-daylight.html"
+    },
+    {
+      "data": "productos/celeste.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-celeste.html"
+    },
+    {
+      "data": "productos/grand-theft-auto-v.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-grand-theft-auto-v.html"
+    },
+    {
+      "data": "productos/undertale.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-undertale.html"
+    },
+    {
+      "data": "productos/baldur-s-gate-3.json",
+      "template": "producto-sections-html.inja",
+      "output": "juego-baldurs-gate-3.html"
+    },
+    {
+      "data": "productos/apex-legends.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-apex-legends.html"
+    },
+    {
+      "data": "productos/the-legend-of-zelda-tears-of-the-kingdom.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-the-legend-of-zelda-tears-of-the-kingdom.html"
+    },
+    {
+      "data": "productos/mortal-kombat-1.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-mortal-kombat-1.html"
+    },
+    {
+      "data": "productos/cities-skylines.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-cities-skylines.html"
+    },
+    {
+      "data": "productos/sekiro-shadows-die-twice.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-sekiro-shadows-die-twice.html"
+    },
+    {
+      "data": "productos/portal-2.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-portal-2.html"
+    },
+    {
+      "data": "productos/fortnite.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-fortnite.html"
+    },
+    {
+      "data": "productos/horizon-forbidden-west.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-horizon-forbidden-west.html"
+    },
+    {
+      "data": "productos/terraria.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-terraria.html"
+    },
+    {
+      "data": "productos/civilization-vi.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-civilization-vi.html"
+    },
+    {
+      "data": "productos/night-in-the-woods.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-night-in-the-woods.html"
+    },
+    {
+      "data": "productos/lego-star-wars-the-skywalker-saga.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-lego-star-wars-the-skywalker-saga.html"
+    },
+    {
+      "data": "productos/project-zomboid.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-project-zomboid.html"
+    },
+    {
+      "data": "productos/hogwarts-legacy.json",
+      "template": "producto-generic-html.inja",
+      "output": "juego-hogwarts-legacy.html"
+    }
+  ]
+}

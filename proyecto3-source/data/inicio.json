@@ -1,0 +1,356 @@
+{
+  "site": {
+    "store": "GameVault",
+    "authors": "Luis A. Aguilar Bolaños y Pablo A. Alvarado Umaña",
+    "contact": "gamevault@una.ac.cr",
+    "tagline": "Tienda de videojuegos",
+    "nav": [
+      {
+        "id": "portafolio",
+        "label": "Menú del sitio",
+        "href": "../index.html"
+      },
+      {
+        "id": "inicio",
+        "label": "Inicio",
+        "href": "index.html"
+      },
+      {
+        "id": "mapa",
+        "label": "Índice",
+        "href": "mapa.html"
+      },
+      {
+        "id": "categoria",
+        "label": "Categorías",
+        "href": "categoria-rpg.html"
+      },
+      {
+        "id": "busqueda",
+        "label": "Búsqueda",
+        "href": "busqueda.html"
+      },
+      {
+        "id": "carrito",
+        "label": "Carrito",
+        "href": "carrito.html"
+      }
+    ],
+    "categorias": [
+      {
+        "id": 1,
+        "nombre": "Acción",
+        "slug": "acci-n",
+        "href": "categoria-acci-n.html"
+      },
+      {
+        "id": 2,
+        "nombre": "Aventura",
+        "slug": "aventura",
+        "href": "categoria-aventura.html"
+      },
+      {
+        "id": 3,
+        "nombre": "RPG",
+        "slug": "rpg",
+        "href": "categoria-rpg.html"
+      },
+      {
+        "id": 4,
+        "nombre": "Deportes",
+        "slug": "deportes",
+        "href": "categoria-deportes.html"
+      },
+      {
+        "id": 5,
+        "nombre": "Estrategia",
+        "slug": "estrategia",
+        "href": "categoria-estrategia.html"
+      },
+      {
+        "id": 6,
+        "nombre": "Terror",
+        "slug": "terror",
+        "href": "categoria-terror.html"
+      },
+      {
+        "id": 7,
+        "nombre": "Simulación",
+        "slug": "simulaci-n",
+        "href": "categoria-simulaci-n.html"
+      },
+      {
+        "id": 8,
+        "nombre": "Peleas",
+        "slug": "peleas",
+        "href": "categoria-peleas.html"
+      },
+      {
+        "id": 9,
+        "nombre": "Plataformas",
+        "slug": "plataformas",
+        "href": "categoria-plataformas.html"
+      },
+      {
+        "id": 10,
+        "nombre": "Puzzle",
+        "slug": "puzzle",
+        "href": "categoria-puzzle.html"
+      },
+      {
+        "id": 11,
+        "nombre": "Indie",
+        "slug": "indie",
+        "href": "categoria-indie.html"
+      }
+    ],
+    "search_suggestions": [
+      "Elden Ring",
+      "The Witcher 3: Wild Hunt",
+      "Red Dead Redemption 2",
+      "Hollow Knight",
+      "FIFA 24",
+      "Resident Evil Village",
+      "Hades",
+      "Minecraft",
+      "God of War: Ragnarök",
+      "Cyberpunk 2077",
+      "Stardew Valley",
+      "Dead by Daylight",
+      "Celeste",
+      "Grand Theft Auto V",
+      "Undertale",
+      "Baldur's Gate 3",
+      "Apex Legends",
+      "The Legend of Zelda: Tears of the Kingdom",
+      "Mortal Kombat 1",
+      "Cities: Skylines",
+      "Sekiro: Shadows Die Twice",
+      "Portal 2",
+      "Fortnite",
+      "Horizon Forbidden West",
+      "Terraria",
+      "Civilization VI",
+      "Night in the Woods",
+      "LEGO Star Wars: The Skywalker Saga",
+      "Project Zomboid",
+      "Hogwarts Legacy"
+    ]
+  },
+  "page": {
+    "title": "GameVault | Inicio",
+    "active_nav": "inicio",
+    "active_category": 0,
+    "breadcrumbs": [
+      {
+        "label": "Inicio",
+        "is_last": true,
+        "href": ""
+      }
+    ]
+  },
+  "featured_carousel": [
+    {
+      "id": 1,
+      "nombre": "Elden Ring",
+      "descripcion_corta": "RPG de acción en mundo abierto desarrollado por FromSoftware en colaboración con George R.R. Martin. Explora l…",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_616x353.jpg",
+      "categoria": "RPG",
+      "precio_final": "$44.99 USD",
+      "precio_original": "$59.99 USD",
+      "descuento_badge": "-25%",
+      "has_discount": true,
+      "search_key": "elden ring",
+      "href": "juego-elden-ring.html"
+    },
+    {
+      "id": 16,
+      "nombre": "Baldur's Gate 3",
+      "descripcion_corta": "RPG basado en Dungeons & Dragons. Con tus compañeros, enfrenta amenazas cósmicas en Faerûn con libertad narrat…",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/capsule_616x353.jpg",
+      "categoria": "RPG",
+      "precio_final": "$59.99 USD",
+      "precio_original": "",
+      "descuento_badge": "",
+      "has_discount": false,
+      "search_key": "baldur's gate 3",
+      "href": "juego-baldurs-gate-3.html"
+    },
+    {
+      "id": 3,
+      "nombre": "Red Dead Redemption 2",
+      "descripcion_corta": "Épica historia del salvaje oeste americano. Juega como Arthur Morgan, forajido que lucha por sobrevivir mientr…",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/capsule_616x353.jpg",
+      "categoria": "Aventura",
+      "precio_final": "$47.99 USD",
+      "precio_original": "$59.99 USD",
+      "descuento_badge": "-20%",
+      "has_discount": true,
+      "search_key": "red dead redemption 2",
+      "href": "juego-red-dead-redemption-2.html"
+    },
+    {
+      "id": 10,
+      "nombre": "Cyberpunk 2077",
+      "descripcion_corta": "RPG de mundo abierto en Night City, una megalópolis del futuro. Juega como V, un mercenario que busca la inmor…",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/capsule_616x353.jpg",
+      "categoria": "RPG",
+      "precio_final": "$30.00 USD",
+      "precio_original": "$59.99 USD",
+      "descuento_badge": "-50%",
+      "has_discount": true,
+      "search_key": "cyberpunk 2077",
+      "href": "juego-cyberpunk-2077.html"
+    },
+    {
+      "id": 7,
+      "nombre": "Hades",
+      "descripcion_corta": "Roguelike de acción donde juegas como Zagreus, hijo de Hades, intentando escapar del inframundo griego. Narrat…",
+      "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/capsule_616x353.jpg",
+      "categoria": "Indie",
+      "precio_final": "$19.99 USD",
+      "precio_original": "$24.99 USD",
+      "descuento_badge": "-20%",
+      "has_discount": true,
+      "search_key": "hades",
+      "href": "juego-hades.html"
+    }
+  ],
+  "home_sections": [
+    {
+      "title": "RPG populares",
+      "href": "categoria-rpg.html",
+      "products": [
+        {
+          "id": 1,
+          "nombre": "Elden Ring",
+          "descripcion_corta": "RPG de acción en mundo abierto desarrollado por FromSoftware en colaboración con George R.R. Martin. Explora l…",
+          "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_616x353.jpg",
+          "categoria": "RPG",
+          "precio_final": "$44.99 USD",
+          "precio_original": "$59.99 USD",
+          "descuento_badge": "-25%",
+          "has_discount": true,
+          "search_key": "elden ring",
+          "href": "juego-elden-ring.html"
+        },
+        {
+          "id": 2,
+          "nombre": "The Witcher 3: Wild Hunt",
+          "descripcion_corta": "RPG de mundo abierto donde juegas como Geralt de Rivia, un cazador de monstruos en busca de su hija adoptiva e…",
+          "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/capsule_616x353.jpg",
+          "categoria": "RPG",
+          "precio_final": "$20.00 USD",
+          "precio_original": "$39.99 USD",
+          "descuento_badge": "-50%",
+          "has_discount": true,
+          "search_key": "the witcher 3: wild hunt",
+          "href": "juego-the-witcher-3-wild-hunt.html"
+        },
+        {
+          "id": 10,
+          "nombre": "Cyberpunk 2077",
+          "descripcion_corta": "RPG de mundo abierto en Night City, una megalópolis del futuro. Juega como V, un mercenario que busca la inmor…",
+          "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/capsule_616x353.jpg",
+          "categoria": "RPG",
+          "precio_final": "$30.00 USD",
+          "precio_original": "$59.99 USD",
+          "descuento_badge": "-50%",
+          "has_discount": true,
+          "search_key": "cyberpunk 2077",
+          "href": "juego-cyberpunk-2077.html"
+        }
+      ]
+    },
+    {
+      "title": "Acción",
+      "href": "categoria-acci-n.html",
+      "products": [
+        {
+          "id": 9,
+          "nombre": "God of War: Ragnarök",
+          "descripcion_corta": "Kratos y Atreus se embarcan en una épica aventura por los nueve reinos para evitar el Ragnarök. Acción especta…",
+          "imagen_url": "https://image.api.playstation.com/vulcan/ap/rnd/202207/1117/4uH3OH4dQtHMe2gmdFuth02u.jpg",
+          "categoria": "Acción",
+          "precio_final": "$69.99 USD",
+          "precio_original": "",
+          "descuento_badge": "",
+          "has_discount": false,
+          "search_key": "god of war: ragnarök",
+          "href": "juego-god-of-war-ragnar-k.html"
+        },
+        {
+          "id": 14,
+          "nombre": "Grand Theft Auto V",
+          "descripcion_corta": "Juego de mundo abierto en Los Santos. Vive las vidas de tres criminales en el crimen organizado de la ciudad. …",
+          "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/capsule_616x353.jpg",
+          "categoria": "Acción",
+          "precio_final": "$22.49 USD",
+          "precio_original": "$29.99 USD",
+          "descuento_badge": "-25%",
+          "has_discount": true,
+          "search_key": "grand theft auto v",
+          "href": "juego-grand-theft-auto-v.html"
+        },
+        {
+          "id": 17,
+          "nombre": "Apex Legends",
+          "descripcion_corta": "Battle royale de héroes en primera persona. Elige tu leyenda, forma escuadrones de 3 y combate en arenas de al…",
+          "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/capsule_616x353.jpg",
+          "categoria": "Acción",
+          "precio_final": "Gratis",
+          "precio_original": "",
+          "descuento_badge": "",
+          "has_discount": false,
+          "search_key": "apex legends",
+          "href": "juego-apex-legends.html"
+        }
+      ]
+    },
+    {
+      "title": "Indie recomendados",
+      "href": "categoria-indie.html",
+      "products": [
+        {
+          "id": 4,
+          "nombre": "Hollow Knight",
+          "descripcion_corta": "Juego de acción-aventura 2D en un vasto reino de insectos subterráneo. Explora cuevas, lucha contra jefes y de…",
+          "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/capsule_616x353.jpg",
+          "categoria": "Indie",
+          "precio_final": "$14.99 USD",
+          "precio_original": "",
+          "descuento_badge": "",
+          "has_discount": false,
+          "search_key": "hollow knight",
+          "href": "juego-hollow-knight.html"
+        },
+        {
+          "id": 7,
+          "nombre": "Hades",
+          "descripcion_corta": "Roguelike de acción donde juegas como Zagreus, hijo de Hades, intentando escapar del inframundo griego. Narrat…",
+          "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/capsule_616x353.jpg",
+          "categoria": "Indie",
+          "precio_final": "$19.99 USD",
+          "precio_original": "$24.99 USD",
+          "descuento_badge": "-20%",
+          "has_discount": true,
+          "search_key": "hades",
+          "href": "juego-hades.html"
+        },
+        {
+          "id": 15,
+          "nombre": "Undertale",
+          "descripcion_corta": "RPG indie donde tus decisiones importan: puedes completar el juego sin matar a nadie. Personajes memorables, h…",
+          "imagen_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/capsule_616x353.jpg",
+          "categoria": "Indie",
+          "precio_final": "$9.99 USD",
+          "precio_original": "",
+          "descuento_badge": "",
+          "has_discount": false,
+          "search_key": "undertale",
+          "href": "juego-undertale.html"
+        }
+      ]
+    }
+  ]
+}
