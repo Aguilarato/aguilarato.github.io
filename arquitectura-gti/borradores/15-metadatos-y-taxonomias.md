@@ -1,6 +1,5 @@
 # 15. Metadatos y taxonomías
 
-> Borrador para pegar en el documento. Las capturas están en `assets/capturas/strapi/`; los archivos, en `exports/strapi/`.
 
 ## 15.1 Enfoque
 

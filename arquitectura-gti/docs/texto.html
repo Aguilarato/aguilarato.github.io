@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Texto del documento · EIF-511 Grupo 03</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body data-root="../" data-page="docs/texto.html" data-layout="docs">
+  <div id="site-header"></div>
+  <main id="main" class="container doc">
+    <p><a href="herramientas.html">← Volver a Herramientas y evidencias</a></p>
+    <article id="texto"><p>Cargando…</p></article>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../js/sitemap-data.js"></script>
+  <script src="../js/search-config.js"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/layout.js"></script>
+  <script src="../js/vendor/marked.min.js"></script>
+  <script>
+  /* Muestra con formato los textos en Markdown del repositorio (borradores y exports). */
+  (function () {
+    var f = new URLSearchParams(location.search).get("f") || "";
+    var out = document.getElementById("texto");
+    if (!/^(borradores|exports)\/[\w\-\/]+\.md$/.test(f)) { out.innerHTML = "<p>Archivo no válido.</p>"; return; }
+    fetch("../" + f).then(function (r) { if (!r.ok) throw r.status; return r.text(); }).then(function (md) {
+      out.innerHTML = window.marked ? marked.parse(md) : "<pre>" + md.replace(/</g, "&lt;") + "</pre>";
+      out.querySelectorAll("table").forEach(function (t) { t.outerHTML = '<div class="table-wrap">' + t.outerHTML + "</div>"; });
+      var h1 = out.querySelector("h1"); if (h1) document.title = h1.textContent + " · EIF-511 Grupo 03";
+    }).catch(function () { out.innerHTML = "<p>No se pudo cargar el archivo (abra la página desde GitHub Pages o un servidor local).</p>"; });
+  })();
+  </script>
+</body>
+</html>

@@ -12,7 +12,7 @@
     <h1>14. Estrategia de búsqueda (Algolia)</h1>
     <p>El buscador del prototipo usa el mismo modelo de registros (14.4), sinónimos (14.6) y reglas de relevancia que se exportan a Algolia.
       Las consultas de prueba de la sección 14.7 se ejecutan aquí en vivo contra ese buscador.</p>
-    <p>Motor activo: <strong id="engine">…</strong>. Mientras <code>js/search-config.js</code> no tenga credenciales, el motor es el buscador local del prototipo, que aplica las mismas reglas.</p>
+    <p>Motor activo: <strong id="engine">…</strong>. Si Algolia no responde, el prototipo usa su buscador local, que aplica las mismas reglas.</p>
 
     <h2>Consultas de prueba (14.7 y 14.9)</h2>
     <div class="table-wrap"><table>
@@ -42,7 +42,7 @@
     (function (cases) {
       var body = document.getElementById("casos");
       Promise.all(cases.map(function (c) { return GTISearch.search(records, c.q); })).then(function (rs) {
-        var ok = 0, top3 = 0;
+        var ok = 0, top3 = 0, motor = rs[0] && rs[0].engine === "Algolia" ? "el índice de Algolia" : "el buscador local del prototipo";
         body.innerHTML = rs.map(function (r, i) {
           var c = cases[i], hits = r.hits, pos = hits.findIndex(function (h) { return h.title === c.expect; }) + 1;
           document.getElementById("engine").textContent = r.engine === "local" ? "buscador local del prototipo" : "Algolia";
@@ -51,7 +51,7 @@
             "</td><td>" + (pos || "—") + "</td><td>" + (pos === 1 ? "✅" : "❌") + "</td></tr>";
         }).join("");
         document.getElementById("indicadores").innerHTML = "<strong>Éxito de búsqueda:</strong> " + ok + "/" + cases.length + " (" + Math.round(ok * 100 / cases.length) +
-          " %) en primera posición · " + top3 + "/" + cases.length + " entre los 3 primeros. Resultados calculados por el prototipo, no medidos con usuarios.";
+          " %) en primera posición · " + top3 + "/" + cases.length + " entre los 3 primeros. Resultados obtenidos con " + motor + "; no son mediciones con usuarios.";
       });
     })(window.GTI_SEARCH_CASES);
   })();

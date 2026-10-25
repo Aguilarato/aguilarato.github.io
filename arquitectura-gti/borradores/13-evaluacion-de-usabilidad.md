@@ -1,10 +1,9 @@
 # 13. Evaluación de usabilidad
 
-> Borrador para pegar en el documento. Las capturas están en `assets/capturas/heuristica/`.
 
 ## 13.1 Metodología
 
-Se realizó una **evaluación heurística** según las 10 heurísticas de usabilidad de Nielsen (1994). El objeto evaluado fue el prototipo navegable en HTML y los wireframes corregidos en Figma (`assets/capturas/figma/`). La evaluación la hizo el equipo con apoyo de herramientas de IA, y cada hallazgo se verificó directamente en el prototipo. Este método no reemplaza las pruebas con usuarios. Por eso se mantiene como trabajo pendiente una prueba en Maze, cuyos resultados se identificarán explícitamente como simulados si no se aplica con participantes reales.
+Se realizó una **evaluación heurística** según las 10 heurísticas de usabilidad de Nielsen (1994). El objeto evaluado fue el prototipo navegable en HTML y los wireframes corregidos en Figma (`assets/capturas/figma/`). La evaluación la hizo el equipo con apoyo de herramientas de IA, y cada hallazgo se verificó directamente en el prototipo. Se seleccionó como alternativa a Maze porque permite analizar el prototipo sin reclutar participantes; sus resultados no equivalen a mediciones con usuarios.
 
 **Tareas recorridas:**
 

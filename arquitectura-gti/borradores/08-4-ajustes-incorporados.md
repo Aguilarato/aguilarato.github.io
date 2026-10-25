@@ -1,10 +1,9 @@
-# 8.4 Ajustes incorporados en el sitemap corregido
+# 11.4 Ajustes incorporados en el sitemap corregido
 
-> Borrador para agregar al final de la sección 8 (Validación de la arquitectura), después de 8.3. Las figuras de Optimal Workshop están en `assets/capturas/optimal/`.
 
 Los estudios de OptimalSort y Treejack se aplicaron sobre el árbol del Avance 1 (cinco categorías, con «Mi Cuenta»). Sus hallazgos, junto con la retroalimentación del avance, se usaron para construir el **sitemap corregido**, que es el que implementan el prototipo HTML, los wireframes en Figma, el índice de búsqueda en Algolia y el modelo de contenido en Strapi. La siguiente tabla muestra cómo responde la versión final a cada hallazgo.
 
-| Hallazgo (Optimal Workshop) | Ajuste propuesto en 8.3 | Estado en el sitemap corregido |
+| Hallazgo (Optimal Workshop) | Ajuste propuesto | Estado en el sitemap corregido |
 |---|---|---|
 | GTI Conectividad se busca en Herramientas y Recursos (card sorting 2/2; peor resultado del tree testing) | Moverla a Herramientas y Recursos con una etiqueta descriptiva | **Incorporado:** Herramientas y Recursos → «Integraciones y Conectividad GTI» |
 | Descargar app se ubica en Herramientas y Recursos (2/2) | Moverla a Herramientas y Recursos | **Incorporado:** Herramientas y Recursos → «Aplicación móvil», también enlazada desde el pie de página |

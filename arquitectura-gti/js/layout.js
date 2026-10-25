@@ -40,6 +40,8 @@
     { url: "docs/herramientas.html", label: "Herramientas y evidencias" },
     { url: "docs/busqueda.html", label: "Búsqueda (Algolia)" }
   ];
+  /* Enlace de regreso al portafolio, solo en la copia publicada en aguilarato.github.io */
+  var back = location.hostname === "aguilarato.github.io" ? ' · <a href="/">Volver al portafolio</a>' : "";
 
   if (layout === "docs") {
     var nav = DOCS.map(function (d) {
@@ -59,7 +61,7 @@
     var f = document.getElementById("site-footer");
     if (f) {
       f.outerHTML = '<footer class="docs-footer"><div class="container">Universidad Nacional de Costa Rica · EIF-511 Arquitectura de Información · ' +
-        "Luis Aguilar Bolaños · Ceasar Calvo Muñoz · Derrek Ureña Solis</div></footer>";
+        "Luis Aguilar Bolaños · Ceasar Calvo Muñoz · Derrek Ureña Solis" + back + "</div></footer>";
     }
     return;
   }
@@ -132,7 +134,7 @@
     '<a href="' + href("ayuda/canales-soporte.html#redes") + '">Redes sociales</a>' +
     "<span>© GTI</span></nav>" +
     '<p class="footer__note">Prototipo académico — EIF-511, Universidad Nacional. No es el sitio oficial de FacturaElectronica.cr. ' +
-    '<a href="' + href("docs/herramientas.html") + '">Herramientas y evidencias del proyecto</a></p>' +
+    '<a href="' + href("docs/herramientas.html") + '">Herramientas y evidencias del proyecto</a>' + back + "</p>" +
     "</div></footer>" +
     '<a class="fab" href="' + href("ayuda/canales-soporte.html") + '" aria-label="¿Necesita ayuda? Abrir canales de soporte">' + ICON.chat + "<span>¿Necesita ayuda?</span></a>";
 

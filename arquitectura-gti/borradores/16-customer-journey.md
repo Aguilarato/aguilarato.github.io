@@ -1,6 +1,5 @@
 # 16. Customer Journey
 
-> Borrador para pegar en el documento. Mapa en FigJam: https://www.figma.com/board/bt09biHBOxATfWGoPhBO8v · Captura: `assets/capturas/journey/customer-journey-figjam.png` · Datos: `exports/journey/customer-journey.csv`.
 
 ## 16.1 Persona y escenario
 
@@ -10,7 +9,7 @@
 
 ## 16.2 Herramienta
 
-La guía del curso propone Miro. El mapa se elaboró en **FigJam**, la pizarra colaborativa de Figma y una herramienta equivalente, para mantener en un mismo espacio los wireframes, el flujo «Comenzar a facturar» y el recorrido. Los datos también se exportan en CSV (`exports/journey/customer-journey.csv`), así que el mapa puede importarse a Miro si se requiere. *Pendiente: informarlo a la profesora, como pide la sección 3 de la guía.*
+La guía del curso propone Miro. El mapa se elaboró en **FigJam**, la pizarra colaborativa de Figma y una herramienta equivalente, para mantener en un mismo espacio los wireframes, el flujo «Comenzar a facturar» y el recorrido. Los datos también se exportan en CSV (`exports/journey/customer-journey.csv`), así que el mapa puede importarse a Miro si se requiere.
 
 ## 16.3 Etapas
 
