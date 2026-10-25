@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de contacto · FacturaElectronica.cr (prototipo)</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body data-root="../" data-page="ayuda/contacto.html" data-layout="site">
+  <div id="site-header"></div>
+
+  <main id="main" class="container">
+    <header class="page-head">
+      <h1>Formulario de contacto</h1>
+      <p>Envíe su consulta y le responderemos a la brevedad.</p>
+    </header>
+
+    <div class="layout-2">
+      <form class="form" data-demo="Prototipo: el mensaje no se envía.">
+        <label for="nombre">Nombre</label><input id="nombre" name="nombre" autocomplete="name" required>
+        <label for="correo">Correo</label><input id="correo" name="correo" type="email" autocomplete="email" required>
+        <label for="tel">Teléfono</label><input id="tel" name="tel" type="tel" autocomplete="tel">
+        <label for="motivo">Motivo</label>
+        <select id="motivo" name="motivo"><option>Ventas / planes</option><option>Soporte técnico</option><option>Activación de cuenta</option><option>Pagos y recargas</option><option>Otro</option></select>
+        <label for="msg">Mensaje</label><textarea id="msg" name="msg" rows="4" required></textarea>
+        <div class="captcha">[ captcha ]</div>
+        <button class="btn btn--primary" type="submit">Enviar</button>
+      </form>
+      <div>
+        <h2 style="margin-top:0">Otros canales</h2>
+        <ul><li>Teléfono: <a href="tel:+50621054400">(506) 2105-4400</a></li><li>WhatsApp: <a href="https://wa.me/50662223030">6222-3030</a></li><li>Ventas: <a href="mailto:ventas@gticr.com">ventas@gticr.com</a></li><li>Servicio al cliente: <a href="mailto:infofacturaelectronica@gticr.com">infofacturaelectronica@gticr.com</a></li><li><a href="canales-soporte.html">Chatbot</a></li></ul>
+        <h2>Oficinas y horarios</h2>
+        <p>Dos oficinas (San José y Curridabat).<br>Lunes a viernes, 8:00 a.m. – 5:00 p.m.</p>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../js/sitemap-data.js"></script>
+  <script src="../js/search-config.js"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/layout.js"></script>
+</body>
+</html>

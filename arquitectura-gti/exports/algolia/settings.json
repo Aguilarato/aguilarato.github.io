@@ -1,0 +1,32 @@
+{
+  "searchableAttributes": [
+    "title",
+    "keywords",
+    "category,subcategory",
+    "unordered(description)"
+  ],
+  "attributesForFaceting": [
+    "searchable(category)",
+    "contentType",
+    "audience"
+  ],
+  "customRanking": [
+    "asc(isHub)"
+  ],
+  "attributesToSnippet": [
+    "description:20"
+  ],
+  "queryLanguages": [
+    "es"
+  ],
+  "indexLanguages": [
+    "es"
+  ],
+  "ignorePlurals": true,
+  "removeStopWords": true,
+  "typoTolerance": true,
+  "minWordSizefor1Typo": 4,
+  "minWordSizefor2Typos": 8,
+  "removeWordsIfNoResults": "allOptional",
+  "hitsPerPage": 20
+}

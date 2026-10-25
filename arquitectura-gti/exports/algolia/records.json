@@ -1,0 +1,731 @@
+[
+  {
+    "objectID": "GTI-001",
+    "title": "Planes",
+    "description": "Comparar las modalidades de contratación según el perfil fiscal del usuario.",
+    "category": "Planes",
+    "subcategory": "",
+    "keywords": [
+      "planes",
+      "precios",
+      "contratar",
+      "comprar plan",
+      "prepago",
+      "pospago"
+    ],
+    "audience": [
+      "Nuevos clientes"
+    ],
+    "contentType": "Página informativa",
+    "url": "planes/index.html",
+    "external": false,
+    "isHub": true,
+    "path": [
+      "Planes"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-002",
+    "title": "Persona Física",
+    "description": "Planes para profesionales y trabajadores independientes.",
+    "category": "Planes",
+    "subcategory": "Persona Física",
+    "keywords": [
+      "persona física",
+      "independiente",
+      "profesional",
+      "planes"
+    ],
+    "audience": [
+      "Nuevos clientes"
+    ],
+    "contentType": "Página informativa",
+    "url": "planes/persona-fisica.html",
+    "external": false,
+    "isHub": false,
+    "path": [
+      "Planes",
+      "Persona Física"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-003",
+    "title": "Persona Jurídica",
+    "description": "Planes para empresas y organizaciones formalmente constituidas.",
+    "category": "Planes",
+    "subcategory": "Persona Jurídica",
+    "keywords": [
+      "persona jurídica",
+      "empresa",
+      "sociedad",
+      "pyme",
+      "planes"
+    ],
+    "audience": [
+      "Nuevos clientes",
+      "Empresas"
+    ],
+    "contentType": "Página informativa",
+    "url": "planes/persona-juridica.html",
+    "external": false,
+    "isHub": false,
+    "path": [
+      "Planes",
+      "Persona Jurídica"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-004",
+    "title": "Régimen Especial Agropecuario",
+    "description": "Planes para contribuyentes del régimen especial agropecuario.",
+    "category": "Planes",
+    "subcategory": "Régimen Especial Agropecuario",
+    "keywords": [
+      "agropecuario",
+      "agricultor",
+      "REA",
+      "régimen",
+      "planes"
+    ],
+    "audience": [
+      "Nuevos clientes"
+    ],
+    "contentType": "Página informativa",
+    "url": "planes/regimen-agropecuario.html",
+    "external": false,
+    "isHub": false,
+    "path": [
+      "Planes",
+      "Régimen Especial Agropecuario"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-005",
+    "title": "Régimen Simplificado",
+    "description": "Planes para contribuyentes registrados en el régimen de tributación simplificada.",
+    "category": "Planes",
+    "subcategory": "Régimen Simplificado",
+    "keywords": [
+      "simplificado",
+      "régimen",
+      "tributación simplificada",
+      "planes"
+    ],
+    "audience": [
+      "Nuevos clientes"
+    ],
+    "contentType": "Página informativa",
+    "url": "planes/regimen-simplificado.html",
+    "external": false,
+    "isHub": false,
+    "path": [
+      "Planes",
+      "Régimen Simplificado"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-006",
+    "title": "Comenzar a facturar",
+    "description": "Reúne los pasos, requisitos y la activación que necesita un usuario nuevo.",
+    "category": "Comenzar a facturar",
+    "subcategory": "",
+    "keywords": [
+      "comenzar",
+      "empezar",
+      "cómo empezar",
+      "primeros pasos",
+      "nuevo cliente"
+    ],
+    "audience": [
+      "Nuevos clientes"
+    ],
+    "contentType": "Guía",
+    "url": "comenzar/index.html",
+    "external": false,
+    "isHub": true,
+    "path": [
+      "Comenzar a facturar"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-007",
+    "title": "Pasos para comenzar",
+    "description": "Proceso completo: elegir un plan, activar la cuenta GTI y registrarse ante Hacienda.",
+    "category": "Comenzar a facturar",
+    "subcategory": "Pasos para comenzar",
+    "keywords": [
+      "pasos",
+      "proceso",
+      "cómo empezar",
+      "guía",
+      "comenzar a facturar"
+    ],
+    "audience": [
+      "Nuevos clientes"
+    ],
+    "contentType": "Guía",
+    "url": "comenzar/pasos.html",
+    "external": false,
+    "isHub": false,
+    "path": [
+      "Comenzar a facturar",
+      "Pasos para comenzar"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-008",
+    "title": "Requisitos para facturar",
+    "description": "Qué necesita para emitir comprobantes: inscripción en ATV, llave criptográfica y datos del emisor.",
+    "category": "Comenzar a facturar",
+    "subcategory": "Requisitos para facturar",
+    "keywords": [
+      "requisitos",
+      "ATV",
+      "Hacienda",
+      "llave criptográfica",
+      "registro",
+      "inscripción",
+      "emisor"
+    ],
+    "audience": [
+      "Nuevos clientes"
+    ],
+    "contentType": "Guía",
+    "url": "comenzar/requisitos.html",
+    "external": false,
+    "isHub": false,
+    "path": [
+      "Comenzar a facturar",
+      "Requisitos para facturar"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-009",
+    "title": "Activar cuenta",
+    "description": "Información y acceso al proceso de activación del servicio de facturación electrónica.",
+    "category": "Comenzar a facturar",
+    "subcategory": "Activar cuenta",
+    "keywords": [
+      "activar",
+      "cuenta",
+      "activación",
+      "código",
+      "código de activación",
+      "registro"
+    ],
+    "audience": [
+      "Nuevos clientes"
+    ],
+    "contentType": "Acceso a operación",
+    "url": "comenzar/activar-cuenta.html",
+    "external": false,
+    "isHub": false,
+    "path": [
+      "Comenzar a facturar",
+      "Activar cuenta"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-010",
+    "title": "Herramientas y Recursos",
+    "description": "Herramientas complementarias, integraciones, recursos tecnológicos y aplicaciones.",
+    "category": "Herramientas y Recursos",
+    "subcategory": "",
+    "keywords": [
+      "herramientas",
+      "recursos",
+      "utilidades"
+    ],
+    "audience": [
+      "Público general"
+    ],
+    "contentType": "Página informativa",
+    "url": "herramientas/index.html",
+    "external": false,
+    "isHub": true,
+    "path": [
+      "Herramientas y Recursos"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-011",
+    "title": "Q-Declaro",
+    "description": "Sistema contable externo (qdeclaro.com) complementario a la facturación.",
+    "category": "Herramientas y Recursos",
+    "subcategory": "Q-Declaro",
+    "keywords": [
+      "Q-Declaro",
+      "qdeclaro",
+      "contabilidad",
+      "declaración",
+      "impuestos"
+    ],
+    "audience": [
+      "Empresas",
+      "Profesionales contables"
+    ],
+    "contentType": "Herramienta",
+    "url": "herramientas/q-declaro.html",
+    "external": true,
+    "isHub": false,
+    "path": [
+      "Herramientas y Recursos",
+      "Q-Declaro"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-012",
+    "title": "De Tiquete a Factura",
+    "description": "Conversión de un tiquete electrónico en factura electrónica a nombre del cliente.",
+    "category": "Herramientas y Recursos",
+    "subcategory": "De Tiquete a Factura",
+    "keywords": [
+      "tiquete",
+      "convertir",
+      "factura a mi nombre",
+      "tiquete electrónico"
+    ],
+    "audience": [
+      "Público general"
+    ],
+    "contentType": "Herramienta",
+    "url": "herramientas/de-tiquete-a-factura.html",
+    "external": false,
+    "isHub": false,
+    "path": [
+      "Herramientas y Recursos",
+      "De Tiquete a Factura"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-013",
+    "title": "Club de Contadores",
+    "description": "Programa de beneficios para profesionales contables que administran clientes.",
+    "category": "Herramientas y Recursos",
+    "subcategory": "Club de Contadores",
+    "keywords": [
+      "club",
+      "contadores",
+      "contador",
+      "contable",
+      "beneficios"
+    ],
+    "audience": [
+      "Profesionales contables"
+    ],
+    "contentType": "Herramienta",
+    "url": "herramientas/club-de-contadores.html",
+    "external": false,
+    "isHub": false,
+    "path": [
+      "Herramientas y Recursos",
+      "Club de Contadores"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-014",
+    "title": "Integraciones y Conectividad GTI",
+    "description": "Integración de ERP y sistemas propios con la facturación electrónica de GTI.",
+    "category": "Herramientas y Recursos",
+    "subcategory": "Integraciones y Conectividad GTI",
+    "keywords": [
+      "integración",
+      "integrar",
+      "ERP",
+      "API",
+      "conectividad",
+      "sistemas"
+    ],
+    "audience": [
+      "Empresas"
+    ],
+    "contentType": "Herramienta",
+    "url": "herramientas/conectividad.html",
+    "external": false,
+    "isHub": false,
+    "path": [
+      "Herramientas y Recursos",
+      "Integraciones y Conectividad GTI"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-015",
+    "title": "Aplicación móvil",
+    "description": "Descargue la app de GTI Factura Electrónica para Android, iOS y Huawei.",
+    "category": "Herramientas y Recursos",
+    "subcategory": "Aplicación móvil",
+    "keywords": [
+      "aplicación",
+      "app",
+      "móvil",
+      "celular",
+      "descargar",
+      "Play Store",
+      "App Store",
+      "AppGallery"
+    ],
+    "audience": [
+      "Clientes existentes"
+    ],
+    "contentType": "Herramienta",
+    "url": "herramientas/app-movil.html",
+    "external": false,
+    "isHub": false,
+    "path": [
+      "Herramientas y Recursos",
+      "Aplicación móvil"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-016",
+    "title": "Sistema anterior",
+    "description": "Acceso legado a la versión anterior del sistema (anterior.facturaelectronica.cr).",
+    "category": "Herramientas y Recursos",
+    "subcategory": "Sistema anterior",
+    "keywords": [
+      "sistema anterior",
+      "legado",
+      "versión anterior"
+    ],
+    "audience": [
+      "Clientes existentes"
+    ],
+    "contentType": "Acceso a operación",
+    "url": "herramientas/sistema-anterior.html",
+    "external": true,
+    "isHub": false,
+    "path": [
+      "Herramientas y Recursos",
+      "Sistema anterior"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-017",
+    "title": "Nosotros",
+    "description": "Información institucional de GTI, sus servicios y reconocimientos.",
+    "category": "Nosotros",
+    "subcategory": "",
+    "keywords": [
+      "nosotros",
+      "GTI",
+      "empresa",
+      "quiénes somos",
+      "oficinas",
+      "horarios"
+    ],
+    "audience": [
+      "Público general"
+    ],
+    "contentType": "Página informativa",
+    "url": "nosotros/index.html",
+    "external": false,
+    "isHub": true,
+    "path": [
+      "Nosotros"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-018",
+    "title": "Nuestro servicio",
+    "description": "Funciones y beneficios del sistema de facturación electrónica de GTI.",
+    "category": "Nosotros",
+    "subcategory": "Nuestro servicio",
+    "keywords": [
+      "servicio",
+      "funciones",
+      "beneficios",
+      "qué ofrece"
+    ],
+    "audience": [
+      "Público general"
+    ],
+    "contentType": "Página informativa",
+    "url": "nosotros/nuestro-servicio.html",
+    "external": false,
+    "isHub": false,
+    "path": [
+      "Nosotros",
+      "Nuestro servicio"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-019",
+    "title": "Programa L",
+    "description": "Sello Programa L y certificaciones de confianza (GS1).",
+    "category": "Nosotros",
+    "subcategory": "Programa L",
+    "keywords": [
+      "Programa L",
+      "sello",
+      "certificación",
+      "GS1"
+    ],
+    "audience": [
+      "Público general"
+    ],
+    "contentType": "Página informativa",
+    "url": "nosotros/programa-l.html",
+    "external": false,
+    "isHub": false,
+    "path": [
+      "Nosotros",
+      "Programa L"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-020",
+    "title": "Ayuda y Contacto",
+    "description": "Canales de atención, soporte y documentación de consulta.",
+    "category": "Ayuda y Contacto",
+    "subcategory": "",
+    "keywords": [
+      "contacto",
+      "consultas"
+    ],
+    "audience": [
+      "Público general"
+    ],
+    "contentType": "Página informativa",
+    "url": "ayuda/index.html",
+    "external": false,
+    "isHub": true,
+    "path": [
+      "Ayuda y Contacto"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-021",
+    "title": "Leyes y reglamentos",
+    "description": "Manuales, resoluciones y disposiciones del Ministerio de Hacienda sobre comprobantes electrónicos.",
+    "category": "Ayuda y Contacto",
+    "subcategory": "Leyes y reglamentos",
+    "keywords": [
+      "leyes",
+      "reglamentos",
+      "normativa",
+      "resoluciones",
+      "Hacienda",
+      "DGT",
+      "manuales",
+      "versión 4.4"
+    ],
+    "audience": [
+      "Público general",
+      "Profesionales contables"
+    ],
+    "contentType": "Documento",
+    "url": "ayuda/leyes-y-reglamentos.html",
+    "external": false,
+    "isHub": false,
+    "path": [
+      "Ayuda y Contacto",
+      "Leyes y reglamentos"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-022",
+    "title": "Formulario de contacto",
+    "description": "Envíe una consulta a GTI. Incluye oficinas, horarios y correos de ventas y servicio.",
+    "category": "Ayuda y Contacto",
+    "subcategory": "Formulario de contacto",
+    "keywords": [
+      "formulario",
+      "contacto",
+      "consulta",
+      "correo",
+      "oficinas",
+      "horarios",
+      "ventas"
+    ],
+    "audience": [
+      "Público general"
+    ],
+    "contentType": "Acceso a operación",
+    "url": "ayuda/contacto.html",
+    "external": false,
+    "isHub": false,
+    "path": [
+      "Ayuda y Contacto",
+      "Formulario de contacto"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-023",
+    "title": "Canales de soporte",
+    "description": "Chatbot, WhatsApp, teléfono y correo para resolver problemas con el servicio.",
+    "category": "Ayuda y Contacto",
+    "subcategory": "Canales de soporte",
+    "keywords": [
+      "ayuda",
+      "soporte",
+      "chat",
+      "chatbot",
+      "WhatsApp",
+      "teléfono",
+      "asistencia",
+      "problema"
+    ],
+    "audience": [
+      "Clientes existentes",
+      "Público general"
+    ],
+    "contentType": "Acceso a operación",
+    "url": "ayuda/canales-soporte.html",
+    "external": false,
+    "isHub": false,
+    "path": [
+      "Ayuda y Contacto",
+      "Canales de soporte"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-024",
+    "title": "Iniciar sesión",
+    "description": "Acceso al sistema de facturación con número de identificación y contraseña.",
+    "category": "Accesos del encabezado",
+    "subcategory": "",
+    "keywords": [
+      "iniciar sesión",
+      "ingresar",
+      "login",
+      "entrar",
+      "contraseña",
+      "acceso clientes"
+    ],
+    "audience": [
+      "Clientes existentes"
+    ],
+    "contentType": "Acceso a operación",
+    "url": "cuenta/iniciar-sesion.html",
+    "external": false,
+    "isHub": false,
+    "path": [
+      "Accesos del encabezado"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-025",
+    "title": "Pagos y recargas",
+    "description": "Pague su plan pospago o recargue documentos de su plan prepago.",
+    "category": "Accesos del encabezado",
+    "subcategory": "",
+    "keywords": [
+      "pagos",
+      "pagar",
+      "recargas",
+      "recargar"
+    ],
+    "audience": [
+      "Clientes existentes"
+    ],
+    "contentType": "Acceso a operación",
+    "url": "cuenta/pagos-y-recargas.html",
+    "external": false,
+    "isHub": true,
+    "path": [
+      "Accesos del encabezado"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-026",
+    "title": "Pagar facturación",
+    "description": "Pago de la facturación de planes pospago con el número de cédula.",
+    "category": "Accesos del encabezado",
+    "subcategory": "Pagar facturación",
+    "keywords": [
+      "pagar",
+      "pago",
+      "factura",
+      "pospago",
+      "mensualidad"
+    ],
+    "audience": [
+      "Clientes existentes"
+    ],
+    "contentType": "Acceso a operación",
+    "url": "cuenta/pagar-facturacion.html",
+    "external": false,
+    "isHub": false,
+    "path": [
+      "Accesos del encabezado",
+      "Pagar facturación"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-027",
+    "title": "Recargar prepago",
+    "description": "Recarga de documentos y saldo para planes prepago.",
+    "category": "Accesos del encabezado",
+    "subcategory": "Recargar prepago",
+    "keywords": [
+      "recargar",
+      "recarga",
+      "prepago",
+      "saldo",
+      "recargar saldo",
+      "documentos"
+    ],
+    "audience": [
+      "Clientes existentes"
+    ],
+    "contentType": "Acceso a operación",
+    "url": "cuenta/recargar-prepago.html",
+    "external": false,
+    "isHub": false,
+    "path": [
+      "Accesos del encabezado",
+      "Recargar prepago"
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "objectID": "GTI-028",
+    "title": "Política de Administración de Datos",
+    "description": "Cómo GTI recopila, usa y protege los datos personales.",
+    "category": "Información legal",
+    "subcategory": "",
+    "keywords": [
+      "privacidad",
+      "datos personales",
+      "política",
+      "protección de datos"
+    ],
+    "audience": [
+      "Público general"
+    ],
+    "contentType": "Documento",
+    "url": "legal/politica-datos.html",
+    "external": false,
+    "isHub": false,
+    "path": [
+      "Información legal"
+    ],
+    "updatedAt": "2026-10-25"
+  }
+]

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Búsqueda (Algolia) · EIF-511 Grupo 03</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body data-root="../" data-page="docs/busqueda.html" data-layout="docs">
+  <div id="site-header"></div>
+  <main id="main" class="container doc">
+    <h1>14. Estrategia de búsqueda (Algolia)</h1>
+    <p>El buscador del prototipo usa el mismo modelo de registros (14.4), sinónimos (14.6) y reglas de relevancia que se exportan a Algolia.
+      Las consultas de prueba de la sección 14.7 se ejecutan aquí en vivo contra ese buscador.</p>
+    <p>Motor activo: <strong id="engine">…</strong>. Mientras <code>js/search-config.js</code> no tenga credenciales, el motor es el buscador local del prototipo, que aplica las mismas reglas.</p>
+
+    <h2>Consultas de prueba (14.7 y 14.9)</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Consulta</th><th>Resultado esperado</th><th>Primer resultado obtenido</th><th>Posición del esperado</th><th>Cumple</th></tr></thead>
+      <tbody id="casos"></tbody>
+    </table></div>
+    <p id="indicadores"></p>
+
+    <h2>Archivos para Algolia</h2>
+    <ul>
+      <li><code>exports/algolia/records.json</code>: un registro por página con los campos de la 14.4 (objectID, title, description, category, subcategory, keywords, audience, contentType, url, updatedAt).</li>
+      <li><code>exports/algolia/settings.json</code>: atributos buscables en orden de importancia (título → palabras clave → categoría → descripción), facetas (categoría, tipo, público), tolerancia a errores y español.</li>
+      <li><code>exports/algolia/synonyms.json</code>: tabla de sinónimos de la 14.6.</li>
+      <li><code>exports/algolia/rules.json</code>: regla «ayuda» → Canales de soporte.</li>
+    </ul>
+    <p>Todo se regenera desde <code>js/sitemap-data.js</code> con <code>node tools/build-exports.js</code>. La misma prueba corre en consola con <code>node tools/test-search.js</code>.</p>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../js/sitemap-data.js"></script>
+  <script src="../js/search-config.js"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/layout.js"></script>
+  <script src="../tools/search-cases.js"></script>
+  <script>
+  (function () {
+    var records = GTISearch.buildRecords({ sitemap: GTI_SITEMAP, utility: GTI_UTILITY, legal: GTI_LEGAL, updated: GTI_UPDATED });
+    (function (cases) {
+      var body = document.getElementById("casos");
+      Promise.all(cases.map(function (c) { return GTISearch.search(records, c.q); })).then(function (rs) {
+        var ok = 0, top3 = 0;
+        body.innerHTML = rs.map(function (r, i) {
+          var c = cases[i], hits = r.hits, pos = hits.findIndex(function (h) { return h.title === c.expect; }) + 1;
+          document.getElementById("engine").textContent = r.engine === "local" ? "buscador local del prototipo" : "Algolia";
+          if (pos === 1) ok++; if (pos && pos <= 3) top3++;
+          return "<tr><td>«" + c.q + "»</td><td>" + c.expect + " <span class=\"muted\">(" + c.category + ")</span></td><td>" + (hits[0] ? hits[0].title : "(sin resultados)") +
+            "</td><td>" + (pos || "—") + "</td><td>" + (pos === 1 ? "✅" : "❌") + "</td></tr>";
+        }).join("");
+        document.getElementById("indicadores").innerHTML = "<strong>Éxito de búsqueda:</strong> " + ok + "/" + cases.length + " (" + Math.round(ok * 100 / cases.length) +
+          " %) en primera posición · " + top3 + "/" + cases.length + " entre los 3 primeros. Resultados calculados por el prototipo, no medidos con usuarios.";
+      });
+    })(window.GTI_SEARCH_CASES);
+  })();
+  </script>
+</body>
+</html>

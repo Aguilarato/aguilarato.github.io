@@ -1,0 +1,20 @@
+[
+  {
+    "objectID": "ayuda-soporte",
+    "description": "Promover Canales de soporte cuando la consulta contiene «ayuda»",
+    "conditions": [
+      {
+        "pattern": "ayuda",
+        "anchoring": "contains"
+      }
+    ],
+    "consequence": {
+      "promote": [
+        {
+          "objectID": "GTI-023",
+          "position": 0
+        }
+      ]
+    }
+  }
+]

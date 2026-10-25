@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sitemap corregido FacturaElectronica.cr - EIF-511 Grupo 03. Importable en FlowMapp y Octopus.do -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.facturaelectronica.cr/</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/planes</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/planes/persona-fisica</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/planes/persona-juridica</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/planes/regimen-agropecuario</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/planes/regimen-simplificado</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/comenzar</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/comenzar/pasos</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/comenzar/requisitos</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/comenzar/activar-cuenta</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/herramientas</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/herramientas/q-declaro</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/herramientas/de-tiquete-a-factura</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/herramientas/club-de-contadores</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/herramientas/conectividad</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/herramientas/app-movil</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/herramientas/sistema-anterior</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/nosotros</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/nosotros/nuestro-servicio</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/nosotros/programa-l</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/ayuda</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/ayuda/leyes-y-reglamentos</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/ayuda/contacto</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/ayuda/canales-soporte</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/cuenta/iniciar-sesion</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/cuenta/pagos-y-recargas</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/cuenta/pagar-facturacion</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/cuenta/recargar-prepago</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.facturaelectronica.cr/legal/politica-datos</loc><lastmod>2026-10-25</lastmod></url>
+</urlset>

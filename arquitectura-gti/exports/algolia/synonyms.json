@@ -1,0 +1,57 @@
+[
+  {
+    "objectID": "syn-1",
+    "type": "synonym",
+    "synonyms": [
+      "activar cuenta",
+      "activación",
+      "código de activación"
+    ]
+  },
+  {
+    "objectID": "syn-2",
+    "type": "synonym",
+    "synonyms": [
+      "aplicación móvil",
+      "app",
+      "descargar aplicación"
+    ]
+  },
+  {
+    "objectID": "syn-3",
+    "type": "synonym",
+    "synonyms": [
+      "facturación prepago",
+      "prepago",
+      "recargar saldo"
+    ]
+  },
+  {
+    "objectID": "syn-4",
+    "type": "synonym",
+    "synonyms": [
+      "reglamentos",
+      "normativa",
+      "leyes"
+    ]
+  },
+  {
+    "objectID": "syn-5",
+    "type": "synonym",
+    "synonyms": [
+      "contactar",
+      "soporte",
+      "atención",
+      "ayuda"
+    ]
+  },
+  {
+    "objectID": "syn-6",
+    "type": "synonym",
+    "synonyms": [
+      "integración",
+      "conectividad",
+      "ERP"
+    ]
+  }
+]

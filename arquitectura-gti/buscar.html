@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultados de búsqueda · FacturaElectronica.cr (prototipo)</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-root="" data-page="buscar.html" data-layout="site">
+  <div id="site-header"></div>
+
+  <main id="main" class="container">
+    <header class="page-head">
+      <h1 id="titulo">Resultados de búsqueda</h1>
+      <p id="resumen" aria-live="polite"></p>
+    </header>
+    <div class="results-layout">
+      <form id="facets" class="facets" aria-label="Filtros de resultados"></form>
+      <section id="results" aria-labelledby="titulo"></section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/sitemap-data.js"></script>
+  <script src="js/search-config.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/layout.js"></script>
+  <script>
+  /* Página de resultados (Doc secc. 14.5–14.7): título, descripción, ruta, enlace; filtros por
+     categoría, tipo de contenido y público; manejo de consultas sin resultados. */
+  (function () {
+    var params = new URLSearchParams(location.search);
+    var q = (params.get("q") || "").trim();
+    var FACETS = [["category", "Categoría"], ["contentType", "Tipo de contenido"], ["audience", "Público objetivo"]];
+    var filters = {};
+    FACETS.forEach(function (f) { if (params.get(f[0])) filters[f[0]] = params.get(f[0]); });
+    var records = window.GTI_RECORDS;
+    var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+    var resumen = document.getElementById("resumen"), out = document.getElementById("results"), form = document.getElementById("facets");
+
+    if (!q) {
+      resumen.textContent = "Escriba un término en el buscador del encabezado.";
+      noResults(false);
+      return;
+    }
+    GTISearch.search(records, q).then(function (all) {
+      var hits = all.hits.filter(function (h) {
+        return FACETS.every(function (f) {
+          var v = filters[f[0]]; if (!v) return true;
+          return Array.isArray(h[f[0]]) ? h[f[0]].indexOf(v) >= 0 : h[f[0]] === v;
+        });
+      });
+      renderFacets(all.hits);
+      resumen.innerHTML = hits.length + " resultado" + (hits.length === 1 ? "" : "s") + " para «<strong>" + esc(q) + "</strong>»" +
+        ' <span class="engine">· motor: ' + all.engine + "</span>";
+      if (!all.hits.length) return noResults(true);
+      out.innerHTML = hits.map(function (h) {
+        return '<article class="result"><div class="result__path">' + esc(h.path.join(" › ")) + "</div>" +
+          '<h2><a href="' + esc(h.url) + '">' + esc(h.title) + "</a>" + (h.external ? ' <span class="tag tag--ext">externo</span>' : "") + "</h2>" +
+          "<p>" + esc(h.description) + "</p>" +
+          '<span class="chip">' + esc(h.contentType) + "</span>" + h.audience.map(function (a) { return '<span class="chip">' + esc(a) + "</span>"; }).join("") +
+          "</article>";
+      }).join("") || '<p class="muted">Ningún resultado con estos filtros. <a href="buscar.html?q=' + encodeURIComponent(q) + '">Quitar filtros</a></p>';
+    });
+
+    function renderFacets(hits) {
+      if (hits.length < 3) { hideFacets(); return; } // 14.5: solo si reducen resultados de forma significativa
+      form.innerHTML = '<input type="hidden" name="q" value="' + esc(q) + '">' + FACETS.map(function (f) {
+        var counts = {};
+        hits.forEach(function (h) { [].concat(h[f[0]]).forEach(function (v) { counts[v] = (counts[v] || 0) + 1; }); });
+        var opts = Object.keys(counts).sort();
+        if (opts.length < 2 && !filters[f[0]]) return "";
+        return "<fieldset><legend>" + f[1] + "</legend>" +
+          '<label><input type="radio" name="' + f[0] + '" value=""' + (filters[f[0]] ? "" : " checked") + "> Todos</label>" +
+          opts.map(function (v) {
+            return '<label><input type="radio" name="' + f[0] + '" value="' + esc(v) + '"' + (filters[f[0]] === v ? " checked" : "") + "> " + esc(v) +
+              ' <span class="count">' + counts[v] + "</span></label>";
+          }).join("") + "</fieldset>";
+      }).join("") + (Object.keys(filters).length ? '<a href="buscar.html?q=' + encodeURIComponent(q) + '">Quitar filtros</a>' : "");
+      form.addEventListener("change", function () {
+        var p = new URLSearchParams(new FormData(form));
+        Array.from(p.keys()).forEach(function (k) { if (!p.get(k)) p.delete(k); });
+        location.search = p.toString();
+      });
+    }
+
+    function hideFacets() { form.hidden = true; form.parentNode.classList.add("results-layout--single"); }
+
+    function noResults(searched) {
+      hideFacets();
+      var tips = searched ? GTISearch.tokens(q).map(function (t) {
+        var n = GTISearch.localSearch(records, t).length;
+        return n ? '<a href="buscar.html?q=' + encodeURIComponent(t) + '">' + esc(t) + "</a> (" + n + ")" : "";
+      }).filter(Boolean) : [];
+      out.innerHTML =
+        (searched ? '<div class="callout callout--warn"><strong>No encontramos resultados para su búsqueda.</strong> Intente utilizar otras palabras o consulte nuestras opciones de ayuda.</div>' : "") +
+        (tips.length ? "<p>Pruebe con una parte de su consulta: " + tips.join(" · ") + "</p>" : "") +
+        "<h2>Explore las categorías</h2><ul>" + GTI_SITEMAP.filter(function (c) { return c.children; }).map(function (c) {
+          return '<li><a href="' + c.url + '">' + c.label + "</a></li>";
+        }).join("") + "</ul>" +
+        '<div class="help-strip"><span>¿Prefiere hablar con alguien?</span><a class="btn btn--primary" href="ayuda/index.html">Ir a Ayuda y Contacto</a></div>';
+    }
+  })();
+  </script>
+</body>
+</html>

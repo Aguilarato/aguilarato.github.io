@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "publicos_objetivo",
+  "info": {
+    "singularName": "publico-objetivo",
+    "pluralName": "publicos-objetivo",
+    "displayName": "Público objetivo",
+    "description": "Vocabulario controlado de audiencias (secc. 4 y 14.4)."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "paginas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::pagina.pagina",
+      "mappedBy": "publicos"
+    }
+  }
+}

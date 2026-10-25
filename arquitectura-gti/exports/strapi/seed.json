@@ -1,0 +1,782 @@
+{
+  "categorias": [
+    {
+      "nombre": "Inicio",
+      "slug": "inicio",
+      "descripcion": "Presenta el servicio y dirige a cada usuario a su siguiente paso.",
+      "orden": 1,
+      "ubicacion": "menu_principal"
+    },
+    {
+      "nombre": "Planes",
+      "slug": "planes",
+      "descripcion": "Comparar las modalidades de contratación según el perfil fiscal del usuario.",
+      "orden": 2,
+      "ubicacion": "menu_principal"
+    },
+    {
+      "nombre": "Comenzar a facturar",
+      "slug": "comenzar-a-facturar",
+      "descripcion": "Reúne los pasos, requisitos y la activación que necesita un usuario nuevo.",
+      "orden": 3,
+      "ubicacion": "menu_principal"
+    },
+    {
+      "nombre": "Herramientas y Recursos",
+      "slug": "herramientas-y-recursos",
+      "descripcion": "Herramientas complementarias, integraciones, recursos tecnológicos y aplicaciones.",
+      "orden": 4,
+      "ubicacion": "menu_principal"
+    },
+    {
+      "nombre": "Nosotros",
+      "slug": "nosotros",
+      "descripcion": "Información institucional de GTI, sus servicios y reconocimientos.",
+      "orden": 5,
+      "ubicacion": "menu_principal"
+    },
+    {
+      "nombre": "Ayuda y Contacto",
+      "slug": "ayuda-y-contacto",
+      "descripcion": "Canales de atención, soporte y documentación de consulta.",
+      "orden": 6,
+      "ubicacion": "menu_principal"
+    },
+    {
+      "nombre": "Accesos del encabezado",
+      "slug": "accesos-del-encabezado",
+      "descripcion": "Accesos persistentes para clientes existentes.",
+      "orden": 90,
+      "ubicacion": "encabezado"
+    },
+    {
+      "nombre": "Información legal",
+      "slug": "informacion-legal",
+      "descripcion": "Documentos legales del pie de página.",
+      "orden": 99,
+      "ubicacion": "pie"
+    }
+  ],
+  "publicos": [
+    {
+      "nombre": "Nuevos clientes"
+    },
+    {
+      "nombre": "Clientes existentes"
+    },
+    {
+      "nombre": "Empresas"
+    },
+    {
+      "nombre": "Profesionales contables"
+    },
+    {
+      "nombre": "Público general"
+    }
+  ],
+  "paginas": [
+    {
+      "identificador": "GTI-000",
+      "titulo": "Inicio",
+      "slug": "inicio",
+      "descripcion": "Presenta el servicio y dirige a cada usuario a su siguiente paso.",
+      "url": "index.html",
+      "categoria": "Inicio",
+      "paginaPadre": null,
+      "tipoContenido": "pagina_informativa",
+      "publicos": [
+        "Público general"
+      ],
+      "palabrasClave": [
+        "inicio",
+        "factura electrónica",
+        "GTI"
+      ],
+      "etiquetaAnterior": "Inicio",
+      "tipoInventario": "Informativo / comercial",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-001",
+      "titulo": "Planes",
+      "slug": "planes",
+      "descripcion": "Comparar las modalidades de contratación según el perfil fiscal del usuario.",
+      "url": "planes/index.html",
+      "categoria": "Planes",
+      "paginaPadre": null,
+      "tipoContenido": "pagina_informativa",
+      "publicos": [
+        "Nuevos clientes"
+      ],
+      "palabrasClave": [
+        "planes",
+        "precios",
+        "contratar",
+        "comprar plan",
+        "prepago",
+        "pospago"
+      ],
+      "etiquetaAnterior": "Planes",
+      "tipoInventario": "Comercial",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-002",
+      "titulo": "Persona Física",
+      "slug": "persona-fisica",
+      "descripcion": "Planes para profesionales y trabajadores independientes.",
+      "url": "planes/persona-fisica.html",
+      "categoria": "Planes",
+      "paginaPadre": "GTI-001",
+      "tipoContenido": "pagina_informativa",
+      "publicos": [
+        "Nuevos clientes"
+      ],
+      "palabrasClave": [
+        "persona física",
+        "independiente",
+        "profesional",
+        "planes"
+      ],
+      "etiquetaAnterior": "Planes (dentro de la página)",
+      "tipoInventario": "Comercial",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-003",
+      "titulo": "Persona Jurídica",
+      "slug": "persona-juridica",
+      "descripcion": "Planes para empresas y organizaciones formalmente constituidas.",
+      "url": "planes/persona-juridica.html",
+      "categoria": "Planes",
+      "paginaPadre": "GTI-001",
+      "tipoContenido": "pagina_informativa",
+      "publicos": [
+        "Nuevos clientes",
+        "Empresas"
+      ],
+      "palabrasClave": [
+        "persona jurídica",
+        "empresa",
+        "sociedad",
+        "pyme",
+        "planes"
+      ],
+      "etiquetaAnterior": "Planes (dentro de la página)",
+      "tipoInventario": "Comercial",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-004",
+      "titulo": "Régimen Especial Agropecuario",
+      "slug": "regimen-especial-agropecuario",
+      "descripcion": "Planes para contribuyentes del régimen especial agropecuario.",
+      "url": "planes/regimen-agropecuario.html",
+      "categoria": "Planes",
+      "paginaPadre": "GTI-001",
+      "tipoContenido": "pagina_informativa",
+      "publicos": [
+        "Nuevos clientes"
+      ],
+      "palabrasClave": [
+        "agropecuario",
+        "agricultor",
+        "REA",
+        "régimen",
+        "planes"
+      ],
+      "etiquetaAnterior": "Planes (dentro de la página)",
+      "tipoInventario": "Comercial",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-005",
+      "titulo": "Régimen Simplificado",
+      "slug": "regimen-simplificado",
+      "descripcion": "Planes para contribuyentes registrados en el régimen de tributación simplificada.",
+      "url": "planes/regimen-simplificado.html",
+      "categoria": "Planes",
+      "paginaPadre": "GTI-001",
+      "tipoContenido": "pagina_informativa",
+      "publicos": [
+        "Nuevos clientes"
+      ],
+      "palabrasClave": [
+        "simplificado",
+        "régimen",
+        "tributación simplificada",
+        "planes"
+      ],
+      "etiquetaAnterior": "Planes (dentro de la página)",
+      "tipoInventario": "Comercial",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-006",
+      "titulo": "Comenzar a facturar",
+      "slug": "comenzar-a-facturar",
+      "descripcion": "Reúne los pasos, requisitos y la activación que necesita un usuario nuevo.",
+      "url": "comenzar/index.html",
+      "categoria": "Comenzar a facturar",
+      "paginaPadre": null,
+      "tipoContenido": "guia",
+      "publicos": [
+        "Nuevos clientes"
+      ],
+      "palabrasClave": [
+        "comenzar",
+        "empezar",
+        "cómo empezar",
+        "primeros pasos",
+        "nuevo cliente"
+      ],
+      "etiquetaAnterior": "Activar Cuenta + «3 pasos» de Home",
+      "tipoInventario": "Guía / transaccional",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-007",
+      "titulo": "Pasos para comenzar",
+      "slug": "pasos-para-comenzar",
+      "descripcion": "Proceso completo: elegir un plan, activar la cuenta GTI y registrarse ante Hacienda.",
+      "url": "comenzar/pasos.html",
+      "categoria": "Comenzar a facturar",
+      "paginaPadre": "GTI-006",
+      "tipoContenido": "guia",
+      "publicos": [
+        "Nuevos clientes"
+      ],
+      "palabrasClave": [
+        "pasos",
+        "proceso",
+        "cómo empezar",
+        "guía",
+        "comenzar a facturar"
+      ],
+      "etiquetaAnterior": "«3 pasos» del Home",
+      "tipoInventario": "Guía",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-008",
+      "titulo": "Requisitos para facturar",
+      "slug": "requisitos-para-facturar",
+      "descripcion": "Qué necesita para emitir comprobantes: inscripción en ATV, llave criptográfica y datos del emisor.",
+      "url": "comenzar/requisitos.html",
+      "categoria": "Comenzar a facturar",
+      "paginaPadre": "GTI-006",
+      "tipoContenido": "guia",
+      "publicos": [
+        "Nuevos clientes"
+      ],
+      "palabrasClave": [
+        "requisitos",
+        "ATV",
+        "Hacienda",
+        "llave criptográfica",
+        "registro",
+        "inscripción",
+        "emisor"
+      ],
+      "etiquetaAnterior": "Leyes y reglamentos (registro y llave)",
+      "tipoInventario": "Guía",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-009",
+      "titulo": "Activar cuenta",
+      "slug": "activar-cuenta",
+      "descripcion": "Información y acceso al proceso de activación del servicio de facturación electrónica.",
+      "url": "comenzar/activar-cuenta.html",
+      "categoria": "Comenzar a facturar",
+      "paginaPadre": "GTI-006",
+      "tipoContenido": "acceso_a_operacion",
+      "publicos": [
+        "Nuevos clientes"
+      ],
+      "palabrasClave": [
+        "activar",
+        "cuenta",
+        "activación",
+        "código",
+        "código de activación",
+        "registro"
+      ],
+      "etiquetaAnterior": "Activar Cuenta (menú principal)",
+      "tipoInventario": "Transaccional",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-010",
+      "titulo": "Herramientas y Recursos",
+      "slug": "herramientas-y-recursos",
+      "descripcion": "Herramientas complementarias, integraciones, recursos tecnológicos y aplicaciones.",
+      "url": "herramientas/index.html",
+      "categoria": "Herramientas y Recursos",
+      "paginaPadre": null,
+      "tipoContenido": "pagina_informativa",
+      "publicos": [
+        "Público general"
+      ],
+      "palabrasClave": [
+        "herramientas",
+        "recursos",
+        "utilidades"
+      ],
+      "etiquetaAnterior": "Herramientas",
+      "tipoInventario": "Herramientas / microsites",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-011",
+      "titulo": "Q-Declaro",
+      "slug": "q-declaro",
+      "descripcion": "Sistema contable externo (qdeclaro.com) complementario a la facturación.",
+      "url": "herramientas/q-declaro.html",
+      "categoria": "Herramientas y Recursos",
+      "paginaPadre": "GTI-010",
+      "tipoContenido": "herramienta",
+      "publicos": [
+        "Empresas",
+        "Profesionales contables"
+      ],
+      "palabrasClave": [
+        "Q-Declaro",
+        "qdeclaro",
+        "contabilidad",
+        "declaración",
+        "impuestos"
+      ],
+      "etiquetaAnterior": "Herramientas → Q-Declaro",
+      "tipoInventario": "Herramienta externa",
+      "externo": true,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-012",
+      "titulo": "De Tiquete a Factura",
+      "slug": "de-tiquete-a-factura",
+      "descripcion": "Conversión de un tiquete electrónico en factura electrónica a nombre del cliente.",
+      "url": "herramientas/de-tiquete-a-factura.html",
+      "categoria": "Herramientas y Recursos",
+      "paginaPadre": "GTI-010",
+      "tipoContenido": "herramienta",
+      "publicos": [
+        "Público general"
+      ],
+      "palabrasClave": [
+        "tiquete",
+        "convertir",
+        "factura a mi nombre",
+        "tiquete electrónico"
+      ],
+      "etiquetaAnterior": "Herramientas → De Tiquete a Factura",
+      "tipoInventario": "Herramienta",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-013",
+      "titulo": "Club de Contadores",
+      "slug": "club-de-contadores",
+      "descripcion": "Programa de beneficios para profesionales contables que administran clientes.",
+      "url": "herramientas/club-de-contadores.html",
+      "categoria": "Herramientas y Recursos",
+      "paginaPadre": "GTI-010",
+      "tipoContenido": "herramienta",
+      "publicos": [
+        "Profesionales contables"
+      ],
+      "palabrasClave": [
+        "club",
+        "contadores",
+        "contador",
+        "contable",
+        "beneficios"
+      ],
+      "etiquetaAnterior": "Herramientas → Club de Contadores",
+      "tipoInventario": "Herramienta",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-014",
+      "titulo": "Integraciones y Conectividad GTI",
+      "slug": "integraciones-y-conectividad-gti",
+      "descripcion": "Integración de ERP y sistemas propios con la facturación electrónica de GTI.",
+      "url": "herramientas/conectividad.html",
+      "categoria": "Herramientas y Recursos",
+      "paginaPadre": "GTI-010",
+      "tipoContenido": "herramienta",
+      "publicos": [
+        "Empresas"
+      ],
+      "palabrasClave": [
+        "integración",
+        "integrar",
+        "ERP",
+        "API",
+        "conectividad",
+        "sistemas"
+      ],
+      "etiquetaAnterior": "GTI Conectividad (menú principal)",
+      "tipoInventario": "Herramienta / producto",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-015",
+      "titulo": "Aplicación móvil",
+      "slug": "aplicacion-movil",
+      "descripcion": "Descargue la app de GTI Factura Electrónica para Android, iOS y Huawei.",
+      "url": "herramientas/app-movil.html",
+      "categoria": "Herramientas y Recursos",
+      "paginaPadre": "GTI-010",
+      "tipoContenido": "herramienta",
+      "publicos": [
+        "Clientes existentes"
+      ],
+      "palabrasClave": [
+        "aplicación",
+        "app",
+        "móvil",
+        "celular",
+        "descargar",
+        "Play Store",
+        "App Store",
+        "AppGallery"
+      ],
+      "etiquetaAnterior": "Banners de tiendas en Home",
+      "tipoInventario": "Recurso",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-016",
+      "titulo": "Sistema anterior",
+      "slug": "sistema-anterior",
+      "descripcion": "Acceso legado a la versión anterior del sistema (anterior.facturaelectronica.cr).",
+      "url": "herramientas/sistema-anterior.html",
+      "categoria": "Herramientas y Recursos",
+      "paginaPadre": "GTI-010",
+      "tipoContenido": "acceso_a_operacion",
+      "publicos": [
+        "Clientes existentes"
+      ],
+      "palabrasClave": [
+        "sistema anterior",
+        "legado",
+        "versión anterior"
+      ],
+      "etiquetaAnterior": "Ingresar al sistema anterior",
+      "tipoInventario": "Herramienta externa",
+      "externo": true,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-017",
+      "titulo": "Nosotros",
+      "slug": "nosotros",
+      "descripcion": "Información institucional de GTI, sus servicios y reconocimientos.",
+      "url": "nosotros/index.html",
+      "categoria": "Nosotros",
+      "paginaPadre": null,
+      "tipoContenido": "pagina_informativa",
+      "publicos": [
+        "Público general"
+      ],
+      "palabrasClave": [
+        "nosotros",
+        "GTI",
+        "empresa",
+        "quiénes somos",
+        "oficinas",
+        "horarios"
+      ],
+      "etiquetaAnterior": "Acerca de",
+      "tipoInventario": "Institucional",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-018",
+      "titulo": "Nuestro servicio",
+      "slug": "nuestro-servicio",
+      "descripcion": "Funciones y beneficios del sistema de facturación electrónica de GTI.",
+      "url": "nosotros/nuestro-servicio.html",
+      "categoria": "Nosotros",
+      "paginaPadre": "GTI-017",
+      "tipoContenido": "pagina_informativa",
+      "publicos": [
+        "Público general"
+      ],
+      "palabrasClave": [
+        "servicio",
+        "funciones",
+        "beneficios",
+        "qué ofrece"
+      ],
+      "etiquetaAnterior": "Acerca de → Nuestro servicio",
+      "tipoInventario": "Informativo",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-019",
+      "titulo": "Programa L",
+      "slug": "programa-l",
+      "descripcion": "Sello Programa L y certificaciones de confianza (GS1).",
+      "url": "nosotros/programa-l.html",
+      "categoria": "Nosotros",
+      "paginaPadre": "GTI-017",
+      "tipoContenido": "pagina_informativa",
+      "publicos": [
+        "Público general"
+      ],
+      "palabrasClave": [
+        "Programa L",
+        "sello",
+        "certificación",
+        "GS1"
+      ],
+      "etiquetaAnterior": "Acerca de → Programa L",
+      "tipoInventario": "Institucional / certificación",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-020",
+      "titulo": "Ayuda y Contacto",
+      "slug": "ayuda-y-contacto",
+      "descripcion": "Canales de atención, soporte y documentación de consulta.",
+      "url": "ayuda/index.html",
+      "categoria": "Ayuda y Contacto",
+      "paginaPadre": null,
+      "tipoContenido": "pagina_informativa",
+      "publicos": [
+        "Público general"
+      ],
+      "palabrasClave": [
+        "contacto",
+        "consultas"
+      ],
+      "etiquetaAnterior": "Contacto (+ Leyes en Acerca de)",
+      "tipoInventario": "Soporte",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-021",
+      "titulo": "Leyes y reglamentos",
+      "slug": "leyes-y-reglamentos",
+      "descripcion": "Manuales, resoluciones y disposiciones del Ministerio de Hacienda sobre comprobantes electrónicos.",
+      "url": "ayuda/leyes-y-reglamentos.html",
+      "categoria": "Ayuda y Contacto",
+      "paginaPadre": "GTI-020",
+      "tipoContenido": "documento",
+      "publicos": [
+        "Público general",
+        "Profesionales contables"
+      ],
+      "palabrasClave": [
+        "leyes",
+        "reglamentos",
+        "normativa",
+        "resoluciones",
+        "Hacienda",
+        "DGT",
+        "manuales",
+        "versión 4.4"
+      ],
+      "etiquetaAnterior": "Acerca de → Leyes y reglamentos",
+      "tipoInventario": "Informativo / legal",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-022",
+      "titulo": "Formulario de contacto",
+      "slug": "formulario-de-contacto",
+      "descripcion": "Envíe una consulta a GTI. Incluye oficinas, horarios y correos de ventas y servicio.",
+      "url": "ayuda/contacto.html",
+      "categoria": "Ayuda y Contacto",
+      "paginaPadre": "GTI-020",
+      "tipoContenido": "acceso_a_operacion",
+      "publicos": [
+        "Público general"
+      ],
+      "palabrasClave": [
+        "formulario",
+        "contacto",
+        "consulta",
+        "correo",
+        "oficinas",
+        "horarios",
+        "ventas"
+      ],
+      "etiquetaAnterior": "Contacto",
+      "tipoInventario": "Transaccional / soporte",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-023",
+      "titulo": "Canales de soporte",
+      "slug": "canales-de-soporte",
+      "descripcion": "Chatbot, WhatsApp, teléfono y correo para resolver problemas con el servicio.",
+      "url": "ayuda/canales-soporte.html",
+      "categoria": "Ayuda y Contacto",
+      "paginaPadre": "GTI-020",
+      "tipoContenido": "acceso_a_operacion",
+      "publicos": [
+        "Clientes existentes",
+        "Público general"
+      ],
+      "palabrasClave": [
+        "ayuda",
+        "soporte",
+        "chat",
+        "chatbot",
+        "WhatsApp",
+        "teléfono",
+        "asistencia",
+        "problema"
+      ],
+      "etiquetaAnterior": "Chatbot (solo en footer de ActivarCuentas)",
+      "tipoInventario": "Soporte",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-024",
+      "titulo": "Iniciar sesión",
+      "slug": "iniciar-sesion",
+      "descripcion": "Acceso al sistema de facturación con número de identificación y contraseña.",
+      "url": "cuenta/iniciar-sesion.html",
+      "categoria": "Accesos del encabezado",
+      "paginaPadre": null,
+      "tipoContenido": "acceso_a_operacion",
+      "publicos": [
+        "Clientes existentes"
+      ],
+      "palabrasClave": [
+        "iniciar sesión",
+        "ingresar",
+        "login",
+        "entrar",
+        "contraseña",
+        "acceso clientes"
+      ],
+      "etiquetaAnterior": "¿Ya es cliente de GTI? (solo en Home)",
+      "tipoInventario": "Transaccional",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-025",
+      "titulo": "Pagos y recargas",
+      "slug": "pagos-y-recargas",
+      "descripcion": "Pague su plan pospago o recargue documentos de su plan prepago.",
+      "url": "cuenta/pagos-y-recargas.html",
+      "categoria": "Accesos del encabezado",
+      "paginaPadre": null,
+      "tipoContenido": "acceso_a_operacion",
+      "publicos": [
+        "Clientes existentes"
+      ],
+      "palabrasClave": [
+        "pagos",
+        "pagar",
+        "recargas",
+        "recargar"
+      ],
+      "etiquetaAnterior": "Servicios (menú)",
+      "tipoInventario": "Transaccional",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-026",
+      "titulo": "Pagar facturación",
+      "slug": "pagar-facturacion",
+      "descripcion": "Pago de la facturación de planes pospago con el número de cédula.",
+      "url": "cuenta/pagar-facturacion.html",
+      "categoria": "Accesos del encabezado",
+      "paginaPadre": "GTI-025",
+      "tipoContenido": "acceso_a_operacion",
+      "publicos": [
+        "Clientes existentes"
+      ],
+      "palabrasClave": [
+        "pagar",
+        "pago",
+        "factura",
+        "pospago",
+        "mensualidad"
+      ],
+      "etiquetaAnterior": "Servicios → Pagar Facturación",
+      "tipoInventario": "Transaccional",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-027",
+      "titulo": "Recargar prepago",
+      "slug": "recargar-prepago",
+      "descripcion": "Recarga de documentos y saldo para planes prepago.",
+      "url": "cuenta/recargar-prepago.html",
+      "categoria": "Accesos del encabezado",
+      "paginaPadre": "GTI-025",
+      "tipoContenido": "acceso_a_operacion",
+      "publicos": [
+        "Clientes existentes"
+      ],
+      "palabrasClave": [
+        "recargar",
+        "recarga",
+        "prepago",
+        "saldo",
+        "recargar saldo",
+        "documentos"
+      ],
+      "etiquetaAnterior": "Servicios → Recargar Prepago",
+      "tipoInventario": "Transaccional",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    },
+    {
+      "identificador": "GTI-028",
+      "titulo": "Política de Administración de Datos",
+      "slug": "politica-de-administracion-de-datos",
+      "descripcion": "Cómo GTI recopila, usa y protege los datos personales.",
+      "url": "legal/politica-datos.html",
+      "categoria": "Información legal",
+      "paginaPadre": null,
+      "tipoContenido": "documento",
+      "publicos": [
+        "Público general"
+      ],
+      "palabrasClave": [
+        "privacidad",
+        "datos personales",
+        "política",
+        "protección de datos"
+      ],
+      "etiquetaAnterior": "Acerca de → Política Administración de Datos",
+      "tipoInventario": "Legal",
+      "externo": false,
+      "fechaActualizacion": "2026-10-25"
+    }
+  ]
+}

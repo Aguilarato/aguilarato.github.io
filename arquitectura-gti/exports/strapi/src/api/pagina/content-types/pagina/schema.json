@@ -1,0 +1,87 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paginas",
+  "info": {
+    "singularName": "pagina",
+    "pluralName": "paginas",
+    "displayName": "Página",
+    "description": "Cada nodo del sitemap con sus metadatos (secc. 14.4 y 15)."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "identificador": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titulo"
+    },
+    "descripcion": {
+      "type": "text",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "categoria": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::categoria.categoria",
+      "inversedBy": "paginas"
+    },
+    "paginaPadre": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::pagina.pagina",
+      "inversedBy": "subpaginas"
+    },
+    "subpaginas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pagina.pagina",
+      "mappedBy": "paginaPadre"
+    },
+    "tipoContenido": {
+      "type": "enumeration",
+      "enum": [
+        "pagina_informativa",
+        "guia",
+        "herramienta",
+        "documento",
+        "acceso_a_operacion"
+      ],
+      "required": true
+    },
+    "publicos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::publico-objetivo.publico-objetivo",
+      "inversedBy": "paginas"
+    },
+    "palabrasClave": {
+      "type": "json"
+    },
+    "etiquetaAnterior": {
+      "type": "string"
+    },
+    "tipoInventario": {
+      "type": "string"
+    },
+    "externo": {
+      "type": "boolean",
+      "default": false
+    },
+    "fechaActualizacion": {
+      "type": "date"
+    }
+  }
+}

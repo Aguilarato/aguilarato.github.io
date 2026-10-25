@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herramientas y evidencias · EIF-511 Grupo 03</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body data-root="../" data-page="docs/herramientas.html" data-layout="docs">
+  <div id="site-header"></div>
+  <main id="main" class="container doc doc--wide">
+    <h1>Herramientas del curso y evidencias</h1>
+    <p>Muestra de cómo cada herramienta de la guía del proyecto (tabla de la sección 4) contribuyó a la propuesta de arquitectura de información para FacturaElectronica.cr. Haga clic en una captura para ampliarla.</p>
+    <nav class="tool-index" aria-label="Herramientas" id="indice"></nav>
+    <div id="herramientas"></div>
+  </main>
+
+  <dialog id="visor" class="lightbox" aria-label="Captura ampliada">
+    <form method="dialog"><button class="lightbox__close" aria-label="Cerrar">✕</button></form>
+    <img id="visor-img" alt="">
+    <p id="visor-cap"></p>
+  </dialog>
+
+  <div id="site-footer"></div>
+  <script src="../js/sitemap-data.js"></script>
+  <script src="../js/search-config.js"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/layout.js"></script>
+  <script>
+  /* Catálogo de evidencias. Para agregar una captura: ponerla en assets/capturas/<carpeta>/ y sumarla aquí. */
+  var C = "../assets/capturas/";
+  var TOOLS = [
+    { id: "flowmapp", semana: "4", nombre: "FlowMapp", estado: "pendiente", nota: "El sitemap v2 aplica los ajustes de Optimal; el sitemap corregido del prototipo parte de esa versión. Falta agregarlo en FlowMapp como página aparte.",
+      uso: "Diseño del sitemap de 3 niveles.",
+      links: [["Sitemap v2 en FlowMapp", "https://app.flowmapp.com/share/projects/b59f314d-6e26-4af8-b77e-143b314a8dca/sitemap/8fc797e8-3178-4dae-a962-e28efe4e29a5"], ["Sitemap corregido (XML)", "../exports/sitemap.xml"], ["Inventario de páginas (CSV)", "../exports/sitemap.csv"]],
+      shots: [["../assets/SiteMap_corregido.png", "Sitemap corregido (versión final, sección 9)"], ["../assets/SiteMap_v2_FlowMapp.png", "Sitemap v2 con los ajustes de Optimal (FlowMapp)"], ["../assets/Sitemap%20FlowMapp.png", "Sitemap en FlowMapp (Avance 1)"], ["../assets/sitemap-avance1-miro.png", "Sitemap del Avance 1 en Miro"]] },
+    { id: "octopus", semana: "5", nombre: "Octopus.do", estado: "pendiente", nota: "Tablero actualizado con los ajustes de Optimal (v2). Falta agregar el sitemap corregido.",
+      uso: "Organización jerárquica, bloques de contenido por página y etiquetado.",
+      links: [["Tablero en Octopus.do (v2)", "https://octopus.do/ehdjf242j8h"], ["Esquema con bloques (TXT)", "../exports/octopus-outline.txt"]], shots: [] },
+    { id: "optimal", semana: "6", nombre: "Optimal Workshop", estado: "hecho",
+      uso: "Validación de la arquitectura del Avance 1 con dos estudios: card sorting cerrado (OptimalSort, 27 tarjetas, 5 categorías, acuerdo promedio 75,6 %) y tree testing (Treejack, 8 tareas, 15 de 16 respuestas correctas). Participantes: 2 por estudio.",
+      nota: "Los estudios se hicieron sobre el árbol del Avance 1 (con «Mi Cuenta»). La tabla muestra cómo el sitemap corregido, que es el que usa el prototipo, responde a cada hallazgo.",
+      tabla: [["Hallazgo", "Ajuste propuesto", "En el sitemap corregido"],
+        ["GTI Conectividad se busca en Herramientas y Recursos (card sorting 2/2; peor tarea del tree testing)", "Moverla a Herramientas y Recursos con una etiqueta descriptiva", "hecho|Herramientas y Recursos → Integraciones y Conectividad GTI"],
+        ["Descargar app se ubica en Herramientas y Recursos (2/2)", "Moverla a Herramientas y Recursos", "hecho|Herramientas y Recursos → Aplicación móvil, también en el pie"],
+        ["Recargar y Pagar se buscan en Planes (tarea 3, 50 % directness)", "Acceso contextual a Recargar y Pagar desde Planes", "hecho|Enlaces en las páginas de Planes y «Pagos y recargas» fijo en el encabezado"],
+        ["Pagar y Recargar sin acuerdo entre Mi Cuenta y Planes", "—", "hecho|«Mi Cuenta» se reemplazó por «Comenzar a facturar» + accesos del encabezado"],
+        ["Leyes y reglamentos no se asocia con Ayuda (se ubicó en Nosotros; tarea 4, 50 % directness)", "Mantenerla en Ayuda y Contacto con enlaces contextuales desde Nosotros y Planes", "hecho|Enlaces desde Nosotros, Planes, Activar cuenta y Requisitos"],
+        ["Términos de marca poco conocidos (Programa L, Club de Contadores, ATV, GTI Conectividad)", "Acompañarlos con una descripción breve en el menú o en la página", "hecho|Descripción breve en el menú bajo Programa L, Club de Contadores y Conectividad; ATV en Requisitos"]],
+      links: [["Árbol del sitemap corregido para Treejack (TXT)", "../exports/optimal-workshop/tree.txt"], ["Tareas (CSV)", "../exports/optimal-workshop/tasks.csv"]],
+      shots: [[C + "optimal/01-optimalsort-acuerdo-por-categoria.jpg", "OptimalSort · tarjetas por categoría y % de acuerdo"], [C + "optimal/02-optimalsort-standardization-grid.jpg", "OptimalSort · standardization grid"],
+        [C + "optimal/03-treejack-resultados-por-participante.jpg", "Treejack · resultados por participante"], [C + "optimal/04-treejack-tarea-3-recargar.jpg", "Treejack · tarea 3 (recargar): 100 % éxito, 50 % directness"],
+        [C + "optimal/05-treejack-rutas-tareas-4-y-5.jpg", "Treejack · rutas de las tareas 4 y 5"], ["../assets/SiteMap_v2_FlowMapp.png", "Resultado: sitemap v2 con los ajustes"]] },
+    { id: "figma", semana: "7", nombre: "Figma + FigJam", estado: "hecho",
+      uso: "Wireframes de las pantallas principales con prototipo navegable, y diagrama del flujo «Comenzar a facturar».",
+      links: [["Archivo de wireframes", "https://www.figma.com/design/o0hd4Xfn45ygl4PVb7DRf7"], ["Flujo en FigJam", "https://www.figma.com/board/D7GIEBK7ICql2tinT7rnpz"], ["Prototipo HTML", "../index.html"]],
+      shots: [[C + "figma/12.1-inicio.png", "12.1 Inicio"], [C + "figma/12.2.3-comenzar-a-facturar.png", "12.2.3 Comenzar a facturar"], [C + "figma/12.2.4-planes.png", "12.2.4 Planes"],
+        [C + "figma/12.2.1-ayuda-y-contacto.png", "12.2.1 Ayuda y Contacto"], [C + "figma/14.5-resultados-busqueda.png", "14.5 Resultados de búsqueda"],
+        [C + "prototipo/01-inicio.png", "Prototipo HTML: Inicio"], [C + "prototipo/02-comenzar-a-facturar.png", "Prototipo HTML: Comenzar a facturar"],
+        [C + "prototipo/03-planes.png", "Prototipo HTML: Planes"], [C + "prototipo/04-ayuda-y-contacto.png", "Prototipo HTML: Ayuda y Contacto"]] },
+    { id: "usabilidad", semana: "8", nombre: "Evaluación de usabilidad (Maze + Clarity)", estado: "parcial", nota: "Evaluación heurística hecha; Maze y Clarity pendientes de cuenta y publicación.",
+      uso: "Evaluación heurística con las 10 heurísticas de Nielsen: 11 hallazgos con severidad y mejora propuesta.",
+      links: [["Texto de la sección 13", "../borradores/13-evaluacion-de-usabilidad.md"]],
+      shots: [[C + "heuristica/h-recuperar-contrasena.png", "Sev. 3 · «¿Olvidó su contraseña?» no lleva a un proceso de recuperación"],
+        [C + "heuristica/h-activar-cuenta-sin-formato.png", "Sev. 2 · Activar cuenta sin formato del código"], [C + "heuristica/h-recargar-sin-formato.png", "Sev. 2 · Recargar prepago sin formato de cédula"],
+        [C + "heuristica/h-jerga-interna-resultados.png", "Sev. 2 · Términos internos en los resultados"], [C + "heuristica/h-sugerencias-sin-teclado.png", "Sev. 2 · Sugerencias sin navegación por teclado"],
+        [C + "heuristica/h-boton-flotante-tapa-contenido.png", "Sev. 1 · El botón flotante tapa contenido"], [C + "heuristica/h-movil-inicio.png", "Positivo · Navegación móvil con buscador visible"]] },
+    { id: "algolia", semana: "10", nombre: "Algolia + Azure AI Search", estado: "hecho",
+      uso: "Índice de 28 páginas con metadatos, sinónimos, facetas y una regla de relevancia; buscador del prototipo conectado a Algolia. Azure AI Search se analiza en la comparación de la sección 14.8.",
+      links: [["Pruebas de búsqueda en vivo (14.7)", "busqueda.html"], ["Probar el buscador", "../buscar.html?q=necesito%20ayuda"], ["Registros e índice (JSON)", "../exports/algolia/records.json"]],
+      shots: [[C + "algolia/01-indice-28-registros.jpg", "Índice gti_contenidos con 28 registros"], [C + "algolia/02-atributos-buscables.jpg", "Atributos buscables en orden de relevancia"],
+        [C + "algolia/03-facetas.jpg", "Facetas: público, categoría y tipo"], [C + "algolia/04-sinonimos.jpg", "Sinónimos de la tabla 14.6"],
+        [C + "algolia/05-regla-ayuda.jpg", "Regla «ayuda» → Canales de soporte"], [C + "algolia/06-busqueda-necesito-ayuda.jpg", "Búsqueda «necesito ayuda» con la regla aplicada"],
+        [C + "prototipo/07-sugerencias-buscador.png", "Sugerencias en el encabezado del prototipo"], [C + "prototipo/05-resultados-busqueda-filtros.png", "Resultados con filtros"],
+        [C + "prototipo/06-busqueda-sin-resultados.png", "Manejo de búsquedas sin resultados"], [C + "prototipo/08-pruebas-busqueda-14.7.png", "Consultas de prueba 14.7"]] },
+    { id: "strapi", semana: "11", nombre: "Contentful + Strapi", estado: "hecho",
+      uso: "Taxonomía, vocabulario controlado y metadatos modelados en Strapi 5, con las 29 páginas cargadas y API REST. Contentful se analiza en la comparación de la sección 15.6.",
+      links: [["Texto de la sección 15", "../borradores/15-metadatos-y-taxonomias.md"], ["Modelo y datos de Strapi", "../exports/strapi/README.md"]],
+      shots: [[C + "strapi/01-modelo-pagina.png", "Modelo «Página»"], [C + "strapi/02-modelo-categoria.png", "Modelo «Categoría» (taxonomía)"],
+        [C + "strapi/03-listado-paginas.png", "29 páginas cargadas"], [C + "strapi/04-listado-categorias.png", "Categorías"],
+        [C + "strapi/05-vocabulario-publicos.png", "Vocabulario controlado de públicos"], [C + "strapi/06-pagina-activar-cuenta.png", "Ficha de «Activar cuenta» con sus relaciones"],
+        [C + "strapi/07-api-rest.png", "Respuesta de la API REST"]] },
+    { id: "journey", semana: "12", nombre: "Miro (Customer Journey)", estado: "hecho", nota: "Elaborado en FigJam como herramienta equivalente; CSV disponible para importar en Miro.",
+      uso: "Recorrido de una persona que desea comenzar a facturar: 7 etapas, necesidades, dificultades, emociones y oportunidades.",
+      links: [["Mapa en FigJam", "https://www.figma.com/board/bt09biHBOxATfWGoPhBO8v"], ["Texto de la sección 16", "../borradores/16-customer-journey.md"], ["Datos (CSV)", "../exports/journey/customer-journey.csv"]],
+      shots: [[C + "journey/customer-journey-figjam.png", "Customer Journey — Comenzar a facturar con GTI"]] },
+    { id: "ia", semana: "13", nombre: "Inteligencia Artificial Generativa", estado: "hecho",
+      uso: "Uso crítico de IA para revisar la organización, el etiquetado, los wireframes y el documento; análisis de aportes y limitaciones en la sección 17 del documento.",
+      links: [], shots: [] }
+  ];
+  var ESTADO = { hecho: "Completado", parcial: "Parcial", pendiente: "Pendiente" };
+  var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+  document.getElementById("indice").innerHTML = TOOLS.map(function (t) {
+    return '<a href="#' + t.id + '"><span class="badge badge--' + t.estado + '" aria-hidden="true"></span>Sem. ' + t.semana + " · " + esc(t.nombre) + "</a>";
+  }).join("");
+  document.getElementById("herramientas").innerHTML = TOOLS.map(function (t) {
+    return '<section class="tool" id="' + t.id + '" aria-labelledby="h-' + t.id + '">' +
+      '<header class="tool__head"><div><span class="muted">Semana ' + t.semana + '</span><h2 id="h-' + t.id + '">' + esc(t.nombre) + "</h2></div>" +
+      '<span class="status status--' + t.estado + '">' + ESTADO[t.estado] + "</span></header>" +
+      "<p>" + esc(t.uso) + "</p>" + (t.nota ? '<p class="tool__note">' + esc(t.nota) + "</p>" : "") +
+      (t.tabla ? '<div class="table-wrap"><table><thead><tr>' + t.tabla[0].map(function (h) { return "<th>" + esc(h) + "</th>"; }).join("") + "</tr></thead><tbody>" +
+        t.tabla.slice(1).map(function (r) {
+          var st = r[2].split("|");
+          return "<tr><td>" + esc(r[0]) + "</td><td>" + esc(r[1]) + '</td><td><span class="status status--' + st[0] + '">' + ESTADO[st[0]] + "</span> " + esc(st[1]) + "</td></tr>";
+        }).join("") + "</tbody></table></div>" : "") +
+      (t.links.length ? '<ul class="tool__links">' + t.links.map(function (l) {
+        var ext = /^https?:/.test(l[1]);
+        return '<li><a href="' + l[1] + '"' + (ext ? ' target="_blank" rel="noopener"' : "") + ">" + esc(l[0]) + (ext ? " ↗" : "") + "</a></li>";
+      }).join("") + "</ul>" : "") +
+      (t.shots.length ? '<div class="shots">' + t.shots.map(function (s) {
+        return '<figure class="shot"><button type="button" data-src="' + s[0] + '" data-cap="' + esc(s[1]) + '" aria-label="Ampliar: ' + esc(s[1]) + '">' +
+          '<img src="' + s[0] + '" alt="' + esc(s[1]) + '" loading="lazy"></button><figcaption>' + esc(s[1]) + "</figcaption></figure>";
+      }).join("") + "</div>" : '<p class="muted">Sin capturas en el repositorio.</p>') + "</section>";
+  }).join("");
+  var visor = document.getElementById("visor");
+  document.getElementById("herramientas").addEventListener("click", function (e) {
+    var b = e.target.closest(".shot button"); if (!b) return;
+    var img = document.getElementById("visor-img"); img.src = b.dataset.src; img.alt = b.dataset.cap;
+    document.getElementById("visor-cap").textContent = b.dataset.cap;
+    visor.showModal();
+  });
+  visor.addEventListener("click", function (e) { if (e.target === visor) visor.close(); });
+  </script>
+</body>
+</html>

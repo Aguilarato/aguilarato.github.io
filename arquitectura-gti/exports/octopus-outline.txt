@@ -1,0 +1,135 @@
+Organización jerárquica y bloques de contenido (Octopus.do) - FacturaElectronica.cr (sitemap corregido)
+Nivel 1 = categoría · Nivel 2 = subcategoría · [bloque] = contenido de la página (nivel 3)
+
+1. Inicio
+    [bloque] Encabezado: buscador + Iniciar sesión + Pagos y recargas
+    [bloque] Mensaje principal (Consultar planes / Cómo comenzar)
+    [bloque] Comience a facturar en 3 pasos
+    [bloque] Herramientas y recursos destacados
+    [bloque] Pie: Contacto · Información legal · Redes sociales
+2. Planes
+    [bloque] Seleccione su modalidad (4 perfiles)
+    [bloque] Prepago vs pospago
+    [bloque] ¿No sabe cuál modalidad necesita? → Cómo comenzar
+    2.1. Persona Física  (Comercial)
+        [bloque] Para quién es
+        [bloque] Planes prepago
+        [bloque] Planes pospago
+        [bloque] Comprar ahora
+        [bloque] Siguiente paso: activar cuenta
+    2.2. Persona Jurídica  (Comercial)
+        [bloque] Para quién es
+        [bloque] Planes prepago
+        [bloque] Planes pospago
+        [bloque] Integración ERP
+        [bloque] Comprar ahora
+    2.3. Régimen Especial Agropecuario  (Comercial)
+        [bloque] Para quién es
+        [bloque] Planes disponibles
+        [bloque] Normativa relacionada
+        [bloque] Comprar ahora
+    2.4. Régimen Simplificado  (Comercial)
+        [bloque] Para quién es
+        [bloque] Planes disponibles
+        [bloque] Normativa relacionada
+        [bloque] Comprar ahora
+3. Comenzar a facturar
+    [bloque] Activar cuenta / Ver requisitos
+    [bloque] Proceso en 3 pasos
+    [bloque] Documentación: requisitos, guía de activación, leyes
+    [bloque] ¿Necesita ayuda? → Ayuda y Contacto
+    3.1. Pasos para comenzar  (Guía)
+        [bloque] Paso 1: elegir plan
+        [bloque] Paso 2: activar cuenta
+        [bloque] Paso 3: registro en ATV de Hacienda
+        [bloque] Preguntas frecuentes
+    3.2. Requisitos para facturar  (Guía)
+        [bloque] Inscripción como emisor en ATV
+        [bloque] Llave criptográfica y PIN
+        [bloque] Datos que solicita GTI
+        [bloque] Enlace a Leyes y reglamentos
+    3.3. Activar cuenta  (Transaccional)
+        [bloque] Explicación: de dónde sale el código
+        [bloque] Formulario código + captcha
+        [bloque] Reenviar código por cédula
+        [bloque] Siguiente paso: registro ante Hacienda
+4. Herramientas y Recursos
+    [bloque] Listado de herramientas
+    [bloque] Aviso de sitios externos
+    [bloque] Para quién es cada herramienta
+    4.1. Q-Declaro  (Herramienta externa)
+        [bloque] Qué es
+        [bloque] Para quién es
+        [bloque] Aviso: sitio externo
+        [bloque] Ir a Q-Declaro
+    4.2. De Tiquete a Factura  (Herramienta)
+        [bloque] Qué es
+        [bloque] Cómo funciona (pasos)
+        [bloque] Iniciar proceso
+    4.3. Club de Contadores  (Herramienta)
+        [bloque] Qué es
+        [bloque] Beneficios
+        [bloque] Cómo unirse
+    4.4. Integraciones y Conectividad GTI  (Herramienta / producto)
+        [bloque] Qué es
+        [bloque] Integración ERP
+        [bloque] Contactar ventas
+    4.5. Aplicación móvil  (Recurso)
+        [bloque] Funciones de la app
+        [bloque] Play Store
+        [bloque] App Store
+        [bloque] AppGallery
+    4.6. Sistema anterior  (Herramienta externa)
+        [bloque] Aviso: sistema legado
+        [bloque] Ingresar al sistema anterior
+        [bloque] Migrar al sistema actual
+5. Nosotros
+    [bloque] Quiénes somos
+    [bloque] Nuestro servicio
+    [bloque] Programa L
+    [bloque] Oficinas y horarios
+    5.1. Nuestro servicio  (Informativo)
+        [bloque] Funciones del sistema
+        [bloque] Beneficios
+        [bloque] Comenzar
+    5.2. Programa L  (Institucional / certificación)
+        [bloque] Qué es
+        [bloque] Certificaciones (GS1)
+6. Ayuda y Contacto
+    [bloque] WhatsApp · Teléfono · Correo
+    [bloque] Leyes y reglamentos
+    [bloque] Formulario de contacto
+    6.1. Leyes y reglamentos  (Informativo / legal)
+        [bloque] Comprobantes electrónicos v4.4
+        [bloque] Registro y llave criptográfica
+        [bloque] Reglamentos y resoluciones DGT
+        [bloque] Manuales
+    6.2. Formulario de contacto  (Transaccional / soporte)
+        [bloque] Formulario + captcha
+        [bloque] Oficinas y horarios
+        [bloque] Correos de ventas y servicio
+    6.3. Canales de soporte  (Soporte)
+        [bloque] Iniciar chat
+        [bloque] WhatsApp
+        [bloque] Teléfono y correo
+H. Accesos del encabezado
+    U1. Iniciar sesión  (Transaccional)
+        [bloque] Formulario de acceso
+        [bloque] Recuperar contraseña
+        [bloque] ¿Aún no tiene cuenta? → Comenzar a facturar
+    U2. Pagos y recargas  (Transaccional)
+        [bloque] Pagar facturación
+        [bloque] Recargar prepago
+        U2.1. Pagar facturación  (Transaccional)
+            [bloque] Formulario de cédula
+            [bloque] Detalle de pago
+            [bloque] Soporte
+        U2.2. Recargar prepago  (Transaccional)
+            [bloque] Formulario de cédula
+            [bloque] Paquetes de recarga
+            [bloque] Soporte
+F. Pie de página · Información legal
+    L1. Política de Administración de Datos  (Legal)
+        [bloque] Alcance
+        [bloque] Datos que se recopilan
+        [bloque] Derechos del usuario

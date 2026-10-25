@@ -1,0 +1,82 @@
+{
+  "titulo": "Customer Journey — Persona trabajadora independiente que desea comenzar a facturar",
+  "persona": {
+    "nombre": "Andrea (persona representativa, no real)",
+    "perfil": "Diseñadora gráfica independiente, persona física. Hacienda le exige emitir comprobantes electrónicos y nunca ha usado un sistema de facturación.",
+    "objetivo": "Emitir su primera factura electrónica válida lo antes posible y sin errores ante Hacienda.",
+    "grupo_de_usuarios": "4.1 Personas trabajadoras independientes y profesionales / 4.5 Personas que desean contratar el servicio"
+  },
+  "filas": ["Objetivo", "Acciones", "Puntos de contacto", "Necesidades", "Dificultades (sitio actual)", "Emoción", "Oportunidades (arquitectura propuesta)"],
+  "etapas": [
+    {
+      "etapa": "1. Descubrir",
+      "Objetivo": "Entender qué es la factura electrónica y si está obligada.",
+      "Acciones": "Busca en Google, llega al Inicio, lee los conceptos básicos.",
+      "Puntos de contacto": "Buscador web · Inicio · Leyes y reglamentos",
+      "Necesidades": "Explicación simple de la obligación y de la ATV.",
+      "Dificultades (sitio actual)": "Las explicaciones conviven en Inicio con login, planes y banners; la normativa está aislada en «Acerca de».",
+      "Emoción": -1,
+      "Oportunidades (arquitectura propuesta)": "Botón «Cómo comenzar» en Inicio; Leyes y reglamentos en Ayuda y Contacto con enlaces contextuales; buscador con sinónimos («normativa», «leyes»)."
+    },
+    {
+      "etapa": "2. Comparar planes",
+      "Objetivo": "Elegir el plan adecuado a su régimen y volumen.",
+      "Acciones": "Abre Planes, identifica su perfil fiscal, compara prepago y pospago.",
+      "Puntos de contacto": "Planes · Persona Física",
+      "Necesidades": "Saber qué perfil le corresponde y cuánto cuesta.",
+      "Dificultades (sitio actual)": "La segmentación por perfil fiscal no está en el menú; solo aparece dentro de la página de Planes.",
+      "Emoción": 0,
+      "Oportunidades (arquitectura propuesta)": "Las 4 modalidades visibles desde el menú; franja «¿No sabe cuál modalidad necesita?» → Comenzar a facturar."
+    },
+    {
+      "etapa": "3. Comprar",
+      "Objetivo": "Adquirir el plan.",
+      "Acciones": "Pulsa «Comprar ahora» y completa el pago.",
+      "Puntos de contacto": "Persona Física · pasarela de pago · correo",
+      "Necesidades": "Saber qué pasa después de pagar.",
+      "Dificultades (sitio actual)": "La compra no anticipa que luego debe activar la cuenta con un código y registrarse ante Hacienda.",
+      "Emoción": 0,
+      "Oportunidades (arquitectura propuesta)": "Bloque «Después de comprar» en Planes que enlaza a Comenzar a facturar y Activar cuenta."
+    },
+    {
+      "etapa": "4. Activar cuenta",
+      "Objetivo": "Activar su cuenta GTI con el código recibido.",
+      "Acciones": "Busca dónde activar, ingresa el código y el captcha; si no le llegó, pide reenvío.",
+      "Puntos de contacto": "Comenzar a facturar · Activar cuenta · correo",
+      "Necesidades": "Encontrar rápido dónde activar y entender de dónde sale el código.",
+      "Dificultades (sitio actual)": "«Activar Cuenta» solo pide un código sin explicar cómo se obtiene; el chatbot solo aparece en el pie de esa página.",
+      "Emoción": -2,
+      "Oportunidades (arquitectura propuesta)": "Activar cuenta dentro de Comenzar a facturar, con aviso «¿De dónde sale el código?», reenvío por cédula y botón persistente «¿Necesita ayuda?»."
+    },
+    {
+      "etapa": "5. Registrarse ante Hacienda",
+      "Objetivo": "Inscribirse como emisora en ATV y obtener la llave criptográfica.",
+      "Acciones": "Consulta requisitos, entra a ATV, genera la llave y la carga en GTI.",
+      "Puntos de contacto": "Requisitos para facturar · Leyes y reglamentos · ATV (externo) · Canales de soporte",
+      "Necesidades": "Lista clara de requisitos y una guía paso a paso.",
+      "Dificultades (sitio actual)": "Los requisitos están dispersos en documentos de «Leyes y reglamentos», lejos del proceso de activación.",
+      "Emoción": -2,
+      "Oportunidades (arquitectura propuesta)": "Página «Requisitos para facturar» en la misma categoría; enlaces contextuales a la normativa; búsqueda «requisitos hacienda»."
+    },
+    {
+      "etapa": "6. Emitir la primera factura",
+      "Objetivo": "Ingresar al sistema y facturar.",
+      "Acciones": "Inicia sesión, configura sus datos y emite el comprobante.",
+      "Puntos de contacto": "Iniciar sesión (encabezado) · sistema GTI · Aplicación móvil",
+      "Necesidades": "Acceso directo al sistema desde cualquier página.",
+      "Dificultades (sitio actual)": "El login de clientes solo está en Inicio.",
+      "Emoción": 1,
+      "Oportunidades (arquitectura propuesta)": "«Iniciar sesión» persistente en el encabezado; Aplicación móvil en Herramientas y Recursos y en el pie."
+    },
+    {
+      "etapa": "7. Mantener el servicio",
+      "Objetivo": "Recargar o pagar y resolver dudas.",
+      "Acciones": "Recarga documentos prepago, consulta soporte cuando tiene problemas.",
+      "Puntos de contacto": "Pagos y recargas (encabezado) · Canales de soporte · WhatsApp",
+      "Necesidades": "Pagar o recargar sin buscar; ayuda inmediata.",
+      "Dificultades (sitio actual)": "Pagar/recargar se repite en 3 lugares sin señalarse como el mismo destino; menú basado en doPostBack sin URLs.",
+      "Emoción": 1,
+      "Oportunidades (arquitectura propuesta)": "Un único destino «Pagos y recargas» en el encabezado; buscador «cómo recargar»; Canales de soporte agrupados."
+    }
+  ]
+}
