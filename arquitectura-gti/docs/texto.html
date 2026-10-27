@@ -19,11 +19,11 @@
   <script src="../js/layout.js"></script>
   <script src="../js/vendor/marked.min.js"></script>
   <script>
-  /* Muestra con formato los textos en Markdown del repositorio (borradores y exports). */
+  /* Muestra con formato los textos en Markdown del repositorio (textos y exports). */
   (function () {
     var f = new URLSearchParams(location.search).get("f") || "";
     var out = document.getElementById("texto");
-    if (!/^(borradores|exports)\/[\w\-\/]+\.md$/.test(f)) { out.innerHTML = "<p>Archivo no válido.</p>"; return; }
+    if (!/^(textos|exports)\/[\w\-\/]+\.md$/.test(f)) { out.innerHTML = "<p>Archivo no válido.</p>"; return; }
     fetch("../" + f).then(function (r) { if (!r.ok) throw r.status; return r.text(); }).then(function (md) {
       out.innerHTML = window.marked ? marked.parse(md) : "<pre>" + md.replace(/</g, "&lt;") + "</pre>";
       out.querySelectorAll("table").forEach(function (t) { t.outerHTML = '<div class="table-wrap">' + t.outerHTML + "</div>"; });

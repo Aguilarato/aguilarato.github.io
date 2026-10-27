@@ -16,7 +16,7 @@ Problemática: el sitio atiende a usuarios en etapas muy distintas (quien invest
 - El login solo está en Home y el chatbot solo en un footer.
 - El menú usa doPostBack (no tiene URLs reales).
 
-Propuesta (sitemap corregido, Doc secc. 8–10): esquema híbrido tarea + audiencia, jerárquico de 3 niveles, con 6 categorías + accesos persistentes en el encabezado + información legal en el pie.
+Propuesta (sitemap final, Doc secc. 8–10): esquema híbrido tarea + audiencia, jerárquico de 3 niveles, con 6 categorías + accesos persistentes en el encabezado + información legal en el pie.
 
 | # | Categoría | Subcategorías |
 |---|-----------|---------------|
@@ -35,14 +35,14 @@ Propuesta (sitemap corregido, Doc secc. 8–10): esquema híbrido tarea + audien
 Arquitectura/
 ├── index.html                  Inicio (wireframe 12.1)
 ├── buscar.html                 Resultados de búsqueda con filtros (secc. 14.5–14.7)
-├── planes/                     2. Planes + 4 perfiles fiscales (wireframe 12.2.4)
-├── comenzar/                   3. Comenzar a facturar, Pasos, Requisitos, Activar cuenta (wireframe 12.2.3)
+├── planes/                     2. Planes + 4 perfiles fiscales (wireframe 12.2.3)
+├── comenzar/                   3. Comenzar a facturar, Pasos, Requisitos, Activar cuenta (wireframe 12.2.2)
 ├── herramientas/               4. Q-Declaro, De Tiquete a Factura, Club, Conectividad, App móvil, Sistema anterior
 ├── nosotros/                   5. Nuestro servicio, Programa L
 ├── ayuda/                      6. Leyes, Contacto, Canales de soporte (wireframe 12.2.1)
 ├── cuenta/                     Accesos del encabezado: Iniciar sesión, Pagos y recargas
 ├── legal/                      Pie: Política de Administración de Datos
-├── docs/                       herramientas.html (evidencias de cada herramienta) y busqueda.html (pruebas del buscador)
+├── docs/                       herramientas.html (evidencias), busqueda.html (pruebas del buscador) y texto.html (visor de textos)
 ├── exports/                    Archivos para importar en las herramientas (se regeneran, ver abajo)
 │   ├── sitemap.xml / .csv      FlowMapp / Octopus.do
 │   ├── octopus-outline.txt     Octopus.do
@@ -51,7 +51,7 @@ Arquitectura/
 │   ├── strapi/                 Tipos de contenido (taxonomía, públicos, páginas) + seed.json
 │   ├── journey/                Customer Journey en JSON y CSV (importable en Miro)
 │   └── figma/pantallas.html    HTML autocontenido de las 5 pantallas (para html.to.design)
-├── borradores/                 Textos de las secciones 8.4, 13, 15 y 16 para el documento
+├── textos/                     Textos de los apartados 11.4, 13, 15 y 16 del documento
 ├── assets/capturas/            Evidencias: algolia, figma, prototipo, strapi, heuristica, journey
 ├── tools/
 │   ├── build-exports.js        node tools/build-exports.js → regenera exports/
@@ -76,33 +76,35 @@ Las categorías, subcategorías, etiquetas, etiquetas anteriores, tipos de conte
 
 Si se renombra una etiqueta ahí, el cambio aparece en todo el sitio, lo que garantiza un etiquetado consistente.
 
-## 4. Avance según la tabla de la guía
+## 4. Herramientas de la guía y versión del sitemap
 
-| Semana | Tema del curso | Aplicación al proyecto | Estado 
-|---|---|---|---|
-| 1 | Presentación del proyecto | Selección y análisis de la organización | ✅ 
-| 2-3 | Sistemas de organización | Inventario de contenidos, usuarios y estructura inicial | ✅ 
-| 4 | FlowMapp | Diseño del sitemap | 🟡 Sitemap v2 con los ajustes de Optimal (`assets/SiteMap_v2_FlowMapp.png`); falta agregar el sitemap corregido como página aparte (`exports/sitemap.xml`)
-| 5 | Octopus.do | Organización jerárquica y etiquetado | 🟡 Tablero actualizado con los ajustes de Optimal; falta agregar el sitemap corregido (`exports/octopus-outline.txt`)
-| 6 | Optimal Workshop | Validación con Card Sorting o Tree Testing | ✅ OptimalSort + Treejack sobre el árbol del Avance 1 (capturas en `assets/capturas/optimal/`); ajustes en `borradores/08-4-ajustes-incorporados.md` 
-| 7 | Figma + FigJam | Wireframes de las principales pantallas | ✅ [Wireframes en Figma](https://www.figma.com/design/o0hd4Xfn45ygl4PVb7DRf7) (5 pantallas con prototipo navegable) y [flujo en FigJam](https://www.figma.com/board/D7GIEBK7ICql2tinT7rnpz) 
-| 8 | Maze + Microsoft Clarity | Evaluación de la experiencia de usuario y propuesta de mejoras | 🟡 Evaluación heurística (Nielsen) hecha: `borradores/13-evaluacion-de-usabilidad.md`; Maze y Clarity pendientes 
-| 10 | Algolia + Azure AI Search | Diseño del buscador y estrategia de recuperación | ✅ Índice `gti_contenidos` en Algolia conectado al buscador del prototipo; pruebas en `docs/busqueda.html` 
-| 11 | Contentful + Strapi | Metadatos, taxonomías y vocabularios controlados | ✅ Modelo en Strapi 5 (`exports/strapi/`, capturas en `assets/capturas/strapi/`); texto en `borradores/15-metadatos-y-taxonomias.md` 
-| 12 | Miro | Customer Journey / mapa de experiencia | ✅ En [FigJam](https://www.figma.com/board/bt09biHBOxATfWGoPhBO8v) (herramienta equivalente) + CSV para Miro; texto en `borradores/16-customer-journey.md` 
-| 13 | IA Generativa | Uso crítico de IA para optimizar y justificar decisiones | ✅ Sección 17 del documento 
+El sitemap tuvo tres versiones: la **inicial** (primer avance, con «Mi Cuenta»), la **versión 2** con los ajustes propuestos a partir de Optimal Workshop y la **versión final**, la de este repositorio. FlowMapp y Octopus.do conservan la versión 2 como registro; el resto de las herramientas se aplicó sobre la versión final.
+
+| Semana | Herramienta | Aplicación al proyecto | Versión del sitemap | Evidencia |
+|---|---|---|---|---|
+| 4 | FlowMapp | Diseño del sitemap | Inicial y versión 2 | `assets/SiteMap_v2_FlowMapp.png`; versión final en `assets/SiteMap_corregido.png` y `exports/sitemap.xml` |
+| 5 | Octopus.do | Organización jerárquica y etiquetado | Inicial y versión 2 | [Tablero](https://octopus.do/ehdjf242j8h); versión final en `exports/octopus-outline.txt` |
+| 6 | Optimal Workshop | Validación con card sorting y tree testing | Inicial | `assets/capturas/optimal/`; ajustes en `textos/11-4-ajustes-incorporados.md` |
+| 7 | Figma + FigJam | Wireframes de las principales pantallas | Final | [Wireframes](https://www.figma.com/design/o0hd4Xfn45ygl4PVb7DRf7) y [flujo en FigJam](https://www.figma.com/board/D7GIEBK7ICql2tinT7rnpz) |
+| 8 | Evaluación de usabilidad | Evaluación heurística (alternativa a Maze y Clarity) | Final | `textos/13-evaluacion-de-usabilidad.md`, `assets/capturas/heuristica/` |
+| 10 | Algolia + Azure AI Search | Buscador y estrategia de recuperación | Final | Índice `gti_contenidos`; pruebas en `docs/busqueda.html` |
+| 11 | Contentful + Strapi | Metadatos, taxonomías y vocabularios controlados | Final | `exports/strapi/`, `textos/15-metadatos-y-taxonomias.md` |
+| 12 | Miro (FigJam) | Customer Journey | Final | [Mapa en FigJam](https://www.figma.com/board/bt09biHBOxATfWGoPhBO8v), `exports/journey/` |
+| 13 | IA generativa | Uso crítico de IA | Transversal | Sección 17 del documento |
+
+Prototipo publicado: <https://aguilarato.github.io/arquitectura-gti/>
 
 # Qué se implementó en cada tema
 
 **1–3. Presentación y sistemas de organización.** Introducción, organización, problemática, objetivos, usuarios, inventario, análisis de la estructura actual y propuesta de organización están en el documento del proyecto. En el repo, la propuesta se materializa en el **prototipo HTML navegable**: una vista por cada nodo del sitemap corregido, basada en los wireframes 12.x.
 
-**4. FlowMapp y 5. Octopus.do.** Sitemap y jerarquía con bloques de contenido. `exports/sitemap.xml`, `sitemap.csv` y `octopus-outline.txt` se generan desde `js/sitemap-data.js` para importarlos en esas herramientas.
+**4. FlowMapp y 5. Octopus.do.** Sitemap y jerarquía con bloques de contenido. Las herramientas conservan la versión 2; la versión final se exporta desde `js/sitemap-data.js` en `exports/sitemap.xml`, `sitemap.csv` y `octopus-outline.txt`.
 
-**6. Optimal Workshop.** Card sorting y tree testing sobre el árbol del Avance 1; sus hallazgos están incorporados en el sitemap corregido. Para repetir el tree testing con el árbol nuevo: `exports/optimal-workshop/`.
+**6. Optimal Workshop.** Card sorting y tree testing sobre el sitemap inicial; sus hallazgos están incorporados en la versión final. Para repetir el tree testing con el árbol nuevo: `exports/optimal-workshop/`.
 
 **7. Figma + FigJam.** Wireframes con prototipo navegable y flujo «Comenzar a facturar».
 
-**8. Evaluación de usabilidad.** Evaluación heurística de Nielsen con 11 hallazgos (`borradores/13-evaluacion-de-usabilidad.md`).
+**8. Evaluación de usabilidad.** Evaluación heurística de Nielsen con 11 hallazgos (`textos/13-evaluacion-de-usabilidad.md`).
 
 **10. Algolia.** Metadatos por página, sinónimos, facetas y una regla de relevancia. Buscador en el encabezado con sugerencias, página de resultados con filtros y manejo de búsquedas sin resultados.
 
